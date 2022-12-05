@@ -1,0 +1,3 @@
+[submodule "sim-data-hub"]
+	path = sim-data-hub
+	url = git@github.com:geo-fluid-dynamics/sim-data-hub.git
