@@ -759,7 +759,7 @@ HydraulicConductivity_Barremian:
 HydraulicConductivity_Hauterivian:
   type: scalar
   value: 1.0e-10
-    dev_pdf: Gauss
+  dev_pdf: Gauss
   dev_value: 1.0e-11
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
