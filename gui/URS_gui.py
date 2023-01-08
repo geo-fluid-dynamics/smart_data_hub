@@ -18,7 +18,7 @@ settings = {
 
 
 URSgui.load_lib_path(map_lib_path='library.map.Map', regime_lib_path='sim-data-hub.library.regimes.Regime', export_lib_path='sim-data-hub.export',
-                     source_path='../yaml-db')
+                     source_path='../yaml-db', assets_path='/assets', stylesheet_path='stylesheet.css')
 
 URSgui.setup_html_gui(**settings)
 
