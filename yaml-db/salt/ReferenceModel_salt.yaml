@@ -455,70 +455,70 @@ HydraulicConductivity_Tertiary:
   unit: [0 1 -1 0 0 0 0]
   source: AdHocAG.1997
 
-HeatConductivity_Bunter_2:
+HydraulicConductivity_Bunter_2:
   type: scalar
   value: 1.0e-5
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: AdHocAG.1997
 
-HeatConductivity_Bunter_1:
+HydraulicConductivity_Bunter_1:
   type: scalar
   value: 1.0e-7
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: AdHocAG.1997
 
-HeatConductivity_Aller-Steinsalz:
+HydraulicConductivity_Aller-Steinsalz:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Anhydritmittelsalz:
+HydraulicConductivity_Anhydritmittelsalz:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Leine-Steinsalz:
+HydraulicConductivity_Leine-Steinsalz:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Hauptanhydrit:
+HydraulicConductivity_Hauptanhydrit:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Straßfurt-Kaliflöz:
+HydraulicConductivity_Straßfurt-Kaliflöz:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Straßfurt-Steinsalz:
+HydraulicConductivity_Straßfurt-Steinsalz:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Anhydrit/Karbonat:
+HydraulicConductivity_Anhydrit/Karbonat:
   type: scalar
   value: 1.0e-15
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Liu.2017
 
-HeatConductivity_Rotliegend:
+HydraulicConductivity_Rotliegend:
   type: scalar
   value: None
   unit_str: m/s
