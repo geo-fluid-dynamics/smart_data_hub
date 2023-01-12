@@ -1,0 +1,1297 @@
+# The possible host rocks in the reference model North are Barremian and Hauterivian. Both are described as claystone units of the lower cretaceous.
+
+
+
+name: Reference Model north, claystone
+location: 
+    type: coordinate
+    value: {'N': 52.62,
+            'E': 9.85}
+    source: Reinhold.2012
+geometry: 
+    model:
+    orientation:
+
+#Density values:
+density_Quaternary:
+  type: scalar
+  value: 1700
+  dev_pdf: Gauss
+  dev_value: 300
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Wohlenberg.1982
+
+density_Tertiary:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 135
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Rath.2005
+
+density_Jo3:
+  type: scalar
+  value: 2650
+  dev_pdf: Gauss
+  dev_value: 350
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Wohlenberg.1982
+
+density_Jo2:
+  type: scalar
+  value: 2650
+  dev_pdf: Gauss
+  dev_value: 350
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Wohlenberg.1982
+
+density_Jo1:
+  type: scalar
+  value: 2600
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_Jm3:
+  type: scalar
+  value: 2490
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_Jm2:
+  type: scalar
+  value: 2550
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_Opalinus_clay:
+  type: scalar
+  value: 2470
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001,Bossart.2008,Bock.2009
+
+density_Ju2:
+  type: scalar
+  value: 2530
+  dev_pdf: Gauss
+  dev_value: 120
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_Ju1:
+  type: scalar
+  value: 2500
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Wohlenberg.1982
+
+density_K3:
+  type: scalar
+  value: 2400
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_K2:
+  type: scalar
+  value: 2750
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_K1:
+  type: scalar
+  value: 2420
+  dev_pdf: Gauss
+  dev_value: 87
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_M3:
+  type: scalar
+  value: 2400
+  dev_pdf: Gauss
+  dev_value: 260
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_M2:
+  type: scalar
+  value: 2630
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+density_M1:
+  type: scalar
+  value: 2500
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Wohlenberg.1982
+
+#Porosity values:
+EffectivePorosity_Quaternary:
+  type: scalar
+  value: 0.125
+  dev_pdf: Gauss
+  dev_value: 0.0025
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Plum.2008
+
+EffectivePorosity_Tertiary:
+  type: scalar
+  value: 0.10
+  dev_pdf: Gauss
+  dev_value: 0.07
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jodocy.2011
+
+EffectivePorosity_Jo3:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_Jo2:
+  type: scalar
+  value: 0.12
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jodocy.2011
+
+EffectivePorosity_Jo1:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_Jm3:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_Jm2:
+  type: scalar
+  value: 0.13
+  dev_pdf: Gauss
+  dev_value: 0.01
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: LGRB.2005
+
+EffectivePorosity_Opalinus_clay:
+  type: scalar
+  value: 0.0675
+  dev_pdf: Gauss
+  dev_value: 0.0095
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: NAGRA.2001,Jahn.2016
+
+EffectivePorosity_Ju2:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_Ju1:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_K3:
+  type: scalar
+  value: 0.136
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_K2:
+  type: scalar
+  value: 0.15
+  dev_pdf: Gauss
+  dev_value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Fehn.2010
+
+EffectivePorosity_K1:
+  type: scalar
+  value: 0.20
+  dev_pdf: Gauss
+  dev_value: 0.08
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: LBEG.2007
+
+EffectivePorosity_M3:
+  type: scalar
+  value: 0.145
+  dev_pdf: Gauss
+  dev_value: 0.035
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Fehn.2010
+
+EffectivePorosity_M2:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2016
+
+EffectivePorosity_M1:
+  type: scalar
+  value: 0.105
+  dev_pdf: Gauss
+  dev_value: 0.035
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Fehn.2010
+
+
+
+#Specific heat capacity values:
+#What about units of Joule and Watt?
+SpecificHeatCapacity_Quaternary:
+  type: scalar
+  value: 1000
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Tertiary:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Jo3:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Jo2:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Jo1:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Jm3:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Jm2:
+  type: scalar
+  value: 1050
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Opalinus_clay:
+  type: scalar
+  value: 0.0675
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Bossart.2008
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Ju2:
+  type: scalar
+  value: 880
+  dev_pdf: Gauss
+  dev_value: 40
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Ju1:
+  type: scalar
+  value: 1050
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_K3:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_K2:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_K1:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_M3:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_M2:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_M1:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+#Anisotropic values are given just for Opalinus clay. Therefore, Opalinus_Clay_perpendicular and Opalinus_Clay_parallel are introduced in the following section.
+HeatConductivity_Quaternary:
+  type: scalar
+  value: 1.80
+  dev_pdf: Gauss
+  dev_value: 0.9
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_Tertiary:
+  type: scalar
+  value: 2.95
+  dev_pdf: Gauss
+  dev_value: 0.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_Jo3:
+  type: scalar
+  value: 3.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_Jo2:
+  type: scalar
+  value: 3.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_Jo1:
+  type: scalar
+  value: 3.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_Jm3:
+  type: scalar
+  value: 3.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_Jm2:
+  type: scalar
+  value: 2.75
+  dev_pdf: Gauss
+  dev_value: 0.14
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_Opalinus_Clay_parallel:
+  type: scalar
+  value: 2.25
+  dev_pdf: Gauss
+  dev_value: 0.4
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Bock.2009
+  meta_free: T = 273.16 K
+
+HeatConductivity_Opalinus_Clay_perpendicular:
+  type: scalar
+  value: 1.18
+  dev_pdf: Gauss
+  dev_value: 0.26
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Bock.2009
+  meta_free: T = 273.16 K
+
+HeatConductivity_Ju2:
+  type: scalar
+  value: 2.38
+  dev_pdf: Gauss
+  dev_value: 0.12
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_Ju1:
+  type: scalar
+  value: 2.74
+  dev_pdf: Gauss
+  dev_value: 0.125
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+SHeatConductivity_K3:
+  type: scalar
+  value: 2.34
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_K2:
+  type: scalar
+  value: 2.35
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_K1:
+  type: scalar
+  value: 4.5
+  dev_pdf: Gauss
+  dev_value: 0.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: NAGRA.1988
+  meta_free: T = 273.16 K
+
+HeatConductivity_M3:
+  type: scalar
+  value: 2.34
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_M2:
+  type: scalar
+  value: 4.5
+  dev_pdf: Gauss
+  dev_value: 0.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: NAGRA.1988
+  meta_free: T = 273.16 K
+
+HeatConductivity_M1:
+  type: scalar
+  value: 2.34
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+
+
+#Hydraulic conductivity values:
+HydraulicConductivity_Quaternary:
+  type: scalar
+  value: 0.01
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Tertiary:
+  type: scalar
+  value: 0.00001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Jo3:
+  type: scalar
+  value: 0.0001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Jo2:
+  type: scalar
+  value: 0.01
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Jo1:
+  type: scalar
+  value: 0.00001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Jm3:
+  type: scalar
+  value: 0.000000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Jm2:
+  type: scalar
+  value: 0.00001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Opalinus_clay:
+  type: scalar
+  value: 0.000000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Ju2:
+  type: scalar
+  value: 0.000000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_Ju1:
+  type: scalar
+  value: 0.00001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_K3:
+  type: scalar
+  value: 0.000000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_K2:
+  type: scalar
+  value: 0.0001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_K1:
+  type: scalar
+  value: 0.0000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_M3:
+  type: scalar
+  value: 0.00001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_M2:
+  type: scalar
+  value: 0.0000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+HydraulicConductivity_M1:
+  type: scalar
+  value: 0.000001
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+
+#p-wave velocity values, if available parallel and perpendicular to bedding of unit:
+pWaveVelocity_Quaternary:
+  type: scalar
+  value: 1650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Tertiary_parallel:
+  type: scalar
+  value: 5680
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Tertiary_perpendicular:
+  type: scalar
+  value: 5410
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Jo3:
+  type: scalar
+  value: 5630
+  dev_pdf: Gauss
+  dev_value: 580
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Jo2:
+  type: scalar
+  value: 5630
+  dev_pdf: Gauss
+  dev_value: 580
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Jo1:
+  type: scalar
+  value: 5630
+  dev_pdf: Gauss
+  dev_value: 580
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Jm3_parallel:
+  type: scalar
+  value: 5680
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Jm3_perpendicular:
+  type: scalar
+  value: 5410
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Jm2:
+  type: scalar
+  value: 3630
+  dev_pdf: Gauss
+  dev_value: 650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Opalinus_clay_parallel:
+  type: scalar
+  value: 3410
+  dev_pdf: Gauss
+  dev_value: 240
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Bossart.2008
+
+pWaveVelocity_Opalinus_clay_perpendicular:
+  type: scalar
+  value: 2620
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Bossart.2008
+
+pWaveVelocity_Ju2_parallel:
+  type: scalar
+  value: 5680
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Ju2_perpendicular:
+  type: scalar
+  value: 5410
+  dev_pdf: Gauss
+  dev_value: 490
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Ju1:
+  type: scalar
+  value: 3630
+  dev_pdf: Gauss
+  dev_value: 650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_K3_parallel:
+  type: scalar
+  value: 5680
+  dev_pdf: Gauss
+  dev_value: 400
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_K3_perpendicular:
+  type: scalar
+  value: 5410
+  dev_pdf: Gauss
+  dev_value: 490
+  unit_str: ms^-1
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_K2:
+  type: scalar
+  value: 3630
+  dev_pdf: Gauss
+  dev_value: 650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_K1_parallel:
+  type: scalar
+  value: 4730
+  dev_pdf: Gauss
+  dev_value: 640
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_K1_perpendicular:
+  type: scalar
+  value: 4100
+  dev_pdf: Gauss
+  dev_value: 990
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_M3:
+  type: scalar
+  value: 5710
+  dev_pdf: Gauss
+  dev_value: 620
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_M2:
+  type: scalar
+  value: 5500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_M1:
+  type: scalar
+  value: 3630
+  dev_pdf: Gauss
+  dev_value: 650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+
+#s-wave velocity values:
+sWaveVelocity_Quaternary:
+  type: scalar
+  value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Tertiary:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn.2016
+
+sWaveVelocity_Jo3:
+  type: scalar
+  value: 3120
+  dev_pdf: Gauss
+  dev_value: 450
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_Jo2:
+  type: scalar
+  value: 3120
+  dev_pdf: Gauss
+  dev_value: 450
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_Jo1:
+  type: scalar
+  value: 3120
+  dev_pdf: Gauss
+  dev_value: 450
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_Jm3:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_Jm2:
+  type: scalar
+  value: 2260
+  dev_pdf: Gauss
+  dev_value: 520
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_Opalinus_clay_parallel:
+  type: scalar
+  value: 1960
+  dev_pdf: Gauss
+  dev_value: 120
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Bossart.2008
+
+sWaveVelocity_Opalinus_clay_perpendicular:
+  type: scalar
+  value: 1510
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Bossart.2008
+
+sWaveVelocity_Ju2:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_Ju1:
+  type: scalar
+  value: 2260
+  dev_pdf: Gauss
+  dev_value: 520
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_K3:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_K2:
+  type: scalar
+  value: 2260
+  dev_pdf: Gauss
+  dev_value: 520
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_K1:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_M3:
+  type: scalar
+  value: 3320
+  dev_pdf: Gauss
+  dev_value: 330
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_M2:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity_M1:
+  type: scalar
+  value: 2260
+  dev_pdf: Gauss
+  dev_value: 520
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+
+#Diffusivity of Opalinus clay, parallel and perpendicular to bedding plane:
+diffusivity_Opalinus_clay_parallel:
+  type: scalar
+  value: 5.4e-11
+  dev_pdf: Gauss
+  dev_value: 0.4e-11
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: VanLoon.2004
+
+diffusivity_Opalinus_clay_perpendicular:
+  type: scalar
+  value: 1.4e-11
+  dev_pdf: Gauss
+  dev_value: 0.1e-12
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: VanLoon.2004
+
+  #Values are taken from Mont Terri studies for HTO isotopes
+
+
+#Lithological description:
+lithology_Quaternary:
+  type: string
+  value: Loose to barely compacted sands and gravels
+  source: Reinhold.2016
+
+lithology_Tertiary:
+  type: string
+  value: Marlstone, varying calcareous and clayey components
+  source: Reinhold.2016
+
+lithology_Jo3:
+  type: string
+  value: Limestone, marlstone
+  source: Reinhold.2016
+
+lithology_Jo2:
+  type: string
+  value: Limestone, dolomite
+  source: Reinhold.2016
+
+lithology_Jo1:
+  type: string
+  value: Limestone, marlstone
+  source: Reinhold.2016
+
+lithology_Jm3:
+  type: string
+  value: CLayey marlstone, single limestone beds
+  source: Reinhold.2016
+
+lithology_Jm2:
+  type: string
+  value: Fe-rich sandstone, claystone and marlstone beds
+  source: Reinhold.2016
+
+lithology_Opalinus_clay:
+  type: string
+  value: Claystone
+  source: Reinhold.2016
+
+lithology_Ju2:
+  type: string
+  value: Clayey marlstone, marlstone
+  source: Reinhold.2016
+
+lithology_Ju1:
+  type: string
+  value: Clayey sandstone, clayey marlstone
+  source: Reinhold.2016
+
+lithology_K3:
+  type: string
+  value: Claystone, marlstone, calcareous concretions
+  source: Reinhold.2016
+
+lithology_K2:
+  type: string
+  value: Sandstone, single claystone beds
+  source: Reinhold.2016
+
+lithology_K1:
+  type: string
+  value: Claystone, siltstones
+  source: Reinhold.2016
+
+lithology_M3:
+  type: string
+  value: Dolomitestone
+  source: Reinhold.2016
+
+lithology_M2:
+  type: string
+  value: Anhydrite, single claystone beds
+  source: Reinhold.2016
+
+lithology_M1:
+  type: string
+  value: Brownstone, varying clay content
+  source: Reinhold.2016
+
+
+#Specific electrical resistivity values:
+electricalResistivity_Quaternary:
+  type: scalar
+  value: 100
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: None #Rough guess, difficult since broad variety of lithologies included in quaternary deposits.
+
+electricalResistivity_Tertiary:
+  type: scalar
+  value: 40
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021, Knödel.1997
+ #As seen in Kneuker (2021), the increasing limestone content leads to increase in res.
+
+electricalResistivity_Jo3:
+  type: scalar
+  value: 2500 #Assuming unfractured limestone and marlstone
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+
+electricalResistivity_Jo2:
+  type: scalar
+  value: 350 #Assuming high degree of fracturing and karstification.
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+
+electricalResistivity_Jo1:
+  type: scalar
+  value: 2500 #Assuming unfractured limestone and marlstone
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+
+electricalResistivity_Jm3:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #As seen in Kneuker (2021), the increasing limestone content leads to increase in res.
+
+electricalResistivity_Jm2:
+  type: scalar
+  value: 75
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Assume higher res than for marlstone, but not too high due to water saturation.
+
+electricalResistivity_Opalinus_clay:
+  type: scalar
+  value: 10
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Strongly depends on facies of Opalinus clay, clayey subfacies shows res < 15 Ohmm, sandy and calcareous parts > 25 Ohmm.
+
+electricalResistivity_Ju2:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #As seen in Kneuker (2021), the increasing limestone content leads to increase in res.
+
+electricalResistivity_Ju1:
+  type: scalar
+  value: 80
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+
+electricalResistivity_K3:
+  type: scalar
+  value: 15
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Analogy to Opalinus clay in Kneuker (2021).
+
+electricalResistivity_K2:
+  type: scalar
+  value: 75
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Assume higher res than for marlstone, but not too high due to water saturation.
+
+electricalResistivity_K1:
+  type: scalar
+  value: 25
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Analogy to Opalinus clay with sandy and calcareous components in Kneuker (2021).
+
+electricalResistivity_M3:
+  type: scalar
+  value: 400 #Assuming high degree of fracturing and karstification.
+  dev_pdf: Gauss
+  dev_value: 200
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+
+electricalResistivity_M2:
+  type: scalar
+  value: 200
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Girard.2015
+
+electricalResistivity_M1:
+  type: scalar
+  value: 100
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+  #Assumption based on other sandy formations.
