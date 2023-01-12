@@ -1061,7 +1061,7 @@ diffusivity_Barremian_parallel:
   value: 5.4e-11
   dev_pdf: Gauss
   dev_value: 0.4e-11
-  unit_str: m^2s^-1
+  unit_str: m²/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
@@ -1070,7 +1070,7 @@ diffusivity_Barremian_perpendicular:
   value: 1.4e-11
   dev_pdf: Gauss
   dev_value: 0.1e-12
-  unit_str: m^2s^-1
+  unit_str: m²/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
@@ -1079,7 +1079,7 @@ diffusivity_Hauterivian_parallel:
   value: 5.4e-11
   dev_pdf: Gauss
   dev_value: 0.4e-11
-  unit_str: m^2s^-1
+  unit_str: m²/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
@@ -1088,7 +1088,7 @@ diffusivity_Hauterivian_perpendicular:
   value: 1.4e-11
   dev_pdf: Gauss
   dev_value: 0.1e-12
-  unit_str: m^2s^-1
+  unit_str: m²/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
