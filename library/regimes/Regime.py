@@ -11,7 +11,7 @@ for i in range(1, len(modules) + 1):
         module_str = modules[-i] + '.' + module_str
         module = modules[-i]
         break
-    except ModuleNotFoundError:
+    except (ModuleNotFoundError, ValueError) as error:
         module_str = modules[-i] + '.' + module_str
 
 if module is None:  # only contains submodule sim-data-hub
