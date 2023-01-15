@@ -1,8 +1,8 @@
-# The possible host rocks in the reference model North are Barremian and Hauterivian. Both are described as claystone units of the lower cretaceous.
+# The possible host rocks in the reference model South is the Opalinus clay of the Mid Jurassic.
 
 
 
-name: Reference Model north, claystone
+name: Reference Model south, claystone
 location: 
     type: coordinate
     value: {'N': 52.62,
