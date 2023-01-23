@@ -8,7 +8,7 @@ location:
     type: coordinate
     value: {'N': 50.54,
             'E': 10.11}
-    source: BGE.2020
+    source: BGR.2020
     meta_free: Coordinates are just representative for one of BGE's locations in crystalline rock. 
 geometry: 
     model:
@@ -418,22 +418,22 @@ HeatConductivity_Zechstein_1:
 
 HeatConductivity_Granite_weathered:
   type: scalar
-  value: 3.0
+  value: 2.85
   dev_pdf: Gauss
-  dev_value: 0.3
+  dev_value: 0.15
   unit_str: W/m/K
   unit: [1 1 -3 -1 0 0 0]
-  source: Vondrovic.2017
+  source: Kozusnikova.2017
   meta_free: T = 273.16 K
 
 HeatConductivity_Granite:
   type: scalar
-  value: 3.0
+  value: 2.85
   dev_pdf: Gauss
-  dev_value: 0.3
+  dev_value: 0.15
   unit_str: W/m/K
   unit: [1 1 -3 -1 0 0 0]
-  source: Vondrovic.2017
+  source: Kozusnikova.2017
   meta_free: T = 273.16 K
 
 
@@ -512,14 +512,14 @@ HydraulicConductivity_Zechstein_1:
 
 HydraulicConductivity_Granite_weathered:
   type: scalar
-  value: 1.0e-10 #Assumed on similar level as surrounding rocks due to filling of fractures by salt minerals. 
+  value: 1.0e-6
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: AdHocAG.1997
+  source: Zeitlhöfer.2015
 
 HydraulicConductivity_Granite:
   type: scalar
-  value: 1.0e-11
+  value: 1.0e-8
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Zeitlhöfer.2015
