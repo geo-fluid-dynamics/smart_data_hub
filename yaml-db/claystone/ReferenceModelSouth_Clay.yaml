@@ -5,9 +5,9 @@
 name: Reference Model south, claystone
 location: 
     type: coordinate
-    value: {'N': 52.62,
-            'E': 9.85}
-    source: Reinhold.2012
+    value: {'N': 48.31,
+            'E': 9.40}
+    source: Reinhold.2016
 geometry: 
     model:
     orientation:
@@ -162,7 +162,7 @@ EffectivePorosity_Tertiary:
   dev_value: 0.07
   unit_str: None
   unit: [0 0 0 0 0 0 0]
-  source: Jodocy.2011
+  source: Jodocy.2010
 
 EffectivePorosity_Jo3:
   type: scalar
@@ -176,7 +176,7 @@ EffectivePorosity_Jo2:
   value: 0.12
   unit_str: None
   unit: [0 0 0 0 0 0 0]
-  source: Jodocy.2011
+  source: Jodocy.2010
 
 EffectivePorosity_Jo1:
   type: scalar
@@ -1169,7 +1169,7 @@ electricalResistivity_Jo3:
   dev_value: 250
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Gelis.2015
+  source: Gelis.2016
 
 electricalResistivity_Jo2:
   type: scalar
@@ -1178,7 +1178,7 @@ electricalResistivity_Jo2:
   dev_value: 25
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Gelis.2015
+  source: Gelis.2016
 
 electricalResistivity_Jo1:
   type: scalar
@@ -1187,7 +1187,7 @@ electricalResistivity_Jo1:
   dev_value: 250
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Gelis.2015
+  source: Gelis.2016
 
 electricalResistivity_Jm3:
   type: scalar
@@ -1236,7 +1236,7 @@ electricalResistivity_Ju1:
   dev_value: 20
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Gelis.2015
+  source: Gelis.2016
 
 electricalResistivity_K3:
   type: scalar
@@ -1275,7 +1275,7 @@ electricalResistivity_M3:
   dev_value: 200
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Gelis.2015
+  source: Gelis.2016
 
 electricalResistivity_M2:
   type: scalar
@@ -1284,7 +1284,7 @@ electricalResistivity_M2:
   dev_value: 25
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Girard.2015
+  source: Girard.2011
 
 electricalResistivity_M1:
   type: scalar
@@ -1293,5 +1293,5 @@ electricalResistivity_M1:
   dev_value: 15
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Gelis.2015
+  source: Gelis.2016
   #Assumption based on other sandy formations.

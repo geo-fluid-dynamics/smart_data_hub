@@ -7,7 +7,7 @@ location:
     type: coordinate
     value: {'N': 52.62,
             'E': 9.85}
-    source: Reinhold.2012
+    source: Reinhold.2013
 geometry: 
     model:
     orientation:
@@ -911,7 +911,7 @@ pWaveVelocity_Aalen_Sandstone:
   value: None
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Alheid.1986
+  source: None
 
 pWaveVelocity_Lower_Jurassic:
   type: scalar
@@ -1024,7 +1024,7 @@ sWaveVelocity_Aalen_Sandstone:
   value: None
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Alheid.1986
+  source: None
 
 sWaveVelocity_Lower_Jurassic:
   type: scalar
@@ -1316,4 +1316,4 @@ electricalResistivity_Zechstein:
   dev_value: 5000
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Yaramanci.2000
+  source: Yaramanci.2001
