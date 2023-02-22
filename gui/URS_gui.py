@@ -29,8 +29,7 @@ settings = {
     "logo_data_hub_png_title": 'Data Hub Logo',
     "logo_png": 'logo.png',
     "uni_logo_png": 'logo.png',
-    "main_dropdown_title": 'Host rock:',
-    "client_path_name": os.path.join('../sim-data-hub/gui/assets', 'client')
+    "main_dropdown_title": 'Host rock:'
 }
 
 
@@ -39,8 +38,9 @@ lib_path = {
     'regime_lib_path': module_str + 'library.regimes.Regime',
     'yaml_loader_path': module_str + 'sim-data-hub.library.regimes.Regime',
     'export_lib_path': module_str + 'sim-data-hub.export',
-    'source_path': '../yaml-db',
-    'assets_path': '/assets',
+    'source_path': os.path.join('..', 'yaml-db'),
+    'assets_path': 'assets',
+    'client_relpath': os.path.join('assets', 'client'),
     'stylesheet_path': 'stylesheet.css'
 }
 
