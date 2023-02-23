@@ -144,20 +144,3 @@ __pycache__/
 # BibTeX
 .bak
 .sav
-
-# Folium offline
-bootstrap-theme.min.css
-bootstrap.min.css
-bootstrap.min.js
-font-awesome.min.css
-jquery-1.12.4.min.js
-leaflet.awesome-markers.css
-leaflet.awesome-markers.js
-leaflet.awesome.rotate.min.css
-leaflet.css
-leaflet.js
-leaflet.js.map
-leaflet-src.esm.js
-leaflet-src.esm.js.map
-leaflet-src.js
-leaflet-src.js.map

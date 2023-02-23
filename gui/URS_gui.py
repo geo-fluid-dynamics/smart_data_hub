@@ -25,10 +25,10 @@ URSgui = importlib.import_module(module_str + "sim-data-hub.gui.gui")
 settings = {
     "gui_title": 'URS-data-Hub',
     # for the image of logo
-    "logo_data_hub_png": 'logo.png',
+    "logo_data_hub_png": 'URSLogoV1.png',
     "logo_data_hub_png_title": 'Data Hub Logo',
-    "logo_png": 'logo.png',
-    "uni_logo_png": 'logo.png',
+    "logo_png": None,
+    "uni_logo_png": 'rwth_mbd_en_rgb.png',
     "main_dropdown_title": 'Host rock:'
 }
 
