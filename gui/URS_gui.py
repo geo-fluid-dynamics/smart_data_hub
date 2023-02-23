@@ -40,7 +40,7 @@ lib_path = {
     'export_lib_path': module_str + 'sim-data-hub.export',
     'source_path': os.path.join('..', 'yaml-db'),
     'assets_path': 'assets',
-    'client_relpath': os.path.join('assets', 'client'),
+    'client_relpath': os.path.join('assets'),
     'stylesheet_path': 'stylesheet.css'
 }
 
