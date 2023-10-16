@@ -1,25 +1,8 @@
-import importlib
 import os
-module_str = ''
-module = None
-modules = (os.path.normpath(os.path.split(os.getcwd())[0])).split(os.sep)
+from data_hub.sim_data_hub.data_hub.library.map.Map import Map as simMap
 
-for i in range(1, len(modules) + 1):
-    try:
-        importlib.import_module(modules[-i])
-        module_str = modules[-i] + '.' + module_str
-        module = modules[-i]
-        break
-    except (ModuleNotFoundError, ValueError) as error:
-        module_str = modules[-i] + '.' + module_str
 
-if module is None:  # only contains submodule sim-data-hub
-    module_str = ''
-    module = 'sim-data-hub'
-
-simMap = importlib.import_module(module_str + "sim-data-hub.library.map.Map")
-
-class Map(simMap.Map):
+class Map(simMap):
 
     def set_map_offline(self, data_file_path: str = None):
         """
