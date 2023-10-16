@@ -1,0 +1,40 @@
+# This file is just for testing plot of multivariables input
+# Qian @RWTH, May
+
+# name:
+#   - type                         # [ scalar, array, tabulated, expression, coordinate ]
+#   - value                        # float
+#   - dev_pdf                      # Gauss or other parametrized or tabulated PDF
+#   - dev_value                    # hyperparameters of PDF or array
+#   - unit_str                     # standard string to inidate unit
+#   - unit  [ kg m s K A mol cd ]  # unit in systematically documented SI units
+#   - variable                     # function argument
+#   - variable_unit  [ kg m s K A mol cd ]  # unit in systematically documented SI units
+#   - variable_unit_str            # standard string to indicate variable_unit
+#   - source [ string ]            # data source
+#   - meta_sys [ string ]          # meta data from systematic databases, e.g. NASA database
+#   - meta_free [ string]          # free text meta data
+
+name: "multivariables_test"
+
+test_case2:
+  type: expression
+  value: 9.31*x + 3.78*x2*sin(x) - 3.6274*pow(x2,2)
+  unit_str: kg/m^3
+  unit: [ 1 -3 0 0 0 0 0 ]
+  variable: {x: temperature, x2: depth}
+  variable_unit_str: {x: K, x2: m}
+  variable_unit: {x: [ 0 0 0 1 0 0 0 ], x2: [ 0 1 0 0 0 0 0 ]}
+  source: None
+  meta_free: None
+
+test_case3:
+  type: expression
+  value: 9.31*x + 3.78*x2*sin(x3) - 3.6274*pow(x2,2)
+  unit_str: kg/m^3
+  unit: [ 1 -3 0 0 0 0 0 ]
+  variable: {x: temperature, x2: depth, x3: depth}
+  variable_unit_str: {x: K, x2: m, x3: m}
+  variable_unit: {x: [ 0 0 0 1 0 0 0 ], x2: [ 0 1 0 0 0 0 0 ],x3: [ 0 1 0 0 0 0 0 ]}
+  source: None
+  meta_free: None
