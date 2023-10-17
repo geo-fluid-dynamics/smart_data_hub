@@ -1,9 +1,0 @@
-numpy~=1.19.5
-scipy~=1.6.0
-matplotlib~=3.5.2
-pandas~=1.2.1
-pyyaml~=5.4.1
-dash~=2.6.2
-dash-bootstrap-components~=1.2.1
-folium~=0.13.0
-cartopy~=0.18.0
