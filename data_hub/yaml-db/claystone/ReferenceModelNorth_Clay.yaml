@@ -1,0 +1,1319 @@
+# The possible host rocks in the reference model North are Barremian and Hauterivian. Both are described as claystone units of the lower cretaceous.
+
+
+
+name: Reference Model north, claystone
+location: 
+    type: coordinate
+    value: {'N': 52.62,
+            'E': 9.85}
+    source: Reinhold.2013
+geometry: 
+    model:
+    orientation:
+
+#Density values:
+density_Quaternary:
+  type: scalar
+  value: 2160
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Gerardi.2005, Jahn.2013
+
+density_Albian:
+  type: scalar
+  value: 2165
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Gerardi.2005, Jahn.2013
+
+density_Hilssandstone:
+  type: scalar
+  value: 2500
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+density_Aptian:
+  type: scalar
+  value: 2300
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Gerardi.2005, Jahn.2013
+
+density_Barremian:
+  type: scalar
+  value: 2450
+  dev_pdf: Gauss
+  dev_value: 100
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Wittke.1991, Jahn.2013
+
+density_Hauterivian:
+  type: scalar
+  value: 2380
+  dev_pdf: Gauss
+  dev_value: 70
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Gerardi.2005, Jahn.2013
+
+density_Valanginian:
+  type: scalar
+  value: 2430
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+density_Wealden:
+  type: scalar
+  value: 2520
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jobmann.2007, Jahn.2013
+
+density_Upper_Jurassic:
+  type: scalar
+  value: 2520
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jobmann.2007, Jahn.2013
+
+density_Mid_Jurassic:
+  type: scalar
+  value: 2520
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jobmann.2007, Jahn.2013
+
+density_Aalen_Sandstone:
+  type: scalar
+  value: 2500
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+density_Lower_Jurassic:
+  type: scalar
+  value: 2520
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+density_Keuper:
+  type: scalar
+  value: 2600
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+density_Bunter:
+  type: scalar
+  value: 2500
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+density_Zechstein:
+  type: scalar
+  value: 2200
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+
+#Porosity values:
+porosity_Quaternary:
+  type: scalar
+  value: 0.4
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Albian:
+  type: scalar
+  value: 0.32
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Hilssandstone:
+  type: scalar
+  value: 0.1
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Aptian:
+  type: scalar
+  value: 0.3
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Barremian:
+  type: scalar
+  value: 0.28
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Hauterivian:
+  type: scalar
+  value: 0.21
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Valanginian:
+  type: scalar
+  value: 0.21
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Wealden:
+  type: scalar
+  value: 0.13
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Upper_Jurassic:
+  type: scalar
+  value: 0.15
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Mid_Jurassic:
+  type: scalar
+  value: 0.15
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Aalen_Sandstone:
+  type: scalar
+  value: 0.1
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Lower_Jurassic:
+  type: scalar
+  value: 0.15
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Keuper:
+  type: scalar
+  value: 0.07
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Bunter:
+  type: scalar
+  value: 0.15
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Zechstein:
+  type: scalar
+  value: 0.002
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+
+#Effective porosity values:
+EffectivePorosity_Quaternary:
+  type: scalar
+  value: 0.2
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Albian:
+  type: scalar
+  value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Hilssandstone:
+  type: scalar
+  value: 0.1
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Aptian:
+  type: scalar
+  value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Barremian:
+  type: scalar
+  value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Hauterivian:
+  type: scalar
+  value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Valanginian:
+  type: scalar
+  value: 0.075
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Wealden:
+  type: scalar
+  value: 0.075
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Upper_Jurassic:
+  type: scalar
+  value: 0.01
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Mid_Jurassic:
+  type: scalar
+  value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Aalen_Sandstone:
+  type: scalar
+  value: 0.1
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Lower_Jurassic:
+  type: scalar
+  value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Keuper:
+  type: scalar
+  value: 0.035
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Bunter:
+  type: scalar
+  value: 0.15
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Zechstein:
+  type: scalar
+  value: 0.002
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+
+#Specific heat capacity values:
+#What about units of Joule and Watt?
+SpecificHeatCapacity_Quaternary:
+  type: scalar
+  value: 1000
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002, Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Albian:
+  type: scalar
+  value: 1115
+  dev_pdf: Gauss
+  dev_value: 100
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Jahn.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Hilssandstone:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Aptian:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Barremian:
+  type: scalar
+  value: 970
+  dev_pdf: Gauss
+  dev_value: 70
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Jahn.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Hauterivian:
+  type: scalar
+  value: 970
+  dev_pdf: Gauss
+  dev_value: 70
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Jahn.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Valanginian:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Wealden:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Upper_Jurassic:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Mid_Jurassic:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Aalen_Sandstone:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Lower_Jurassic:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Keuper:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Bunter:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Zechstein:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+
+#Heat conductivity values, parallel to bedding plane:
+HeatConductivity_parallel_Quaternary:
+  type: scalar
+  value: 2.3
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Albian:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Hilssandstone:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+HeatConductivity_parallel_Aptian:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Barremian:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Hauterivian:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Valanginian:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Wealden:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Upper_Jurassic:
+  type: scalar
+  value: 2.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Mid_Jurassic:
+  type: scalar
+  value: 2.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Aalen_Sandstone:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Lower_Jurassic:
+  type: scalar
+  value: 2.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Keuper:
+  type: scalar
+  value: 2.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Bunter:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Zechstein:
+  type: scalar
+  value: 5.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+
+#Heat conductivity values, perpendicular to bedding plane:
+HeatConductivity_perpendicular_Quaternary:
+  type: scalar
+  value: 2.3
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Albian:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Hilssandstone:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Aptian:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Barremian:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Hauterivian:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Valanginian:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Wealden:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Upper_Jurassic:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Mid_Jurassic:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Aalen_Sandstone:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+HeatConductivity_perpendicular_Lower_Jurassic:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Keuper:
+  type: scalar
+  value: 2.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Bunter:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Zechstein:
+  type: scalar
+  value: 5.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+
+#Hydraulic conductivity values:
+HydraulicConductivity_Quaternary:
+  type: scalar
+  value: 5.0e-4
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: BfS.2002, Jahn.2013
+
+HydraulicConductivity_Albian:
+  type: scalar
+  value: 1.0e-11
+  dev_pdf: Gauss
+  dev_value: 1.0e-12
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Müller.1987, BfS.2002, Hoth.2007, Jahn.2013
+
+HydraulicConductivity_Hilssandstone:
+  type: scalar
+  value: 1.0e-4
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: BfS.2002, Jahn.2013
+
+HydraulicConductivity_Aptian:
+  type: scalar
+  value: 1.0e-11
+  dev_pdf: Gauss
+  dev_value: 1.0e-12
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Müller.1987, BfS.2002, Jahn.2013
+
+HydraulicConductivity_Barremian:
+  type: scalar
+  value: 1.0e-9
+  dev_pdf: Gauss
+  dev_value: 1.0e-10
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Müller.1987, Hoth.2007, Jahn.2013
+
+HydraulicConductivity_Hauterivian:
+  type: scalar
+  value: 1.0e-10
+  dev_pdf: Gauss
+  dev_value: 1.0e-11
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Müller.1987, Hoth.2007, Jahn.2013
+
+HydraulicConductivity_Valanginian:
+  type: scalar
+  value: 1.0e-8
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: BfS.2002, Jahn.2013
+
+HydraulicConductivity_Wealden:
+  type: scalar
+  value: 1.0e-6
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: BfS.2002, Jahn.2013
+
+HydraulicConductivity_Upper_Jurassic:
+  type: scalar
+  value: 1.0e-7
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+HydraulicConductivity_Mid_Jurassic:
+  type: scalar
+  value: 1.0e-9
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+HydraulicConductivity_Aalen_Sandstone:
+  type: scalar
+  value: 1.0e-5
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+HydraulicConductivity_Lower_Jurassic:
+  type: scalar
+  value: 1.0e-9
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+HydraulicConductivity_Keuper:
+  type: scalar
+  value: 6.0e-7
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+HydraulicConductivity_Bunter:
+  type: scalar
+  value: 1.0e-7
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+HydraulicConductivity_Zechstein:
+  type: scalar
+  value: 1.0e-12
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+
+#p-wave velocity values:
+pWaveVelocity_Quaternary:
+  type: scalar
+  value: 1650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Albian:
+  type: scalar
+  value: 2950
+  dev_pdf: Gauss
+  dev_value: 150
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Schnier.1986a
+
+pWaveVelocity_Hilssandstone:
+  type: scalar
+  value: 2430
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Aptian:
+  type: scalar
+  value: 3070
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Barremian:
+  type: scalar
+  value: 2900
+  dev_pdf: Gauss
+  dev_value: 100
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gerardi.2005
+
+pWaveVelocity_Hauterivian:
+  type: scalar
+  value: 3150
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Schnier.1986b,Schnier.1987
+
+pWaveVelocity_Valanginian:
+  type: scalar
+  value: 3070
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Wealden:
+  type: scalar
+  value: 2430
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Upper_Jurassic:
+  type: scalar
+  value: 3780
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Mid_Jurassic:
+  type: scalar
+  value: 3210
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Aalen_Sandstone:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+pWaveVelocity_Lower_Jurassic:
+  type: scalar
+  value: 3570
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Keuper:
+  type: scalar
+  value: 3960
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Bunter:
+  type: scalar
+  value: 4770
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+pWaveVelocity_Zechstein:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+
+#s-wave velocity values:
+sWaveVelocity_Quaternary:
+  type: scalar
+  value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Albian:
+  type: scalar
+  value: 1475
+  dev_pdf: Gauss
+  dev_value: 175
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Schnier.1986a
+
+sWaveVelocity_Hilssandstone:
+  type: scalar
+  value: 1370
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Aptian:
+  type: scalar
+  value: 1720
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Barremian:
+  type: scalar
+  value: 1400
+  dev_pdf: Gauss
+  dev_value: 100
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Schnier.1986a,Schnier.1987
+
+sWaveVelocity_Hauterivian:
+  type: scalar
+  value: 1760
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Schnier.1986b,Schnier.1987
+
+sWaveVelocity_Valanginian:
+  type: scalar
+  value: 1370
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Wealden:
+  type: scalar
+  value: 1370
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Upper_Jurassic:
+  type: scalar
+  value: 2120
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Mid_Jurassic:
+  type: scalar
+  value: 1800
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Aalen_Sandstone:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+sWaveVelocity_Lower_Jurassic:
+  type: scalar
+  value: 2000
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Keuper:
+  type: scalar
+  value: 2220
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Bunter:
+  type: scalar
+  value: 2680
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Zechstein:
+  type: scalar
+  value: 2530
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+
+#Diffusivity of Hauterivian and Barremian claystones
+diffusivity_Barremian_parallel:
+  type: scalar
+  value: 5.4e-11
+  dev_pdf: Gauss
+  dev_value: 0.4e-11
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: VanLoon.2004
+
+diffusivity_Barremian_perpendicular:
+  type: scalar
+  value: 1.4e-11
+  dev_pdf: Gauss
+  dev_value: 0.1e-12
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: VanLoon.2004
+
+diffusivity_Hauterivian_parallel:
+  type: scalar
+  value: 5.4e-11
+  dev_pdf: Gauss
+  dev_value: 0.4e-11
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: VanLoon.2004
+
+diffusivity_Hauterivian_perpendicular:
+  type: scalar
+  value: 1.4e-11
+  dev_pdf: Gauss
+  dev_value: 0.1e-12
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: VanLoon.2004
+
+  #Values are taken from Mont Terri studies for HTO isotopes
+
+
+#Lithological description:
+lithology_Quaternary:
+  type: string
+  value: Loose to barely compacted sand, gravel, silt and clay
+  source: Reinhold.2013
+
+lithology_Albian:
+  type: string
+  value: Claystone and marlstone
+  source: Reinhold.2013
+
+lithology_Hilssandstone:
+  type: string
+  value: Sandstone
+  source: Reinhold.2013
+
+lithology_Aptian:
+  type: string
+  value: Claystone, marlstone with varying clay content
+  source: Reinhold.2013
+
+lithology_Barremian:
+  type: string
+  value: Claystone and clayey marlstone, bituminous claystone layers
+  source: Reinhold.2013
+
+lithology_Hauterivian:
+  type: string
+  value: Claystone and clayey marlstone
+  source: Reinhold.2013
+
+lithology_Valanginian:
+  type: string
+  value: Claystone and clayey marlstone
+  source: Reinhold.2013
+
+lithology_Wealden:
+  type: string
+  value: Claystone and sandstone
+  source: Reinhold.2013
+
+lithology_Upper_Jurassic:
+  type: string
+  value: Limestone, thin beds of anhydrite and evaporites
+  source: Reinhold.2013
+
+lithology_Mid_Jurassic:
+  type: string
+  value: Claystone and marlstone
+  source: Reinhold.2013
+
+lithology_Aalen_Sandstone:
+  type: string
+  value: Sandstone
+  source: Reinhold.2013
+
+lithology_Lower_Jurassic:
+  type: string
+  value: Claystone and clayey marlstone, bituminous claystone layers
+  source: Reinhold.2013
+
+lithology_Keuper:
+  type: string
+  value: Claystone and siltstone, thin sandstone beds and evaporitic layers
+  source: Reinhold.2013
+
+lithology_Bunter:
+  type: string
+  value: Sandstone and claystone, limestone and marlstone in uppermotst parts
+  source: Reinhold.2013
+
+lithology_Zechstein:
+  type: string
+  value: Salt rocks
+  source: Reinhold.2013
+
+
+#Specific electrical resistivity values:
+electricalResistivity_Quaternary:
+  type: scalar
+  value: 100
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: None #Rough guess, difficult since broad variety of lithologies included in quaternary deposits.
+
+electricalResistivity_Albian:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #As seen in Kneuker (2021), the increasing limestone content leads to increase in res.
+
+electricalResistivity_Hilssandstone:
+  type: scalar
+  value: 75
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Assume higher res than for marlstone, but not too high due to water saturation.
+
+electricalResistivity_Aptian:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  # Same as Albian unit.
+
+electricalResistivity_Barremian:
+  type: scalar
+  value: 15
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Strongly depends on secondary components, clayey subfacies shows res < 15 Ohmm, sandy and calcareous parts > 25 Ohmm.
+
+electricalResistivity_Hauterivian:
+  type: scalar
+  value: 25
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Similar lithological composition to abovementioned Albian and Aptian, but assuming slightly higher clay content (-> lower res).
+
+electricalResistivity_Valanginian:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Similar to Albian and Aptian.
+
+electricalResistivity_Wealden:
+  type: scalar
+  value: 80
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2015
+  #Assume that composition is similar to Lower Jurassic 1 from claystone model South (Gelis, 2015).
+
+electricalResistivity_Upper_Jurassic:
+  type: scalar
+  value: 2500 #Assuming unfractured limestone and marlstone
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+
+electricalResistivity_Mid_Jurassic:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  # Similar to other claystone / marlstone layers.
+
+electricalResistivity_Aalen_Sandstone:
+  type: scalar
+  value: 75
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Also sandstone with comparably high hydraulic conductivity -> low res for sandstone.
+
+electricalResistivity_Lower_Jurassic:
+  type: scalar
+  value: 15
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Bituminous claystone layer, comparavle to host rock.
+
+electricalResistivity_Keuper:
+  type: scalar
+  value: 50
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+
+electricalResistivity_Bunter:
+  type: scalar
+  value: 75
+  dev_pdf: Gauss
+  dev_value: 15
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+
+electricalResistivity_Zechstein:
+  type: scalar
+  value: 50000
+  dev_pdf: Gauss
+  dev_value: 5000
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001

@@ -1,0 +1,918 @@
+
+# The possible host rock in the reference model "Salt" is located in Lower Saxony, location not further specified. Stratiform Zechstein rocks are assumed as barrier- and host rock formations.
+
+
+
+name: Reference Model rock salt, stratiform deposition
+location: 
+    type: coordinate
+    value: {'N': 51.88,
+            'E': 13.13}
+    source: BGE.2020
+    meta_free: Coordinates are just representative for one of BGE's locations in saline rock. 
+geometry: 
+    model:
+    orientation:
+
+#Density values:
+density_Quaternary:
+  type: scalar
+  value: 2000
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Minkley.2010
+
+density_Tertiary:
+  type: scalar
+  value: 2100
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Minkley.2010
+
+density_Bunter_2:
+  type: scalar
+  value: 2150
+  dev_pdf: Gauss
+  dev_value: 150
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Minkley.2010
+
+density_Bunter_1:
+  type: scalar
+  value: 2400
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Minkley.2010
+
+density_Aller-Steinsalz:
+  type: scalar
+  value: 2175
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Anhydritmittelsalz:
+  type: scalar
+  value: 2700
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Leine-Steinsalz:
+  type: scalar
+  value: 2160
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Hauptanhydrit:
+  type: scalar
+  value: 2700
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 1850
+  dev_pdf: Gauss
+  dev_value: 150
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Straßfurt-Steinsalz:
+  type: scalar
+  value: 2160
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Anhydrit/Karbonat:
+  type: scalar
+  value: 2700
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Heemann.2014
+
+density_Rotliegend:
+  type: scalar
+  value: 2500
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Minkley.2010
+
+
+
+
+#Effective porosity values:
+EffectivePorosity_Quaternary:
+  type: scalar
+  value: 0.125
+  dev_pdf: Gauss
+  dev_value: 0.025
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Reinhold.2016
+
+EffectivePorosity_Tertiary:
+  type: scalar
+  value: 0.10
+  dev_pdf: Gauss
+  dev_value: 0.07
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Reinhold.2016
+
+EffectivePorosity_Bunter_2:
+  type: scalar
+  value: 0.11
+  dev_pdf: Gauss
+  dev_value: 0.06
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Bunter_1:
+  type: scalar
+  value: 0.025
+  dev_pdf: Gauss
+  dev_value: 0.025
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Aller-Steinsalz:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Anhydritmittelsalz:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Leine-Steinsalz:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Hauptanhydrit:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Anhydrit/Karbonat:
+  type: scalar
+  value: 0.02
+  dev_pdf: Gauss
+  dev_value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Pusch.2008
+
+EffectivePorosity_Rotliegend:
+  type: scalar
+  value: None
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Reinhold.2016
+
+
+#Specific heat capacity values:
+SpecificHeatCapacity_Quaternary:
+  type: scalar
+  value: 950
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Tertiary:
+  type: scalar
+  value: 905
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Bunter_2:
+  type: scalar
+  value: 760
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Bunter_1:
+  type: scalar
+  value: 760
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Aller-Steinsalz:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Anhydritmittelsalz:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Leine-Steinsalz:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Hauptanhydrit:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 903
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Anhydrit/Karbonat:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Rotliegend:
+  type: scalar
+  value: 760
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+
+#Heat conductivity values:
+HeatConductivity_Quaternary:
+  type: scalar
+  value: 2.3
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity_Tertiary:
+  type: scalar
+  value: 2.1
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity_Bunter_2:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity_Bunter_1:
+  type: scalar
+  value: 2.6
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity_Aller-Steinsalz:
+  type: scalar
+  value: 5.2
+  dev_pdf: Gauss
+  dev_value: 0.2
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Anhydritmittelsalz:
+  type: scalar
+  value: 4.2
+  dev_pdf: Gauss
+  dev_value: 1.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Leine-Steinsalz:
+  type: scalar
+  value: 5.2
+  dev_pdf: Gauss
+  dev_value: 0.2
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Hauptanhydrit:
+  type: scalar
+  value: 4.2
+  dev_pdf: Gauss
+  dev_value: 1.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 1.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 5.2
+  dev_pdf: Gauss
+  dev_value: 0.2
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Anhydrit/Karbonat:
+  type: scalar
+  value: 4.2
+  dev_pdf: Gauss
+  dev_value: 1.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Rotliegend:
+  type: scalar
+  value: 2.5
+  dev_pdf: Gauss
+  dev_value: 0.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+
+
+
+#Hydraulic conductivity values:
+HydraulicConductivity_Quaternary:
+  type: scalar
+  value: 1.0e-3
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Tertiary:
+  type: scalar
+  value: 1.0e-7
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Bunter_2:
+  type: scalar
+  value: 1.0e-5
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Bunter_1:
+  type: scalar
+  value: 1.0e-7
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Aller-Steinsalz:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Anhydritmittelsalz:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Leine-Steinsalz:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Hauptanhydrit:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Anhydrit/Karbonat:
+  type: scalar
+  value: 1.0e-15
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Liu.2017
+
+HydraulicConductivity_Rotliegend:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+
+
+#p-wave velocity values:
+pWaveVelocity_Quaternary:
+  type: scalar
+  value: 1500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn&Sönnke.2013
+
+pWaveVelocity_Tertiary:
+  type: scalar
+  value: 3000
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: jahn.2016
+
+pWaveVelocity_Bunter_2:
+  type: scalar
+  value: 3630
+  dev_pdf: Gauss
+  dev_value: 650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Bunter_1:
+  type: scalar
+  value: 4100
+  dev_pdf: Gauss
+  dev_value: 990
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Aller-Steinsalz:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Anhydritmittelsalz:
+  type: scalar
+  value: 5750
+  dev_pdf: Gauss
+  dev_value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Leine-Steinsalz:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Hauptanhydrit:
+  type: scalar
+  value: 5750
+  dev_pdf: Gauss
+  dev_value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Anhydrit/Karbonat:
+  type: scalar
+  value: 5750
+  dev_pdf: Gauss
+  dev_value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Rotliegend:
+  type: scalar
+  value: 4730
+  dev_pdf: Gauss
+  dev_value: 640
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982 #Assume similar composition as Keuper_1 in Claystone model south.
+
+
+#s-wave velocity values:
+sWaveVelocity_Quaternary:
+  type: scalar
+  value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn&Sönnke.2013
+
+sWaveVelocity_Tertiary:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+sWaveVelocity_Bunter_2:
+  type: scalar
+  value: 2680
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn.2016
+
+sWaveVelocity_Bunter_1:
+  type: scalar
+  value: 2680
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn.2016
+
+sWaveVelocity_Aller-Steinsalz:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022 #Website Geophysics for Practicing Geoscientists (GPG)
+
+sWaveVelocity_Anhydritmittelsalz:
+  type: scalar
+  value: 2600
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Leine-Steinsalz:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Hauptanhydrit:
+  type: scalar
+  value: 2600
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Anhydrit/Karbonat:
+  type: scalar
+  value: 2600
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Rotliegend:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+
+
+
+#Lithological description:
+lithology_Quaternary:
+  type: string
+  value: Loose to barely compacted sands and gravels
+  source: Reinhold.2016
+
+lithology_Tertiary:
+  type: string
+  value: Sandstone, siltstone, claystone layers
+  source: None
+
+lithology_Bunter_2:
+  type: string
+  value: Sandstone (mid- to coarse-grained, aquifer)
+  source: Weitkamp.2021
+
+lithology_Bunter_1:
+  type: string
+  value: Siltstone, fine sandstone, claystone
+  source: Weitkamp.2021
+
+lithology_Aller-Steinsalz:
+  type: string
+  value: Rock salt
+  source: Völkner.2017
+
+lithology_Anhydritmittelsalz:
+  type: string
+  value: Anhydrite rock
+  source: Völkner.2017
+
+lithology_Leine-Steinsalz:
+  type: string
+  value: Rock salt
+  source: Völkner.2017
+
+lithology_Hauptanhydrit:
+  type: string
+  value: Anhydrite rock
+  source: Völkner.2017
+
+lithology_Straßfurt-Kaliflöz:
+  type: string
+  value: Kali salt
+  source: Völkner.2017
+
+lithology_Straßfurt-Steinsalz:
+  type: string
+  value: Rock salt
+  source: Völkner.2017
+
+lithology_Anhydrit/Karbonat:
+  type: string
+  value: Anhydrite rock and calcareous layers (base of saline succession)
+  source: Völkner.2017
+
+lithology_Rotliegend:
+  type: string
+  value: Claystones and siltstones
+  source: Henninges.2020
+
+
+# Diffusivity values for salt rock layers
+diffusivity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 2.2e-10
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Kock.2012
+
+diffusivity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 2.2e-10
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Kock.2012
+
+diffusivity_Anhydrit/Karbonat:
+  type: scalar
+  value: 2.2e-10
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Kock.2012
+
+diffusivity_CrushedRockSalt:
+  type: scalar
+  value: 1.5e-9
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Flügge.2016
+
+
+#Specific electrical resistivity values:
+electricalResistivity_Quaternary:
+  type: scalar
+  value: 150
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Knödel.1997 #Rough guess, difficult since broad variety of lithologies included in quaternary deposits.
+
+electricalResistivity_Tertiary:
+  type: scalar
+  value: 40
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Knödel.1997
+
+electricalResistivity_Bunter_2:
+  type: scalar
+  value: 125
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021 #Assuming sandstone, high water content.
+
+electricalResistivity_Bunter_1:
+  type: scalar
+  value: 50
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021 #Assuming silty layer with sandstone beds.
+
+electricalResistivity_Aller-Steinsalz:
+  type: scalar
+  value: 5.0e+5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Anhydritmittelsalz:
+  type: scalar
+  value: 5.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Leine-Steinsalz:
+  type: scalar
+  value: 5.0e+5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Hauptanhydrit:
+  type: scalar
+  value: 5.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Straßfurt-Kaliflöz:
+  type: scalar
+  value: 1.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Straßfurt-Steinsalz:
+  type: scalar
+  value: 5.0e+5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Anhydrit/Karbonat:
+  type: scalar
+  value: 5.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Rotliegend:
+  type: scalar
+  value: 25
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Analogy to Opalinus clay in Kneuker (2021), assuming similar lithology.

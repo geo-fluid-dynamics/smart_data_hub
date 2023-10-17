@@ -1,0 +1,917 @@
+
+# The possible host rocks in the reference model crystalline is located in homogenous granitic rocks. A homogenous fracture network will be assumed in later stages.
+
+
+
+name: Reference Model crystalline, granite
+location: 
+    type: coordinate
+    value: {'N': 50.54,
+            'E': 10.11}
+    source: BGR.2020
+    meta_free: Coordinates are just representative for one of BGE's locations in crystalline rock. 
+geometry: 
+    model:
+    orientation:
+
+#Density values:
+density_Muschelkalk_2:
+  type: scalar
+  value: 2650
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Müller.2018
+
+density_Muschelkalk_1:
+  type: scalar
+  value: 2650
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Müller.2018
+
+density_Bunter_3:
+  type: scalar
+  value: 2400
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Dachroth.2017
+
+density_Bunter_2:
+  type: scalar
+  value: 2150
+  dev_pdf: Gauss
+  dev_value: 150
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Dachroth.2017
+
+density_Bunter_1:
+  type: scalar
+  value: 2300
+  dev_pdf: Gauss
+  dev_value: 100
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Dachroth.2017 #Derived from values for clayey and sandy layers.
+
+density_Zechstein_5:
+  type: scalar
+  value: 2160
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Liu.2017
+
+density_Zechstein_4:
+  type: scalar
+  value: 2700
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Liu.2017
+
+density_Zechstein_3:
+  type: scalar
+  value: 1850
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Liu.2017
+
+density_Zechstein_2:
+  type: scalar
+  value: 2160
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Liu.2017
+
+density_Zechstein_1:
+  type: scalar
+  value: 2700
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Liu.2017
+
+density_Granite_weathered:
+  type: scalar
+  value: 2500
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Prinz&Strauß.2018 #Approximation, since no exact value in study.
+
+density_Granite:
+  type: scalar
+  value: 2700
+  dev_pdf: Gauss
+  dev_value: 100
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Prinz&Strauß.2018
+
+
+
+
+#Effective porosity values:
+EffectivePorosity_Muschelkalk_2:
+  type: scalar
+  value: 0.15
+  dev_pdf: Gauss
+  dev_value: 0.03
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Reinhold.2011
+
+EffectivePorosity_Muschelkalk_1:
+  type: scalar
+  value: 0.06
+  dev_pdf: Gauss
+  dev_value: 0.03
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Bunter_3:
+  type: scalar
+  value: 0.025
+  dev_pdf: Gauss
+  dev_value: 0.025
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Bunter_2:
+  type: scalar
+  value: 0.12
+  dev_pdf: Gauss
+  dev_value: 0.04
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Bunter_1:
+  type: scalar
+  value: 0.08
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Huckriede&Zander.2011
+
+EffectivePorosity_Zechstein_5:
+  type: scalar
+  value: None #Find me!!!
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Zechstein_4:
+  type: scalar
+  value: 0.01
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Zechstein_3:
+  type: scalar
+  value: None #Find me!!!
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Zechstein_2:
+  type: scalar
+  value: None #Find me!!!
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Zechstein_1:
+  type: scalar
+  value: 0.01
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Langkutsch.1998
+
+EffectivePorosity_Granite_weathered:
+  type: scalar
+  value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Schön.2011
+
+EffectivePorosity_Granite:
+  type: scalar
+  value: 0.002
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Vondrovic.2017
+
+
+#Specific heat capacity values:
+#What about units of Joule and Watt?
+SpecificHeatCapacity_Muschelkalk_2:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Jahn.2016
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Muschelkalk_1:
+  type: scalar
+  value: 860
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Jahn.2016
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Bunter_3:
+  type: scalar
+  value: 1070
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002, Nowak.2013
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Bunter_2:
+  type: scalar
+  value: 760
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Kock.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Bunter_1:
+  type: scalar
+  value: 950
+  dev_pdf: Gauss
+  dev_value: 50
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Clauser.2002, Nowak.2013 #Derived from claystone and sandstone values.
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Zechstein_5:
+  type: scalar
+  value: 870
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Zechstein_4:
+  type: scalar
+  value: 864
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Zechstein_3:
+  type: scalar
+  value: 903
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Zechstein_2:
+  type: scalar
+  value: 870
+  dev_pdf: Gauss
+  dev_value: 20
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Zechstein_1:
+  type: scalar
+  value: 864
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Granite_weathered:
+  type: scalar
+  value: 990
+  dev_pdf: Gauss
+  dev_value: 440
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Schön.2011
+  meta_free: T = 273.16 K
+
+SpecificHeatCapacity_Granite:
+  type: scalar
+  value: 990
+  dev_pdf: Gauss
+  dev_value: 440
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Schön.2011
+  meta_free: T = 273.16 K
+
+
+#Heat conductivity values:
+HeatConductivity_Muschelkalk_2:
+  type: scalar
+  value: 2.5
+  dev_pdf: Gauss
+  dev_value: 0.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Nipp&Heusermann.2000
+  meta_free: T = 273.16 K
+
+HeatConductivity_Muschelkalk_1:
+  type: scalar
+  value: 2.5
+  dev_pdf: Gauss
+  dev_value: 0.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Nipp&Heusermann.2000
+  meta_free: T = 273.16 K
+
+HeatConductivity_Bunter_3:
+  type: scalar
+  value: 2.34
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity_Bunter_2:
+  type: scalar
+  value: 2.3
+  dev_pdf: Gauss
+  dev_value: 0.3
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Scheck-Wenderoth.2014
+  meta_free: T = 273.16 K
+
+HeatConductivity_Bunter_1:
+  type: scalar
+  value: 2.3 #Assumption based on other models and previous values.
+  dev_pdf: Gauss
+  dev_value: 0.3
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Scheck-Wenderoth.2014
+  meta_free: T = 273.16 K
+
+HeatConductivity_Zechstein_5:
+  type: scalar
+  value: 5.4
+  dev_pdf: Gauss
+  dev_value: 0.4
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2018
+  meta_free: T = 273.16 K
+
+HeatConductivity_Zechstein_4:
+  type: scalar
+  value: 4.2
+  dev_pdf: Gauss
+  dev_value: 1.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Zechstein_3:
+  type: scalar
+  value: 1.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Zechstein_2:
+  type: scalar
+  value: 5.4
+  dev_pdf: Gauss
+  dev_value: 0.4
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity_Zechstein_1:
+  type: scalar
+  value: 4.2
+  dev_pdf: Gauss
+  dev_value: 1.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+HeatConductivity_Granite_weathered:
+  type: scalar
+  value: 2.85
+  dev_pdf: Gauss
+  dev_value: 0.15
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kozusnikova.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity_Granite:
+  type: scalar
+  value: 2.85
+  dev_pdf: Gauss
+  dev_value: 0.15
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kozusnikova.2017
+  meta_free: T = 273.16 K
+
+
+
+
+#Hydraulic conductivity values:
+HydraulicConductivity_Muschelkalk_2:
+  type: scalar
+  value: 1.0e-3
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Muschelkalk_1:
+  type: scalar
+  value: 1.0e-4
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Bunter_3:
+  type: scalar
+  value: 1.0e-6
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Bunter_2:
+  type: scalar
+  value: 1.0e-4
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Bunter_1:
+  type: scalar
+  value: 1.0e-6
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Zechstein_5:
+  type: scalar
+  value: 1.0e-10
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Zechstein_4:
+  type: scalar
+  value: 1.0e-10
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Zechstein_3:
+  type: scalar
+  value: 1.0e-10
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Zechstein_2:
+  type: scalar
+  value: 1.0e-12 #Lower since thick-banked rock salt layer acts as main geological barrier for repository.
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Zechstein_1:
+  type: scalar
+  value: 1.0e-10
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+HydraulicConductivity_Granite_weathered:
+  type: scalar
+  value: 1.0e-6
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Zeitlhöfer.2015
+
+HydraulicConductivity_Granite:
+  type: scalar
+  value: 1.0e-8
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Zeitlhöfer.2015
+
+
+
+#p-wave velocity values:
+pWaveVelocity_Muschelkalk_2:
+  type: scalar
+  value: 3120
+  dev_pdf: Gauss
+  dev_value: 450
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Muschelkalk_1:
+  type: scalar
+  value: 3120
+  dev_pdf: Gauss
+  dev_value: 450
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Bunter_3:
+  type: scalar
+  value: 4730
+  dev_pdf: Gauss
+  dev_value: 640
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Bunter_2:
+  type: scalar
+  value: 3630
+  dev_pdf: Gauss
+  dev_value: 650
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Bunter_1:
+  type: scalar
+  value: 4100
+  dev_pdf: Gauss
+  dev_value: 990
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+pWaveVelocity_Zechstein_5:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Zechstein_4:
+  type: scalar
+  value: 5750
+  dev_pdf: Gauss
+  dev_value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Zechstein_3:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Zechstein_2:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Zechstein_1:
+  type: scalar
+  value: 5750
+  dev_pdf: Gauss
+  dev_value: 750
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+pWaveVelocity_Granite_weathered:
+  type: scalar
+  value: 4500
+  dev_pdf: Gauss
+  dev_value: 200
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
+
+pWaveVelocity_Granite:
+  type: scalar
+  value: 5300
+  dev_pdf: Gauss
+  dev_value: 300
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
+
+
+
+#s-wave velocity values:
+sWaveVelocity_Muschelkalk_2:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+sWaveVelocity_Muschelkalk_1:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+sWaveVelocity_Bunter_3:
+  type: scalar
+  value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+sWaveVelocity_Bunter_2:
+  type: scalar
+  value: 2680
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn.2016
+
+sWaveVelocity_Bunter_1:
+  type: scalar
+  value: 2680
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn.2016
+
+sWaveVelocity_Zechstein_5:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022 #Website Geophysics for Practicing Geoscientists (GPG)
+
+sWaveVelocity_Zechstein_4:
+  type: scalar
+  value: 2600
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Zechstein_3:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Zechstein_2:
+  type: scalar
+  value: 2750
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Zechstein_1:
+  type: scalar
+  value: 2600
+  dev_pdf: Gauss
+  dev_value: 500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Granite_weathered:
+  type: scalar
+  value: 2800
+  dev_pdf: Gauss
+  dev_value: 300
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022
+
+sWaveVelocity_Granite:
+  type: scalar
+  value: 3400
+  dev_pdf: Gauss
+  dev_value: 800
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Clauser.2018
+
+
+
+#Diffusivity of barrier rock and granite:
+diffusivity_Zechstein_2:
+  type: scalar
+  value: 2.2e-10
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Kock.2012
+
+diffusivity_Granite_Cations:
+  type: scalar
+  value: 2.7e-14
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Shahkarami.2019
+
+diffusivity_Granite_Anions:
+  type: scalar
+  value: 8.5e-15
+  unit_str: m²/s
+  unit: [0 2 -1 0 0 0 0]
+  source: Shahkarami.2019
+
+  #Values are taken from Mont Terri studies for HTO isotopes
+
+
+#Lithological description:
+lithology_Muschelkalk_2:
+  type: string
+  value: Limestone, marlstone, karstified (karst aquifer)
+  source: Weitkamp.2021
+
+lithology_Muschelkalk_1:
+  type: string
+  value: Limestone, marlstone, porous, jointed (porewater aquifer)
+  source: Weitkamp.2021
+
+lithology_Bunter_3:
+  type: string
+  value: Claystone, siltstone, fine sandstone
+  source: Weitkamp.2021
+
+lithology_Bunter_2:
+  type: string
+  value: Sandstone (mid- to coarse-grained, aquifer)
+  source: Weitkamp.2021
+
+lithology_Bunter_1:
+  type: string
+  value: Siltstone, fine sandstone
+  source: Weitkamp.2021
+
+lithology_Zechstein_5:
+  type: string
+  value: Rock salt
+  source: Weitkamp.2021
+
+lithology_Zechstein_4:
+  type: string
+  value: Anhydrite
+  source: Weitkamp.2021
+
+lithology_Zechstein_3:
+  type: string
+  value: Kali salt
+  source: Weitkamp.2021
+
+lithology_Zechstein_2:
+  type: string
+  value: Rock salt
+  source: Weitkamp.2021
+
+lithology_Zechstein_1:
+  type: string
+  value: Anhydrite
+  source: Weitkamp.2021
+
+lithology_Granite_weathered:
+  type: string
+  value: Granite, fractured (heterogenous zone)
+  source: Weitkamp.2021
+
+lithology_Granite:
+  type: string
+  value: Granite, intact (less fractured, homogenous)
+  source: Weitkamp.2021
+
+
+
+#Specific electrical resistivity values:
+electricalResistivity_Muschelkalk_2:
+  type: scalar
+  value: 50
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021, Knödel.1997 #Low values due to high hydraulic conductivity and water saturation.
+
+electricalResistivity_Muschelkalk_1:
+  type: scalar
+  value: 2500 #Assuming unfractured limestone and marlstone
+  dev_pdf: Gauss
+  dev_value: 250
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021, Knödel.1997
+
+electricalResistivity_Bunter_3:
+  type: scalar
+  value: 25
+  dev_pdf: Gauss
+  dev_value: 10
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Assume clayey, silty layer
+
+electricalResistivity_Bunter_2:
+  type: scalar
+  value: 125
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021 #Assuming sandstone, high water content.
+
+electricalResistivity_Bunter_1:
+  type: scalar
+  value: 50
+  dev_pdf: Gauss
+  dev_value: 25
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021 #Assuming silty layer with fine sandstone beds.
+
+electricalResistivity_Zechstein_5:
+  type: scalar
+  value: 5.0e+5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Zechstein_4:
+  type: scalar
+  value: 5.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Zechstein_3:
+  type: scalar
+  value: 1.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Zechstein_2:
+  type: scalar
+  value: 5.0e+5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Zechstein_1:
+  type: scalar
+  value: 5.0e+4
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001
+
+electricalResistivity_Granite_weathered:
+  type: scalar
+  value: 35000
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
+
+electricalResistivity_Granite:
+  type: scalar
+  value: 35000
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
