@@ -1,0 +1,21 @@
+site:
+  site_name: ../../yaml-db/sites/Mont_Terri/Mont_Terri.yml
+  modelling_areas: ['Jurassic-Middle_Aalenian_OpalinusClay_shaly-facies1']
+
+fluid:
+  type: ['water']
+  fluid_properties: ['../../yaml-db/fluid/default/water.yml']
+
+nuclide:
+  nuclides_properties: ../../yaml-db/nuclide/Cm247_decay_chain_OpalinusClay.yml
+  first_nuclide: Cm-247
+  include_nuclides: ['Cm-247', 'Am-243', 'Pu-239', 'U-235', 'Pa-231', 'Ac-227'] # if include_nuclides = full_chain, then the first_nuclide is important
+
+solver:
+  ogs_solver:
+    simulation_setup: ../../yaml-db/sim_setup/ogs_sol_setup.yml
+  analytical_solution:
+    simulation_setup: ../../yaml-db/sim_setup/analytical_sol_setup.yml
+
+
+

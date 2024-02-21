@@ -1,0 +1,44 @@
+include_processes:
+  decay:
+    bool: True
+  diffusion:
+    bool: True
+  sorption:
+    bool: True
+  advection:
+    bool: True
+
+numerical_approximation_for_Exp_times_Erfc:
+  bool: True
+
+scaling_the_transport_equation:
+  bool: True
+
+include_branching_decay:
+  bool: False
+
+x_grids:
+  value: np.linspace(0, 2, num=201) # np.array
+  unit: m
+
+t_interim:  # when simulation time is larger than t_interim, the boundary condition will set to be zero.
+  value: 10000
+  unit: Myr
+
+time_series:
+  value: np.arange(0,100000+1000,1000) # np.array
+  unit: yr
+
+# initial C(x,0)
+ics_nuclides:
+  value: np.zeros(6) # np.array
+  unit: mol/L
+
+# boundary conditions C(0,t)
+bcs_nuclides:
+  value: np.ones(6) # np.array
+  unit: mol/L
+
+
+
+
