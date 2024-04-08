@@ -1,0 +1,82 @@
+
+# Default values for sediments of Lower Jurassic:
+density_Lower_Jurassic:
+  type: scalar
+  value: 2520
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Lower_Jurassic:
+  type: scalar
+  value: 0.15
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Lower_Jurassic:
+  type: scalar
+  value: 0.02
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+SpecificHeatCapacity_Lower_Jurassic:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Lower_Jurassic:
+  type: scalar
+  value: 2.5
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Lower_Jurassic:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HydraulicConductivity_Lower_Jurassic:
+  type: scalar
+  value: 1.0e-9
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Nowak.2013
+
+pWaveVelocity_Lower_Jurassic:
+  type: scalar
+  value: 3570
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Lower_Jurassic:
+  type: scalar
+  value: 2000
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+lithology_Lower_Jurassic:
+  type: string
+  value: Claystone and clayey marlstone, bituminous claystone layers
+  source: Reinhold.2013
+
+electricalResistivity_Lower_Jurassic:
+  type: scalar
+  value: 15
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+#Bituminous claystone layer, comparavle to host rock.
