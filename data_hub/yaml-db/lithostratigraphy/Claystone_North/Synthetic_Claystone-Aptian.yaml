@@ -1,6 +1,6 @@
 
 # Default values for sediments of Aptian age:
-density_Aptian:
+density:
   type: scalar
   value: 2300
   dev_pdf: Gauss
@@ -9,21 +9,21 @@ density_Aptian:
   unit: [1 -3 0 0 0 0 0]
   source: Gerardi.2005, Jahn.2013
 
-porosity_Aptian:
+porosity:
   type: scalar
   value: 0.3
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Aptian:
+EffectivePorosity:
   type: scalar
   value: 0.05
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Aptian:
+SpecificHeatCapacity:
   type: scalar
   value: 1000
   unit_str: J/kg/K
@@ -31,7 +31,7 @@ SpecificHeatCapacity_Aptian:
   source: Nowak.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Aptian:
+HeatConductivity_parallel:
   type: scalar
   value: 2.0
   unit_str: W/m/K
@@ -39,7 +39,7 @@ HeatConductivity_parallel_Aptian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Aptian:
+HeatConductivity_perpendicular:
   type: scalar
   value: 1.38
   unit_str: W/m/K
@@ -47,7 +47,7 @@ HeatConductivity_perpendicular_Aptian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Aptian:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-11
   dev_pdf: Gauss
@@ -56,26 +56,26 @@ HydraulicConductivity_Aptian:
   unit: [0 1 -1 0 0 0 0]
   source: Müller.1987, BfS.2002, Jahn.2013
 
-pWaveVelocity_Aptian:
+pWaveVelocity:
   type: scalar
   value: 3070
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-sWaveVelocity_Aptian:
+sWaveVelocity:
   type: scalar
   value: 1720
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-lithology_Aptian:
+lithology:
   type: string
   value: Claystone, marlstone with varying clay content
   source: Reinhold.2013
 
-electricalResistivity_Aptian:
+electricalResistivity:
   type: scalar
   value: 35
   dev_pdf: Gauss

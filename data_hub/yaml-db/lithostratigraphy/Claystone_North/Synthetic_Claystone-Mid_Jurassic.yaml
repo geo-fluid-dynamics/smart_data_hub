@@ -1,27 +1,27 @@
 
 # Default values for sediments of Mid Jurassic:
-density_Mid_Jurassic:
+density:
   type: scalar
   value: 2520
   unit_str: kg/m³
   unit: [1 -3 0 0 0 0 0]
   source: Jobmann.2007, Jahn.2013
 
-porosity_Mid_Jurassic:
+porosity:
   type: scalar
   value: 0.15
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Mid_Jurassic:
+EffectivePorosity:
   type: scalar
   value: 0.02
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Mid_Jurassic:
+SpecificHeatCapacity:
   type: scalar
   value: 1000
   unit_str: J/kg/K
@@ -29,7 +29,7 @@ SpecificHeatCapacity_Mid_Jurassic:
   source: Nowak.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Mid_Jurassic:
+HeatConductivity_parallel:
   type: scalar
   value: 2.5
   unit_str: W/m/K
@@ -37,7 +37,7 @@ HeatConductivity_parallel_Mid_Jurassic:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Mid_Jurassic:
+HeatConductivity_perpendicular:
   type: scalar
   value: 2.0
   unit_str: W/m/K
@@ -45,33 +45,33 @@ HeatConductivity_perpendicular_Mid_Jurassic:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Mid_Jurassic:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-9
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Nowak.2013
 
-pWaveVelocity_Mid_Jurassic:
+pWaveVelocity:
   type: scalar
   value: 3210
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-sWaveVelocity_Mid_Jurassic:
+sWaveVelocity:
   type: scalar
   value: 1800
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-lithology_Mid_Jurassic:
+lithology:
   type: string
   value: Claystone and marlstone
   source: Reinhold.2013
 
-electricalResistivity_Mid_Jurassic:
+electricalResistivity:
   type: scalar
   value: 35
   dev_pdf: Gauss

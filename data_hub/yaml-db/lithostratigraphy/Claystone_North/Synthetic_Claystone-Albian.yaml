@@ -1,6 +1,6 @@
 
 # Default values for sediments of Albian age:
-density_Albian:
+density:
   type: scalar
   value: 2165
   dev_pdf: Gauss
@@ -9,21 +9,21 @@ density_Albian:
   unit: [1 -3 0 0 0 0 0]
   source: Gerardi.2005, Jahn.2013
 
-porosity_Albian:
+porosity:
   type: scalar
   value: 0.32
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Albian:
+EffectivePorosity:
   type: scalar
   value: 0.05
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Albian:
+SpecificHeatCapacity:
   type: scalar
   value: 1115
   dev_pdf: Gauss
@@ -33,7 +33,7 @@ SpecificHeatCapacity_Albian:
   source: Jahn.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Albian:
+HeatConductivity_parallel:
   type: scalar
   value: 2.0
   unit_str: W/m/K
@@ -41,7 +41,7 @@ HeatConductivity_parallel_Albian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Albian:
+HeatConductivity_perpendicular:
   type: scalar
   value: 1.38
   unit_str: W/m/K
@@ -49,7 +49,7 @@ HeatConductivity_perpendicular_Albian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Albian:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-11
   dev_pdf: Gauss
@@ -58,7 +58,7 @@ HydraulicConductivity_Albian:
   unit: [0 1 -1 0 0 0 0]
   source: Müller.1987, BfS.2002, Hoth.2007, Jahn.2013
 
-pWaveVelocity_Albian:
+pWaveVelocity:
   type: scalar
   value: 2950
   dev_pdf: Gauss
@@ -67,7 +67,7 @@ pWaveVelocity_Albian:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986a
 
-sWaveVelocity_Albian:
+sWaveVelocity:
   type: scalar
   value: 1475
   dev_pdf: Gauss
@@ -76,12 +76,12 @@ sWaveVelocity_Albian:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986a
 
-lithology_Albian:
+lithology:
   type: string
   value: Claystone and marlstone
   source: Reinhold.2013
 
-electricalResistivity_Albian:
+electricalResistivity:
   type: scalar
   value: 35
   dev_pdf: Gauss

@@ -1,6 +1,6 @@
 
 # Default values for sediments of Hauterivian age:
-density_Hauterivian:
+density:
   type: scalar
   value: 2380
   dev_pdf: Gauss
@@ -9,21 +9,21 @@ density_Hauterivian:
   unit: [1 -3 0 0 0 0 0]
   source: Gerardi.2005, Jahn.2013
 
-porosity_Hauterivian:
+porosity:
   type: scalar
   value: 0.21
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Hauterivian:
+EffectivePorosity:
   type: scalar
   value: 0.05
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Hauterivian:
+SpecificHeatCapacity:
   type: scalar
   value: 970
   dev_pdf: Gauss
@@ -33,7 +33,7 @@ SpecificHeatCapacity_Hauterivian:
   source: Jahn.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Hauterivian:
+HeatConductivity_parallel:
   type: scalar
   value: 2.0
   unit_str: W/m/K
@@ -41,7 +41,7 @@ HeatConductivity_parallel_Hauterivian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Hauterivian:
+HeatConductivity_perpendicular:
   type: scalar
   value: 1.38
   unit_str: W/m/K
@@ -49,7 +49,7 @@ HeatConductivity_perpendicular_Hauterivian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Hauterivian:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-10
   dev_pdf: Gauss
@@ -58,7 +58,7 @@ HydraulicConductivity_Hauterivian:
   unit: [0 1 -1 0 0 0 0]
   source: Müller.1987, Hoth.2007, Jahn.2013
 
-pWaveVelocity_Hauterivian:
+pWaveVelocity:
   type: scalar
   value: 3150
   dev_pdf: Gauss
@@ -67,7 +67,7 @@ pWaveVelocity_Hauterivian:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986b,Schnier.1987
 
-sWaveVelocity_Hauterivian:
+sWaveVelocity:
   type: scalar
   value: 1760
   dev_pdf: Gauss
@@ -76,7 +76,7 @@ sWaveVelocity_Hauterivian:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986b,Schnier.1987
 
-diffusivity_Hauterivian_parallel:
+diffusivity_parallel:
   type: scalar
   value: 5.4e-11
   dev_pdf: Gauss
@@ -85,7 +85,7 @@ diffusivity_Hauterivian_parallel:
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
-diffusivity_Hauterivian_perpendicular:
+diffusivity_perpendicular:
   type: scalar
   value: 1.4e-11
   dev_pdf: Gauss
@@ -96,12 +96,12 @@ diffusivity_Hauterivian_perpendicular:
 
   #Values are taken from Mont Terri studies for HTO isotopes
 
-lithology_Hauterivian:
+lithology:
   type: string
   value: Claystone and clayey marlstone
   source: Reinhold.2013
 
-electricalResistivity_Hauterivian:
+electricalResistivity:
   type: scalar
   value: 25
   dev_pdf: Gauss

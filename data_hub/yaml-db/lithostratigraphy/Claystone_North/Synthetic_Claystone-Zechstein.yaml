@@ -1,27 +1,27 @@
 
 # Default values for sediments of Lower Jurassic:
-density_Zechstein:
+density:
   type: scalar
   value: 2200
   unit_str: kg/m³
   unit: [1 -3 0 0 0 0 0]
   source: Jahn.2013
 
-porosity_Zechstein:
+porosity:
   type: scalar
   value: 0.002
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Zechstein:
+EffectivePorosity:
   type: scalar
   value: 0.002
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Zechstein:
+SpecificHeatCapacity:
   type: scalar
   value: 1000
   unit_str: J/kg/K
@@ -29,7 +29,7 @@ SpecificHeatCapacity_Zechstein:
   source: Nowak.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Zechstein:
+HeatConductivity_parallel:
   type: scalar
   value: 5.0
   unit_str: W/m/K
@@ -37,7 +37,7 @@ HeatConductivity_parallel_Zechstein:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Zechstein:
+HeatConductivity_perpendicular:
   type: scalar
   value: 5.0
   unit_str: W/m/K
@@ -45,33 +45,33 @@ HeatConductivity_perpendicular_Zechstein:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Zechstein:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-12
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Nowak.2013
 
-pWaveVelocity_Zechstein:
+pWaveVelocity:
   type: scalar
   value: 4500
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-sWaveVelocity_Zechstein:
+sWaveVelocity:
   type: scalar
   value: 2530
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-lithology_Zechstein:
+lithology:
   type: string
   value: Salt rocks
   source: Reinhold.2013
 
-electricalResistivity_Zechstein:
+electricalResistivity:
   type: scalar
   value: 50000
   dev_pdf: Gauss

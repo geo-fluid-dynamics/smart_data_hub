@@ -1,27 +1,27 @@
 
 # Default values for sediments of Wealden age:
-density_Wealden:
+density:
   type: scalar
   value: 2520
   unit_str: kg/m³
   unit: [1 -3 0 0 0 0 0]
   source: Jobmann.2007, Jahn.2013
 
-porosity_Wealden:
+porosity:
   type: scalar
   value: 0.13
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Wealden:
+EffectivePorosity:
   type: scalar
   value: 0.075
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Wealden:
+SpecificHeatCapacity:
   type: scalar
   value: 1000
   unit_str: J/kg/K
@@ -29,7 +29,7 @@ SpecificHeatCapacity_Wealden:
   source: Nowak.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Wealden:
+HeatConductivity_parallel:
   type: scalar
   value: 2.0
   unit_str: W/m/K
@@ -37,7 +37,7 @@ HeatConductivity_parallel_Wealden:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Wealden:
+HeatConductivity_perpendicular:
   type: scalar
   value: 1.38
   unit_str: W/m/K
@@ -45,33 +45,33 @@ HeatConductivity_perpendicular_Wealden:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Wealden:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-6
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: BfS.2002, Jahn.2013
 
-pWaveVelocity_Wealden:
+pWaveVelocity:
   type: scalar
   value: 2430
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-sWaveVelocity_Wealden:
+sWaveVelocity:
   type: scalar
   value: 1370
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-lithology_Wealden:
+lithology:
   type: string
   value: Claystone and sandstone
   source: Reinhold.2013
 
-electricalResistivity_Wealden:
+electricalResistivity:
   type: scalar
   value: 80
   dev_pdf: Gauss

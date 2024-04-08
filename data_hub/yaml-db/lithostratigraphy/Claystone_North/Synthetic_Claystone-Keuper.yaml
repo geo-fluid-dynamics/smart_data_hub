@@ -1,27 +1,27 @@
 
 # Default values for sediments of Keuper:
-density_Keuper:
+density:
   type: scalar
   value: 2600
   unit_str: kg/m³
   unit: [1 -3 0 0 0 0 0]
   source: Jahn.2013
 
-porosity_Keuper:
+porosity:
   type: scalar
   value: 0.07
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Keuper:
+EffectivePorosity:
   type: scalar
   value: 0.035
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Keuper:
+SpecificHeatCapacity:
   type: scalar
   value: 1000
   unit_str: J/kg/K
@@ -29,7 +29,7 @@ SpecificHeatCapacity_Keuper:
   source: Nowak.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Keuper:
+HeatConductivity_parallel:
   type: scalar
   value: 2.5
   unit_str: W/m/K
@@ -37,7 +37,7 @@ HeatConductivity_parallel_Keuper:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Keuper:
+HeatConductivity_perpendicular:
   type: scalar
   value: 2.5
   unit_str: W/m/K
@@ -45,33 +45,33 @@ HeatConductivity_perpendicular_Keuper:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Keuper:
+HydraulicConductivity:
   type: scalar
   value: 6.0e-7
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Nowak.2013
 
-pWaveVelocity_Keuper:
+pWaveVelocity:
   type: scalar
   value: 3960
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-sWaveVelocity_Keuper:
+sWaveVelocity:
   type: scalar
   value: 2220
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-lithology_Keuper:
+lithology:
   type: string
   value: Claystone and siltstone, thin sandstone beds and evaporitic layers
   source: Reinhold.2013
 
-electricalResistivity_Keuper:
+electricalResistivity:
   type: scalar
   value: 50
   dev_pdf: Gauss

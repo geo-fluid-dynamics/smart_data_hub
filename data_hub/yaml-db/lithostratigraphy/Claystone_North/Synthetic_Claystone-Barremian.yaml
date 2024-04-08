@@ -1,6 +1,6 @@
 
 # Default values for sediments of Barremian age:
-density_Barremian:
+density:
   type: scalar
   value: 2450
   dev_pdf: Gauss
@@ -9,21 +9,21 @@ density_Barremian:
   unit: [1 -3 0 0 0 0 0]
   source: Wittke.1991, Jahn.2013
 
-porosity_Barremian:
+porosity:
   type: scalar
   value: 0.28
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity_Barremian:
+EffectivePorosity:
   type: scalar
   value: 0.05
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity_Barremian:
+SpecificHeatCapacity:
   type: scalar
   value: 970
   dev_pdf: Gauss
@@ -33,7 +33,7 @@ SpecificHeatCapacity_Barremian:
   source: Jahn.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel_Barremian:
+HeatConductivity_parallel:
   type: scalar
   value: 2.0
   unit_str: W/m/K
@@ -41,7 +41,7 @@ HeatConductivity_parallel_Barremian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular_Barremian:
+HeatConductivity_perpendicular:
   type: scalar
   value: 1.38
   unit_str: W/m/K
@@ -49,7 +49,7 @@ HeatConductivity_perpendicular_Barremian:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity_Barremian:
+HydraulicConductivity:
   type: scalar
   value: 1.0e-9
   dev_pdf: Gauss
@@ -58,7 +58,7 @@ HydraulicConductivity_Barremian:
   unit: [0 1 -1 0 0 0 0]
   source: Müller.1987, Hoth.2007, Jahn.2013
 
-pWaveVelocity_Barremian:
+pWaveVelocity:
   type: scalar
   value: 2900
   dev_pdf: Gauss
@@ -67,7 +67,7 @@ pWaveVelocity_Barremian:
   unit: [0 1 -1 0 0 0 0]
   source: Gerardi.2005
 
-sWaveVelocity_Barremian:
+sWaveVelocity:
   type: scalar
   value: 1400
   dev_pdf: Gauss
@@ -76,7 +76,7 @@ sWaveVelocity_Barremian:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986a,Schnier.1987
 
-diffusivity_Barremian_parallel:
+diffusivity_Barremian:
   type: scalar
   value: 5.4e-11
   dev_pdf: Gauss
@@ -85,7 +85,7 @@ diffusivity_Barremian_parallel:
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
-diffusivity_Barremian_perpendicular:
+diffusivity_Barremian:
   type: scalar
   value: 1.4e-11
   dev_pdf: Gauss
@@ -94,12 +94,12 @@ diffusivity_Barremian_perpendicular:
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
-lithology_Barremian:
+lithology:
   type: string
   value: Claystone and clayey marlstone, bituminous claystone layers
   source: Reinhold.2013
 
-electricalResistivity_Barremian:
+electricalResistivity:
   type: scalar
   value: 15
   dev_pdf: Gauss
