@@ -1,0 +1,82 @@
+
+# Default values for sediments of Valanginian age:
+density_Valanginian:
+  type: scalar
+  value: 2430
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn.2013
+
+porosity_Valanginian:
+  type: scalar
+  value: 0.21
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+EffectivePorosity_Valanginian:
+  type: scalar
+  value: 0.075
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+SpecificHeatCapacity_Valanginian:
+  type: scalar
+  value: 1000
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013
+  meta_free: T = 273.16 K
+
+HeatConductivity_parallel_Valanginian:
+  type: scalar
+  value: 2.0
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HeatConductivity_perpendicular_Valanginian:
+  type: scalar
+  value: 1.38
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Clauser.2002
+  meta_free: T = 273.16 K
+
+HydraulicConductivity_Valanginian:
+  type: scalar
+  value: 1.0e-8
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: BfS.2002, Jahn.2013
+
+pWaveVelocity_Valanginian:
+  type: scalar
+  value: 3070
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+sWaveVelocity_Valanginian:
+  type: scalar
+  value: 1370
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Alheid.1986
+
+lithology_Valanginian:
+  type: string
+  value: Claystone and clayey marlstone
+  source: Reinhold.2013
+
+electricalResistivity_Valanginian:
+  type: scalar
+  value: 35
+  dev_pdf: Gauss
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021
+  #Similar to Albian and Aptian.
