@@ -8,17 +8,17 @@
 
 
 Jurassic-Lower_Toarcian_OpalinusClay_shaly-facies1:
-  properties: ../../yaml-db/lithostratigraphy/Mont_Terri_OpalinusClay.yml
+  properties: ../../../yaml-db/lithostratigraphy/Mont_Terri/Mont_Terri-OpalinusClay.yml
 Jurassic-Middle_Aalenian_OpalinusClay_shaly-facies1:
-  properties: ../../yaml-db/lithostratigraphy/Mont_Terri_OpalinusClay.yml
+  properties: ../../../yaml-db/lithostratigraphy/Mont_Terri/Mont_Terri-OpalinusClay.yml
 Jurassic-Middle_Aalenian_OpalinusClay_carb-rich-sandy-facies:
-  properties: ../../yaml-db/lithostratigraphy/Mont_Terri_OpalinusClay.yml
+  properties: ../../../yaml-db/lithostratigraphy/Mont_Terri/Mont_Terri-OpalinusClay.yml
 Jurassic-Middle_Aalenian_OpalinusClay_sandy_facies1:
-  properties: ../../yaml-db/lithostratigraphy/Mont_Terri_OpalinusClay.yml
+  properties: ../../../yaml-db/lithostratigraphy/Mont_Terri/Mont_Terri-OpalinusClay.yml
 Jurassic-Middle_Aalenian_OpalinusClay_shaly_facies2:
-  properties: ../../yaml-db/lithostratigraphy/Mont_Terri_OpalinusClay.yml
+  properties: ../../../yaml-db/lithostratigraphy/Mont_Terri/Mont_Terri-OpalinusClay.yml
 Jurassic-Middle_Aalenian_OpalinusClay_sandy_facies2:
-  properties: ../../yaml-db/lithostratigraphy/Mont_Terri_OpalinusClay.yml
+  properties: ../../../yaml-db/lithostratigraphy/Mont_Terri/Mont_Terri-OpalinusClay.yml
 Jurassic-Middle_Aalenian_PasswangFormation:
   properties: default
 Jurassic-Middle_Bajocian_PasswangFormation:
