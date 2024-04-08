@@ -1,0 +1,74 @@
+include_processes:
+  decay:
+    bool: True
+  diffusion:
+    bool: True
+  sorption:
+    bool: True
+  advection:
+    bool: True
+
+mesh:
+  mesh_dimension: 1d
+  mesh_domain_numpy_array: np.linspace(0, 2, num=201)
+  domain_interpolation:
+  UseExistedVTU:
+    bool: False
+    VTUs: ['test_domain_domain.vtu','test_domain_physical_group_upstream.vtu','reactive_test_domain_domain.vtu']
+    #VTUs: ['1d_decay_chain.vtu','1d_decay_chain_upstream.vtu','1d_decay_chain_ReactiveDomain.vtu']
+
+specify_ReactionDomain:
+  bool: True
+
+t_initial:
+  value: 0
+  unit: yr
+
+t_end:
+  value: 1.0e+5
+  unit: yr
+
+time_step:
+  value: 1.0e+2
+  unit: yr
+
+# initial C(x,0)
+ics_nuclides:
+  value: np.zeros(6) # np.array
+  unit: mol/L
+
+# boundary conditions C(0,t)
+bcs_nuclides:
+  value: np.ones(6) # np.array
+  unit: mol/L
+
+# specific ogs set_up
+time_loop:
+  nonlinear_solver_name: basic_picard
+  convergence_type: PerComponentDeltaX # the error is defined as difference between results vector obtained from two consecutive iterations.
+  norm_type: NORM2
+  relative_tol: 1e-14 1e-14 1e-14 1e-14 1e-14 1e-14 #relative tolerances applied to solution vector
+  time_discretization: BackwardEuler
+
+# write first output 1 time after 10dt, second output 1 time after 10dt+90dt,...
+output_vtk:
+  output_repeat: ['100'] # output 100 times
+  output_each_steps: ['10'] # 10*dt, 10dt, ...
+
+non_linear_solver:
+  name: basic_picard
+  type: Picard
+  max_iter: '10'
+  linear_solver: 'general_linear_solver'
+
+linear_solver:
+  name: ['general_linear_solver', 'general_linear_solver', 'general_linear_solver']
+  kind: ['lis', 'eigen', 'petsc']
+  prefix: [None, None, 'hc']
+  solver_type: ['cg', 'BiCGSTAB', 'bcgs']
+  precon_type: ['jacobi', 'ILUT', 'bjacobi']
+  max_iteration_step: ['20000', '10000', '20000']
+  error_tolerance: ['1e-16', '1e-14', '1e-8']
+
+
+

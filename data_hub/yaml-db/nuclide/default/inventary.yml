@@ -1,0 +1,375 @@
+Be-10:
+  type: scalar
+  value: 23.05249011
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+C-14:
+  type: scalar
+  value: 228.2887971
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cl-36:
+  type: scalar
+  value: 350.4946033
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ca-41:
+  type: scalar
+  value: 6.570192579
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ni-59:
+  type: scalar
+  value: 17777.52851
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ni-63:
+  type: scalar
+  value: 2173.736372
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Se-79:
+  type: scalar
+  value: 1392.301218
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Rb-87:
+  type: scalar
+  value: 63554.51776
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Sr-90:
+  type: scalar
+  value: 29598.25206
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Zr-93:
+  type: scalar
+  value: 179255.9318
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Nb-94:
+  type: scalar
+  value: 6925.17405
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Mo-93:
+  type: scalar
+  value: 16.58502037
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Tc-99:
+  type: scalar
+  value: 186896.5178
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pd-107:
+  type: scalar
+  value: 55537.86213
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ag-108m:
+  type: scalar
+  value: 1.745040022
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Sn-126:
+  type: scalar
+  value: 8647.318452
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+I-129:
+  type: scalar
+  value: 28910.71338
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cs-135:
+  type: scalar
+  value: 60735.93094
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cs-137:
+  type: scalar
+  value: 51604.99172
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Sm-147:
+  type: scalar
+  value: 33726.27531
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Sm-151:
+  type: scalar
+  value: 1380.170101
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ho-166m:
+  type: scalar
+  value: 0.086392937
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cm-248:
+  type: scalar
+  value: 0.094057364
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pu-244:
+  type: scalar
+  value: 2012.152958
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pu-240:
+  type: scalar
+  value: 227328.8686
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+U-236:
+  type: scalar
+  value: 246644.6441
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Th-232:
+  type: scalar
+  value: 33160.33006
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+U-232:
+  type: scalar
+  value: 0.268348082
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cm-245:
+  type: scalar
+  value: 1013.915216
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Am-241:
+  type: scalar
+  value: 138226.7763
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Np-237:
+  type: scalar
+  value: 56664.64053
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+U-233:
+  type: scalar
+  value: 697.3344514
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Th-229:
+  type: scalar
+  value: 0.25276305
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cm-246:
+  type: scalar
+  value: 92.74827425
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pu-242:
+  type: scalar
+  value: 78792.46859
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+U-238:
+  type: scalar
+  value: 43423773.81
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Am-242m:
+  type: scalar
+  value: 152.1771006
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pu-238:
+  type: scalar
+  value: 18430.09607
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+U-234:
+  type: scalar
+  value: 16850.93824
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Th-230:
+  type: scalar
+  value: 2.196104399
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ra-226:
+  type: scalar
+  value: 0.000610094
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Cm-247:
+  type: scalar
+  value: 1.678016358
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Am-243:
+  type: scalar
+  value: 21651.80148
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pu-239:
+  type: scalar
+  value: 379186.8386
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+U-235:
+  type: scalar
+  value: 300528.6109
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Pa-231:
+  type: scalar
+  value: 0.309232635
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]
+
+Ac-227:
+  type: scalar
+  value: 0.000184109
+  dev_pdf:
+  dev_value:
+  unit_str: mol
+  unit: [0 0 0 0 0 -1 0]

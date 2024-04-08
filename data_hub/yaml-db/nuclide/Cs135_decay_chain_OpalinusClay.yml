@@ -1,4 +1,8 @@
-# name:
+# Source for sorption: Bradbury, M.H., & Baeyens, B. (2003). Far-field sorption data bases for performance assessment of a high-level radioactive waste repository in an undisturbed Opalinus Clay host rock (NTB--02-19). Switzerland
+# Energy information is taken from IAEA
+
+# Qian Chen @ RWTH, February 2024
+
 #   - type                         # [ scalar, array, tabulated, expression, coordinate, string ]
 #   - value                        # float
 #   - dev_pdf                      # Gauss or other parametrized or tabulated PDF
@@ -12,4 +16,24 @@
 #   - meta_sys [ string ]          # meta data from systematic databases, e.g. NASA database
 #   - meta_free [ string]          # free text meta data
 
-name: "crystalline"
+Cs-135:
+  stable: Ba-135
+  effective_diffusion_coefficient:
+    type: scalar
+    value: 1.e-11
+    dev_pdf:
+    dev_value:
+    unit_str: m^2/s
+    unit: [0 2 -1 0 0 0 0 ]
+  sorption_coefficient:
+    type: scalar
+    value: 0.55
+    dev_pdf: non-symmetric #  the value varies from X*Y to X/Y
+    dev_value: 6
+    unit_str: m^3/kg
+    unit: [-1 3 0 0 0 0 0 ]
+  emitted_energy:
+    alpha: 
+    electron: 0.0894
+    photon: 
+    unit: MeV
