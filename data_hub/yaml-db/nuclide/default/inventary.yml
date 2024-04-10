@@ -1,3 +1,5 @@
+# Qian Chen @ RWTH, February 2024
+
 Be-10:
   type: scalar
   value: 23.05249011
@@ -5,6 +7,7 @@ Be-10:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 C-14:
   type: scalar
@@ -13,6 +16,7 @@ C-14:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cl-36:
   type: scalar
@@ -21,6 +25,7 @@ Cl-36:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ca-41:
   type: scalar
@@ -29,6 +34,7 @@ Ca-41:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ni-59:
   type: scalar
@@ -37,6 +43,7 @@ Ni-59:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ni-63:
   type: scalar
@@ -45,6 +52,7 @@ Ni-63:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Se-79:
   type: scalar
@@ -53,6 +61,7 @@ Se-79:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Rb-87:
   type: scalar
@@ -61,6 +70,7 @@ Rb-87:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Sr-90:
   type: scalar
@@ -69,6 +79,7 @@ Sr-90:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Zr-93:
   type: scalar
@@ -77,6 +88,7 @@ Zr-93:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Nb-94:
   type: scalar
@@ -85,6 +97,7 @@ Nb-94:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Mo-93:
   type: scalar
@@ -93,6 +106,7 @@ Mo-93:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Tc-99:
   type: scalar
@@ -101,6 +115,7 @@ Tc-99:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pd-107:
   type: scalar
@@ -109,6 +124,7 @@ Pd-107:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ag-108m:
   type: scalar
@@ -117,6 +133,7 @@ Ag-108m:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Sn-126:
   type: scalar
@@ -125,6 +142,7 @@ Sn-126:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 I-129:
   type: scalar
@@ -133,6 +151,7 @@ I-129:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cs-135:
   type: scalar
@@ -141,6 +160,7 @@ Cs-135:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cs-137:
   type: scalar
@@ -149,6 +169,7 @@ Cs-137:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Sm-147:
   type: scalar
@@ -157,6 +178,7 @@ Sm-147:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Sm-151:
   type: scalar
@@ -165,6 +187,7 @@ Sm-151:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ho-166m:
   type: scalar
@@ -173,6 +196,7 @@ Ho-166m:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cm-248:
   type: scalar
@@ -181,6 +205,7 @@ Cm-248:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pu-244:
   type: scalar
@@ -189,6 +214,7 @@ Pu-244:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pu-240:
   type: scalar
@@ -197,6 +223,7 @@ Pu-240:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 U-236:
   type: scalar
@@ -205,6 +232,7 @@ U-236:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Th-232:
   type: scalar
@@ -213,6 +241,7 @@ Th-232:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 U-232:
   type: scalar
@@ -221,6 +250,7 @@ U-232:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cm-245:
   type: scalar
@@ -229,6 +259,7 @@ Cm-245:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Am-241:
   type: scalar
@@ -237,6 +268,7 @@ Am-241:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Np-237:
   type: scalar
@@ -245,6 +277,7 @@ Np-237:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 U-233:
   type: scalar
@@ -253,6 +286,7 @@ U-233:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Th-229:
   type: scalar
@@ -261,6 +295,7 @@ Th-229:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cm-246:
   type: scalar
@@ -269,6 +304,7 @@ Cm-246:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pu-242:
   type: scalar
@@ -277,6 +313,7 @@ Pu-242:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 U-238:
   type: scalar
@@ -285,6 +322,7 @@ U-238:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Am-242m:
   type: scalar
@@ -293,6 +331,7 @@ Am-242m:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pu-238:
   type: scalar
@@ -301,6 +340,7 @@ Pu-238:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 U-234:
   type: scalar
@@ -309,6 +349,7 @@ U-234:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Th-230:
   type: scalar
@@ -317,6 +358,7 @@ Th-230:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ra-226:
   type: scalar
@@ -325,6 +367,7 @@ Ra-226:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Cm-247:
   type: scalar
@@ -333,6 +376,7 @@ Cm-247:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Am-243:
   type: scalar
@@ -341,6 +385,7 @@ Am-243:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pu-239:
   type: scalar
@@ -349,6 +394,7 @@ Pu-239:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 U-235:
   type: scalar
@@ -357,6 +403,7 @@ U-235:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Pa-231:
   type: scalar
@@ -365,6 +412,7 @@ Pa-231:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250
 
 Ac-227:
   type: scalar
@@ -373,3 +421,4 @@ Ac-227:
   dev_value:
   unit_str: mol
   unit: [0 0 0 0 0 -1 0]
+  source: behrens_2023_7995250

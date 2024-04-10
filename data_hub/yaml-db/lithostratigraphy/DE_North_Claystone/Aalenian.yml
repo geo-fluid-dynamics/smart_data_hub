@@ -1,4 +1,3 @@
-
 # Default values for the Aalen sandstone:
 density:
   type: scalar
@@ -14,14 +13,14 @@ porosity:
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-EffectivePorosity:
+effective_porosity:
   type: scalar
   value: 0.1
   unit_str: None
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
-SpecificHeatCapacity:
+specific_heat_capacity:
   type: scalar
   value: 1000
   unit_str: J/kg/K
@@ -29,7 +28,7 @@ SpecificHeatCapacity:
   source: Nowak.2013
   meta_free: T = 273.16 K
 
-HeatConductivity_parallel:
+heat_conductivity_parallel:
   type: scalar
   value: 2.6
   unit_str: W/m/K
@@ -37,7 +36,7 @@ HeatConductivity_parallel:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HeatConductivity_perpendicular:
+heat_conductivity_perpendicular:
   type: scalar
   value: 2.6
   unit_str: W/m/K
@@ -45,21 +44,21 @@ HeatConductivity_perpendicular:
   source: Clauser.2002
   meta_free: T = 273.16 K
 
-HydraulicConductivity:
+hydraulic_conductivity:
   type: scalar
   value: 1.0e-5
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Nowak.2013
 
-pWaveVelocity:
+p_wave_velocity:
   type: scalar
   value: None
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: None
 
-sWaveVelocity:
+s_wave_velocity:
   type: scalar
   value: None
   unit_str: m/s
@@ -71,7 +70,7 @@ lithology:
   value: Sandstone
   source: Reinhold.2013
 
-electricalResistivity:
+electrical_resistivity:
   type: scalar
   value: 75
   dev_pdf: Gauss

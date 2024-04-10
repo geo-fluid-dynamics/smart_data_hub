@@ -1,4 +1,3 @@
-# Source for sorption: Bradbury, M.H., & Baeyens, B. (2003). Far-field sorption data bases for performance assessment of a high-level radioactive waste repository in an undisturbed Opalinus Clay host rock (NTB--02-19). Switzerland
 # Energy information is taken from IAEA
 
 # Qian Chen @ RWTH, February 2024
@@ -20,11 +19,12 @@
 Cm-247:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value:
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ]
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206
   sorption_coefficient:
     type: scalar
     value: 17
@@ -32,6 +32,7 @@ Cm-247:
     dev_value: 8.2
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 5.0292
     electron: 0.0114
@@ -41,11 +42,12 @@ Cm-247:
 Pu-243:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 22.6
@@ -53,6 +55,7 @@ Pu-243:
     dev_value: 8.2
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 
     electron: 0.1729
@@ -63,11 +66,12 @@ Pu-243:
 Am-243:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 17
@@ -75,6 +79,7 @@ Am-243:
     dev_value: 5.8
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 5.3583
     electron: 0.0234
@@ -84,11 +89,12 @@ Am-243:
 Np-239:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -96,6 +102,7 @@ Np-239:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 
     electron: 0.2623
@@ -105,11 +112,12 @@ Np-239:
 Pu-239:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 22.6
@@ -117,6 +125,7 @@ Pu-239:
     dev_value: 8.2
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 5.2357
     electron: 0.0075
@@ -126,11 +135,12 @@ Pu-239:
 U-235:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 20.5
@@ -138,6 +148,7 @@ U-235:
     dev_value: 6.3
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 4.4693
     electron: 0.0530
@@ -147,11 +158,12 @@ U-235:
 U-235m:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 20.5
@@ -159,6 +171,7 @@ U-235m:
     dev_value: 6.3
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 0.0
     electron: 0.0
@@ -169,11 +182,12 @@ U-235m:
 Th-231:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -181,6 +195,7 @@ Th-231:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 
     electron: 0.1622
@@ -190,11 +205,12 @@ Th-231:
 Pa-231:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 5
@@ -202,6 +218,7 @@ Pa-231:
     dev_value: 10
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 5.0592
     electron: 0.0538
@@ -211,11 +228,12 @@ Pa-231:
 Ac-227:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value: 17.0
@@ -223,6 +241,7 @@ Ac-227:
     dev_value: 8.2
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 0.0693
     electron: 0.0150
@@ -232,11 +251,12 @@ Ac-227:
 Th-227:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -244,6 +264,7 @@ Th-227:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 5.9883
     electron: 0.0755
@@ -254,10 +275,11 @@ Fr-223:
   effective_diffusion_coefficient:
     type: scalar
     value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: default
   sorption_coefficient:
     type: scalar
     value:
@@ -265,6 +287,7 @@ Fr-223:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 0.0003
     electron: 0.3829
@@ -275,11 +298,12 @@ Fr-223:
 Ra-223:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -287,6 +311,7 @@ Ra-223:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 5.7702
     electron: 0.0781
@@ -297,10 +322,11 @@ At-219:
   effective_diffusion_coefficient:
     type: scalar
     value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: default
   sorption_coefficient:
     type: scalar
     value:
@@ -308,6 +334,7 @@ At-219:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 6.1343
     electron: 0
@@ -319,10 +346,11 @@ Rn-219:
   effective_diffusion_coefficient:
     type: scalar
     value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: default
   sorption_coefficient:
     type: scalar
     value:
@@ -330,6 +358,7 @@ Rn-219:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 6.8801
     electron: 0.0068
@@ -340,10 +369,11 @@ Bi-215:
   effective_diffusion_coefficient:
     type: scalar
     value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: default
   sorption_coefficient:
     type: scalar
     value:
@@ -351,6 +381,7 @@ Bi-215:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 
     electron: 0.6694
@@ -361,11 +392,12 @@ Bi-215:
 Po-215:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-12
+    dev_pdf: uniform
+    dev_value: [ 1.e-12, 3.e-12 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -373,6 +405,7 @@ Po-215:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 7.5261
     electron: 0
@@ -382,11 +415,12 @@ Po-215:
 Pb-211:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -394,6 +428,7 @@ Pb-211:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 0
     electron: 0.4543
@@ -404,10 +439,11 @@ Bi-211:
   effective_diffusion_coefficient:
     type: scalar
     value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: default
   sorption_coefficient:
     type: scalar
     value:
@@ -415,6 +451,7 @@ Bi-211:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 6.6757
     electron: 0.01
@@ -424,11 +461,12 @@ Bi-211:
 Po-211:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-12
+    dev_pdf: uniform
+    dev_value: [ 1.e-12, 3.e-12 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -436,6 +474,7 @@ Po-211:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 7.5860
     electron: 0.0002
@@ -446,10 +485,11 @@ Tl-207:
   effective_diffusion_coefficient:
     type: scalar
     value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: default
   sorption_coefficient:
     type: scalar
     value:
@@ -457,6 +497,7 @@ Tl-207:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 0
     electron: 0.4952
@@ -467,11 +508,12 @@ Pb-207:
   stable:
   effective_diffusion_coefficient:
     type: scalar
-    value: 1.e-11
-    dev_pdf:
-    dev_value: 
+    value: 5.e-11
+    dev_pdf: uniform
+    dev_value: [ 1.e-11, 1.e-10 ]
     unit_str: m^2/s
-    unit: [0 2 -1 0 0 0 0 ] 
+    unit: [ 0 2 -1 0 0 0 0 ]
+    source: nagra2002ntb0206 
   sorption_coefficient:
     type: scalar
     value:
@@ -479,6 +521,7 @@ Pb-207:
     dev_value:
     unit_str: m^3/kg
     unit: [-1 3 0 0 0 0 0 ]
+    source: bradburry2003far
   emitted_energy:
     alpha: 
     electron: 
