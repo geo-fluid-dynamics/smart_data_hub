@@ -26,10 +26,13 @@ to support THM simulations.
 * ### Basis Folders
 The basis folders consist of two types of data: reference site related and default. The default folder contains the 
 default physical properties, which can be used when a certain parameter has no value for a specific location.
+
 `fluid`: This folder contains information about fluid within porous media, such as water and gas. Each YAML file includes 
 parameters such as density and viscosity.
+
 `geometry`: This folder holds points and orientation data in CSV format, which are used for creating 3D geological 
 structural models. The [GemPy](https://www.gempy.org/) tool is generally utilized for this purpose.
+
 `lithostratigraphy`:  This folder provides material properties for each stratigraphic layer,  including properties such 
 as density, porosity, hydraulic conductivity, etc.  
 
