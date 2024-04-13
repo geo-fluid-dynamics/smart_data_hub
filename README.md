@@ -9,8 +9,9 @@ ensures the reproducibility and transparency of our results, while it is also fe
 research areas, such as the [ice data hub](https://doi.org/10.23689/fidgeo-5735).
 
 ## Installation
-This repository contains a submodule [sim_data_hub](https://github.com/geo-fluid-dynamics/sim_data_hub.git).  If you 
-want to clone the project with a submodule, follow the steps below:
+This repository contains a submodule [sim_data_hub](https://github.com/geo-fluid-dynamics/sim_data_hub.git).  The sim 
+data hub offers guidelines on creating your own data hub and serves as a platform to connect with the GUI. 
+If you want to clone the project with a submodule, follow the steps below:
 1. Clone the current repository:
    ```
     git clone https://github.com/geo-fluid-dynamics/smart_data_hub.git
@@ -27,7 +28,7 @@ The data hub is designed to serve two different use cases:
 1. **Scenario-based Database**: The data is stored in YAML format, managed and constructed using the [yaml-db](data_hub/yaml-db/readme.md) module.
 All relevant files for this use case can be found in the `data_hub/yaml-db` directory.
 2. **Data Visualization**: Data is visualized through a Graphical User Interface (GUI), which supports data import, export, 
-and visualization. The basic features can be found in the [GUI_for_data_hubs]() repository (which will be made public soon). 
+and visualization. The basic features can be found in the GUI_for_data_hubs repository (which will be made public soon). 
 Files associated with this use case are located in the following directories:
    * `assets`
    * `data_hub/export`

@@ -1,0 +1,41 @@
+# Nino Menzel @ RWTH, April 2024
+
+# name of the site
+name: DE_North_Claystone
+
+# Location
+location:
+  type: 
+  value: 
+
+Triassic-Upper_Keuper:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Keuper.yml
+Lower_Jurassic:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Lower_Jurassic.yml
+Middle_Jurassic:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Middle_Jurassic.yml
+Upper_Jurassic:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Upper_Jurassic.yml
+Cretaceous-Lower_Wealden:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Weladen.yml
+Cretaceous-Lower_Hauterivian:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Hauterivian.yml
+Cretaceous-Lower_Barremian:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Barremian.yml
+Cretaceous-Lower_Aptian:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Aptian.yml
+Cretaceous_Lower_Albian:
+  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Albian.yml
+
+
+geometry:
+  geological_model_points: ../../../yaml-db/geometry/DE_North_Claystone/points.csv
+  geological_model_orientations: ../../../yaml-db/geometry/DE_North_Claystone/orientations.csv
+
+
+
+
+
+
+
+

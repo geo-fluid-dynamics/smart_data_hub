@@ -1,24 +1,41 @@
-# yaml-db
-This document explains the structure of folders and files in the yaml-db
+# Scenario-based Database
+This document provides an overview of the file structure of yaml-db, details the layout of YAML files, and offers an 
+example demonstrating how to construct a compute scenario.
+
+The concept behind constructing the YAML folders is to facilitate scenario-based, uncertainty-informed simulations. By 
+organizing data specific to a reference site, simulations can be conducted simply by 'sending' a flag. The figure below 
+illustrates this concept:  
+![](compute_scenario.png)
 
 ## Directories / Folders
-Each folder represents one host rock, for example, claystone, salt or crystalline. There is only one exception, which is 
-the folder "_default". This folder contains the default material properties that can be used when there is no value for
-a certain parameter at a specific location.
+The folders can be categorized into two types:
+* ### Control Folders
+The control folders serve as flags, collecting information on geological sites and providing fundamental input data for 
+running scenario-based simulations.  
 
-No subfolders are supported.
+`site`: This folder contains geological information for each site. Each reference site has its own YAML file. Further 
+details about the layout and design of site YAML files can be found in [`site\readme.md`](./site/readme.md).
 
-## Files
-For each host rock, i.e. each folder, there can be any number of different yaml-files that are associated with a 
-certain location. There can be several files with the same location (e.g., repeated measurements in different years), 
-but there cannot be several locations within one file.
-The names of the files should contain the location of the dataset.
+`transport_model_setup`: This folder is an example of assembling input data for running nuclide transport simulations. 
+For more information on designing a computing scenario, please refer to the readme.md file in the [`transport_model_setup\readme.md`](./transport_model_setup/readme.md).  
 
-The files should contain a field "name", that gives the name similar to the filename, a field "description", that gives details on the dataset, a location and other fields that 
-depend on the dataset itself.
+It's important to note that the control folders are not limited to the two folders mentioned here. If users wish to run 
+a different type of simulation, such as a THM simulation, they can create another control folder specifically designed 
+to support THM simulations.
 
-A field other than name and description has the following structure (it must contain type, value, unit and unit_str; it 
-should contain source; other subfields can be omitted):
+* ### Basis Folders
+The basis folders consist of two types of data: reference site related and default. The default folder contains the 
+default physical properties, which can be used when a certain parameter has no value for a specific location.
+`fluid`: This folder contains information about fluid within porous media, such as water and gas. Each YAML file includes 
+parameters such as density and viscosity.
+`geometry`: This folder holds points and orientation data in CSV format, which are used for creating 3D geological 
+structural models. The [GemPy](https://www.gempy.org/) tool is generally utilized for this purpose.
+`lithostratigraphy`:  This folder provides material properties for each stratigraphic layer,  including properties such 
+as density, porosity, hydraulic conductivity, etc.  
+
+The layout of the yaml files within these basis folders follows a specific structure:
+
+it must contain type, value, unit and unit_str; the source should be added if necessary ; other subfields can be omitted:
 
 ```
 field:
@@ -37,49 +54,6 @@ field:
   meta_sys: STR                     # Meta data from systematic databases, e.g. NASA database.
   meta_free: STR                    # Free text meta data.
 ```
-
-## Fields
-
-The different fields should have the the structure (PROPERTY)_(OBJECT), or only (PROPERTY) if the property is 
-independent of any object (e.g., material or interface). Examples are density_ice or gravitational_acceleration.
-Special fields are _name_, _description_, and _figures_, which are used to provide additional information for the 
-dataset. Examples:
-
-| Property                   | Object   |
-|----------------------------|----------|
-| accumulation               | air      |
-| attenuation_length         | base     |
-| bulk_modulus               | brine    |
-| bulk_modulus_drained       | firn     |
-| density                    | ice      |
-| depth                      | seawater |
-| dynamic_viscosity          | snow     |
-| elevation                  | surface  |
-| geothermal_heat_flux       | water    |
-| gravitational_acceleration |          |
-| latent_heat_melting        |          |
-| latent_heat_sublimation    |          |
-| location                   |          |
-| mass                       |          |
-| melt_rate                  |          |
-| melting_temperature        |          |
-| porosity                   |          |
-| permeability               |          |
-| Q_P                        |          |
-| Q_S                        |          |
-| salt_concentration         |          |
-| saturation                 |          |
-| shear_modulus              |          |
-| specific_heat_capacity     |          |
-| surface_depth              |          |
-| temperature                |          |
-| thermal_conductivity       |          |
-| thermal_diffusivity        |          |
-| thermal_expansivity        |          |
-| thickness                  |          |
-| velocity_P                 |          |
-| velocity_S                 |          |
-| youngs_modulus             |          |
 
 ## sources.bib
 The file sources.bib contains BibTeX entries for all sources that are mentioned in the yaml-db.
