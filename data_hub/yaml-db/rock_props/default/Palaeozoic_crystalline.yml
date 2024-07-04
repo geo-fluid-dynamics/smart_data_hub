@@ -1,0 +1,74 @@
+lithology: crystalline
+
+age: palaeozoic
+
+density_Granite:
+  type: scalar
+  value: 2700
+  dev_pdf: std
+  dev_value: 100
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Prinz&Strauß.2018
+
+EffectivePorosity_Granite:
+  type: scalar
+  value: 0.002
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Vondrovic.2017
+
+SpecificHeatCapacity_Granite:
+  type: scalar
+  value: 990
+  dev_pdf: std
+  dev_value: 440
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Schön.2011
+  meta_free: T = 273.16 K
+
+HeatConductivity_Granite:
+  type: scalar
+  value: 2.85
+  dev_pdf: std
+  dev_value: 0.15
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Kozusnikova.2017
+  meta_free: T = 273.16 K
+
+HydraulicConductivity_Granite:
+  type: scalar
+  value: 1.0e-8
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Zeitlhöfer.2015
+
+pWaveVelocity_Granite:
+  type: scalar
+  value: 5300
+  dev_pdf: std
+  dev_value: 300
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
+
+sWaveVelocity_Granite:
+  type: scalar
+  value: 3400
+  dev_pdf: std
+  dev_value: 800
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Clauser.2018
+
+
+electricalResistivity_Granite:
+  type: scalar
+  value: 3.5e+4
+  dev_pdf: std
+  dev_value: 2500
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden

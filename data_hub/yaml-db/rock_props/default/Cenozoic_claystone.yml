@@ -1,0 +1,88 @@
+lithology: claystone
+
+age: cenozoic
+
+density:
+  type: scalar
+  value: 2660
+  dev_pdf: std
+  dev_value: 50
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Deng2012boom
+
+porosity:
+  type: scalar
+  value: 0.39
+  dev_pdf: std
+  dev_value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Coll2004, Ma2016boom, Bruggemann2009
+
+EffectivePorosity:
+  type: scalar
+  value: 0.08
+  dev_pdf: std
+  dev_value: 0.02 
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source:
+
+SpecificHeatCapacity:
+  type: scalar
+  value: 770
+  dev_pdf: std
+  dev_value: 5 
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Chen2021boom
+  meta_free: T = 273.16 K
+
+HeatConductivity:
+  type: scalar 
+  value: 1.47
+  dev_pdf: std
+  dev_value: 0.10
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Dao2014boom, Chen2021boom
+  meta_free: T = 273.16 K
+
+
+HydraulicConductivity:
+  type: scalar
+  value: 5.0e-12
+  dev_pdf: std
+  dev_value: 2.0e-12
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Ma2016boom, Yu2013boom
+
+
+pWaveVelocity:
+  type: scalar
+  value: 3200
+  dev_pdf: std
+  dev_value: 300
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Wittke1991a, Wittke1991b
+
+sWaveVelocity:
+  type: scalar
+  value: None
+  dev_pdf: std
+  dev_value: None
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: None
+
+electricalResistivity:
+  type: scalar
+  value: 20
+  dev_pdf: std
+  dev_value: 5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source:

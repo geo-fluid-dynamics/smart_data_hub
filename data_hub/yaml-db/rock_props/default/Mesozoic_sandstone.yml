@@ -1,0 +1,78 @@
+lithology: sandstone
+
+age: mesozoic
+
+density:
+  type: scalar
+  value: 2500
+  dev_pdf: std
+  dev_value: 75
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: Jahn2016
+
+EffectivePorosity:
+  type: scalar
+  value: 0.25
+  dev_pdf: std
+  dev_value: 0.05
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Larue2010
+
+SpecificHeatCapacity:
+  type: scalar
+  value: 1000
+  dev_pdf: std
+  dev_value: 150
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Nowak.2013, Liu.2017
+  meta_free: T = 273.16 K
+
+HeatConductivity:
+  type: scalar
+  value: 2.6
+  dev_pdf: std
+  dev_value: 0.2
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Jahn2016
+  meta_free: T = 273.16 K
+
+HydraulicConductivity:
+  type: scalar
+  value: 2.0e-5
+  dev_pdf: std
+  dev_value: 1.0e-6
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn2016
+
+pWaveVelocity:
+  type: scalar
+  value: 3600
+  dev_pdf: std
+  dev_value: 600
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn2016
+
+sWaveVelocity:
+  type: scalar
+  value: 2250
+  dev_pdf: std
+  dev_value: 350
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Jahn2016
+
+
+electricalResistivity:
+  type: scalar
+  value: 500
+  dev_pdf: list
+  dev_value: [250,1000] # High deviation to cope for different water saturation.
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Kneuker.2021

@@ -1,0 +1,80 @@
+lithology: limestone
+
+age: mesozoic
+
+density:
+  type: scalar
+  value: 2600
+  dev_pdf: std
+  dev_value: 50
+  unit_str: kg/m³
+  unit: [1 -3 0 0 0 0 0]
+  source: NAGRA.2001
+
+EffectivePorosity:
+  type: scalar
+  value: 0.12
+  dev_pdf: std
+  dev_value: 0.05 
+  unit_str: None
+  unit: [0 0 0 0 0 0 0]
+  source: Jodocy.2010
+
+SpecificHeatCapacity:
+  type: scalar
+  value: 850
+  dev_pdf: std
+  dev_value: 20
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+HeatConductivity:
+  type: scalar 
+  value: 3.0
+  dev_pdf: std
+  dev_value: 0.10
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Rath.2005
+  meta_free: T = 273.16 K
+
+
+HydraulicConductivity:
+  type: scalar
+  value: 0.0001
+  dev_pdf: std
+  dev_value: 1.0e-5
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Reinhold.2016
+
+
+pWaveVelocity:
+  type: scalar
+  value: 5630
+  dev_pdf: std
+  dev_value: 580
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+sWaveVelocity:
+  type: scalar
+  value: 3120
+  dev_pdf: std
+  dev_value: 450
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Gebrande.1982
+
+
+electricalResistivity:
+  type: scalar
+  value: 1500
+  dev_pdf: list
+  dev_value: [500, 2000] # High degree of uncertainty to cope for different degree of fracturing.
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Gelis.2016
