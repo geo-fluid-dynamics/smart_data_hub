@@ -20,7 +20,7 @@ porosity:
   unit: [0 0 0 0 0 0 0]
   source: Coll2004, Ma2016boom, Bruggemann2009
 
-EffectivePorosity:
+effective_porosity:
   type: scalar
   value: 0.08
   dev_pdf: std
@@ -29,7 +29,7 @@ EffectivePorosity:
   unit: [0 0 0 0 0 0 0]
   source:
 
-SpecificHeatCapacity:
+specific_heat_capacity:
   type: scalar
   value: 770
   dev_pdf: std
@@ -39,7 +39,7 @@ SpecificHeatCapacity:
   source: Chen2021boom
   meta_free: T = 273.16 K
 
-HeatConductivity:
+heat_conductivity:
   type: scalar 
   value: 1.47
   dev_pdf: std
@@ -50,7 +50,7 @@ HeatConductivity:
   meta_free: T = 273.16 K
 
 
-HydraulicConductivity:
+hydraulic_conductivity:
   type: scalar
   value: 5.0e-12
   dev_pdf: std
@@ -60,7 +60,7 @@ HydraulicConductivity:
   source: Ma2016boom, Yu2013boom
 
 
-pWaveVelocity:
+p_wave_velocity:
   type: scalar
   value: 3200
   dev_pdf: std
@@ -69,7 +69,7 @@ pWaveVelocity:
   unit: [0 1 -1 0 0 0 0]
   source: Wittke1991a, Wittke1991b
 
-sWaveVelocity:
+s_wave_velocity:
   type: scalar
   value: None
   dev_pdf: std
@@ -78,7 +78,7 @@ sWaveVelocity:
   unit: [0 1 -1 0 0 0 0]
   source: None
 
-electricalResistivity:
+electrical_resistivity:
   type: scalar
   value: 20
   dev_pdf: std
