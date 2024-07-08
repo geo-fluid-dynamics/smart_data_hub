@@ -18,7 +18,7 @@ porosity:
   dev_value: 0.05
   unit_str: None
   unit: [0 0 0 0 0 0 0]
-  source: Coll2004, Ma2016boom, Bruggemann2009
+  source: Coll2004, Ma2016boom, Bruggemann2017
 
 EffectivePorosity:
   type: scalar
@@ -27,7 +27,7 @@ EffectivePorosity:
   dev_value: 0.02 
   unit_str: None
   unit: [0 0 0 0 0 0 0]
-  source:
+  source: Ma2016boom, Bruggemann2017
 
 SpecificHeatCapacity:
   type: scalar
@@ -67,7 +67,7 @@ pWaveVelocity:
   dev_value: 300
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Wittke1991a, Wittke1991b
+  source: Wittke.1991
 
 sWaveVelocity:
   type: scalar

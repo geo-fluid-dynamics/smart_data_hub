@@ -9,7 +9,7 @@ density:
   dev_value: 75
   unit_str: kg/m³
   unit: [1 -3 0 0 0 0 0]
-  source: Jahn2016
+  source: Jahn.2016
 
 EffectivePorosity:
   type: scalar
@@ -18,7 +18,7 @@ EffectivePorosity:
   dev_value: 0.05
   unit_str: None
   unit: [0 0 0 0 0 0 0]
-  source: Larue2010
+  source: Larue.2010
 
 SpecificHeatCapacity:
   type: scalar
@@ -37,7 +37,7 @@ HeatConductivity:
   dev_value: 0.2
   unit_str: W/m/K
   unit: [1 1 -3 -1 0 0 0]
-  source: Jahn2016
+  source: Jahn.2016
   meta_free: T = 273.16 K
 
 HydraulicConductivity:
@@ -47,7 +47,7 @@ HydraulicConductivity:
   dev_value: 1.0e-6
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Jahn2016
+  source: Jahn.2016
 
 pWaveVelocity:
   type: scalar
@@ -56,7 +56,7 @@ pWaveVelocity:
   dev_value: 600
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Jahn2016
+  source: Jahn.2016
 
 sWaveVelocity:
   type: scalar
@@ -65,7 +65,7 @@ sWaveVelocity:
   dev_value: 350
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Jahn2016
+  source: Jahn.2016
 
 
 electricalResistivity:
