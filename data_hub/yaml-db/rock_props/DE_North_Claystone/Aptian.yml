@@ -1,5 +1,9 @@
+lithology: claystone
 
-# Default values for sediments of Aptian age:
+age: mesozoic
+
+description: Claystone, marlstone with varying clay content
+
 density:
   type: scalar
   value: 2300
@@ -70,11 +74,6 @@ s_wave_velocity:
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
 
-lithology:
-  type: string
-  value: Claystone, marlstone with varying clay content
-  source: Reinhold.2013
-
 electrical_resistivity:
   type: scalar
   value: 35
@@ -83,4 +82,3 @@ electrical_resistivity:
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
   source: Kneuker.2021
-  # Same as Albian unit.

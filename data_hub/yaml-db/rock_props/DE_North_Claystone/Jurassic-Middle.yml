@@ -1,5 +1,9 @@
+lithology: claystone
 
-# Default values for sediments of Mid Jurassic:
+age: mesozoic
+
+description: Claystone and marlstone.
+
 density:
   type: scalar
   value: 2520
@@ -65,11 +69,6 @@ s_wave_velocity:
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Alheid.1986
-
-lithology:
-  type: string
-  value: Claystone and marlstone
-  source: Reinhold.2013
 
 electrical_resistivity:
   type: scalar

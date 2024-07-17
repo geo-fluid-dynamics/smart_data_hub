@@ -1,5 +1,9 @@
+lithology: claystone
 
-# Default values for sediments of Albian age:
+age: mesozoic
+
+description: Claystone and marlstone. Increasing limestone content leads to increase in res.
+
 density:
   type: scalar
   value: 2165
@@ -76,11 +80,6 @@ s_wave_velocity:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986a
 
-lithology:
-  type: string
-  value: Claystone and marlstone
-  source: Reinhold.2013
-
 electrical_resistivity:
   type: scalar
   value: 35
@@ -89,4 +88,3 @@ electrical_resistivity:
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
   source: Kneuker.2021
-  #As seen in Kneuker (2021), the increasing limestone content leads to increase in res.

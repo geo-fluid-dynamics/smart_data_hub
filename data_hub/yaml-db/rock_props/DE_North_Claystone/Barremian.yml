@@ -1,5 +1,9 @@
+lithology: claystone
 
-# Default values for sediments of Barremian age:
+age: mesozoic
+
+description: Claystone and clayey marlstone, bituminous claystone layers. Clayey subfacies shows res < 15 Ohmm, sandy and calcareous parts > 25 Ohmm.
+
 density:
   type: scalar
   value: 2450
@@ -76,7 +80,7 @@ s_wave_velocity:
   unit: [0 1 -1 0 0 0 0]
   source: Schnier.1986a,Schnier.1987
 
-diffusivity_Barremian:
+diffusivity_parallel:
   type: scalar
   value: 5.4e-11
   dev_pdf: Gauss
@@ -85,7 +89,7 @@ diffusivity_Barremian:
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
-diffusivity_Barremian:
+diffusivity_perpendicular:
   type: scalar
   value: 1.4e-11
   dev_pdf: Gauss
@@ -93,11 +97,6 @@ diffusivity_Barremian:
   unit_str: m²/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
-
-lithology:
-  type: string
-  value: Claystone and clayey marlstone, bituminous claystone layers
-  source: Reinhold.2013
 
 electrical_resistivity:
   type: scalar
@@ -107,4 +106,4 @@ electrical_resistivity:
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
   source: Kneuker.2021
-#Strongly depends on secondary components, clayey subfacies shows res < 15 Ohmm, sandy and calcareous parts > 25 Ohmm.
+

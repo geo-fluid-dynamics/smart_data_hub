@@ -1,5 +1,9 @@
+lithology: claystone
 
-# Default values for sediments of Hauterivian age:
+age: mesozoic
+
+description: Claystone and clayey marlstone. Similar lithological composition to Albian and Aptian, but assuming slightly higher clay content (-> lower res).
+
 density:
   type: scalar
   value: 2380
@@ -94,12 +98,7 @@ diffusivity_perpendicular:
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
-  #Values are taken from Mont Terri studies for HTO isotopes
-
-lithology:
-  type: string
-  value: Claystone and clayey marlstone
-  source: Reinhold.2013
+#Values are taken from Mont Terri studies for HTO isotopes
 
 electrical_resistivity:
   type: scalar
@@ -109,4 +108,3 @@ electrical_resistivity:
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
   source: Kneuker.2021
-  #Similar lithological composition to abovementioned Albian and Aptian, but assuming slightly higher clay content (-> lower res).
