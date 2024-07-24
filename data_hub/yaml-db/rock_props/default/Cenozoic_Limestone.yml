@@ -7,7 +7,7 @@ density:
   value: 2300
   dev_pdf: std
   dev_value: 300
-  unit_str: kg/m³
+  unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
   source: Isch.2020EGU
 

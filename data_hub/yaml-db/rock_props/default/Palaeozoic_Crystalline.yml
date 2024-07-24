@@ -7,7 +7,7 @@ density_Granite:
   value: 2700
   dev_pdf: std
   dev_value: 100
-  unit_str: kg/m³
+  unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
   source: Prinz&Strauß.2018
 

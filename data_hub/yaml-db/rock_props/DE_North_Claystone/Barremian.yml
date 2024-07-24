@@ -9,7 +9,7 @@ density:
   value: 2450
   dev_pdf: Gauss
   dev_value: 100
-  unit_str: kg/m³
+  unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
   source: Wittke.1991, Jahn.2013
 

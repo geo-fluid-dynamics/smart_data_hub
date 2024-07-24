@@ -9,7 +9,7 @@ density:
   value: 2165
   dev_pdf: Gauss
   dev_value: 15
-  unit_str: kg/m³
+  unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
   source: Gerardi.2005, Jahn.2013
 
@@ -60,7 +60,7 @@ hydraulic_conductivity:
   dev_value: 1.0e-12
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Müller.1987, BfS.2002, Hoth.2007, Jahn.2013
+  source: Mueller.1987, BfS.2002, Hoth.2007, Jahn.2013
 
 p_wave_velocity:
   type: scalar
