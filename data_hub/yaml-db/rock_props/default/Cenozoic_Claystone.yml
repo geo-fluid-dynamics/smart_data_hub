@@ -1,6 +1,6 @@
-lithology: claystone
+lithology: Claystone
 
-age: cenozoic
+age: Cenozoic
 
 density:
   type: scalar

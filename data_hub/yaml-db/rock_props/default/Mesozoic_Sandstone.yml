@@ -1,6 +1,6 @@
-lithology: sandstone
+lithology: Sandstone
 
-age: mesozoic
+age: Mesozoic
 
 density:
   type: scalar

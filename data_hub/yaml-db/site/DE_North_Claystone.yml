@@ -5,56 +5,56 @@ name: DE_North_Claystone
 
 description: Synthetic data from Northern Germany.
 
-Quaternary:
+Cenozoic-Quaternary:
   # properties: default
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Albian.yml
-  lithology: claystone
-  age: cenozoic
+  lithology: Claystone
+  age: Cenozoic
 
-Cretaceous-Lower-Albian:
+Mesozoic-Cretaceous-Lower-Albian:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Albian.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
-Cretaceous-Lower-Aptian:
+Mesozoic-Cretaceous-Lower-Aptian:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Aptian.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
-Cretaceous-Lower-Barremian:
+Mesozoic-Cretaceous-Lower-Barremian:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Barremian.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
-Cretaceous-Lower-Hauterivian:
+Mesozoic-Cretaceous-Lower-Hauterivian:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Hauterivian.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
-Cretaceous-Lower-Berriasian-Wealden:
+Mesozoic-Cretaceous-Lower-Berriasian-Wealden:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Wealden.yml
-  lithology: claystone
-  age: cretaceous
+  lithology: Claystone
+  age: Mesozoic
 
-Jurassic-Upper:
+Mesozoic-Jurassic-Upper:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Jurassic-Upper.yml
-  lithology: limestone
-  age: mesozoic
+  lithology: Limestone
+  age: Mesozoic
 
-Jurassic-Middle:
+Mesozoic-Jurassic-Middle:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Jurassic-Middle.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
-Jurassic-Lower:
+Mesozoic-Jurassic-Lower:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Jurassic-Lower.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
-Triassic-Upper-Keuper:
+Mesozoic-Triassic-Upper-Keuper:
   properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Keuper.yml
-  lithology: claystone
-  age: mesozoic
+  lithology: Claystone
+  age: Mesozoic
 
 geometry:
   geological_model_points: data_hub/yaml-db/geometry/DE_North_Claystone/points.csv

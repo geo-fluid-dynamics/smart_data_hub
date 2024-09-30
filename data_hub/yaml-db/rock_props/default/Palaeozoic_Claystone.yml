@@ -1,6 +1,6 @@
-lithology: claystone
+lithology: Claystone
 
-age: palaeozoic
+age: Palaeozoic
 
 density:
   type: scalar

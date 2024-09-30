@@ -1,6 +1,6 @@
-lithology: sandstone
+lithology: Sandstone
 
-age: cenozoic
+age: Cenozoic
 
 density:
   type: scalar

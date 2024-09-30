@@ -1,6 +1,6 @@
-lithology: crystalline
+lithology: Crystalline
 
-age: palaeozoic
+age: Palaeozoic
 
 density_Granite:
   type: scalar

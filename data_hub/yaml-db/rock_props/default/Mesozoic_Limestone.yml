@@ -1,6 +1,6 @@
-lithology: limestone
+lithology: Limestone
 
-age: mesozoic
+age: Mesozoic
 
 density:
   type: scalar

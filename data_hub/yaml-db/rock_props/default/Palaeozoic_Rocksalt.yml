@@ -1,6 +1,6 @@
-lithology: rock salt
+lithology: Rocksalt
 
-age: palaeozoic
+age: Palaeozoic
 
 density:
   type: scalar
