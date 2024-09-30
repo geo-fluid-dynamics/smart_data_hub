@@ -14,14 +14,14 @@ density:
 porosity:
   type: scalar
   value: 0.15
-  unit_str: None
+  unit_str:
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 
 effective_porosity:
   type: scalar
   value: 0.02
-  unit_str: None
+  unit_str:
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2013
 

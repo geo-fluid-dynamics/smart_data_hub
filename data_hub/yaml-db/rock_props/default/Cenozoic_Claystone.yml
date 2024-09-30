@@ -16,7 +16,7 @@ porosity:
   value: 0.39
   dev_pdf: std
   dev_value: 0.05
-  unit_str: None
+  unit_str:  
   unit: [0 0 0 0 0 0 0]
   source: Coll2004, Ma2016boom, Bruggemann2017
 
@@ -25,7 +25,7 @@ effective_porosity:
   value: 0.08
   dev_pdf: std
   dev_value: 0.02 
-  unit_str: None
+  unit_str:  
   unit: [0 0 0 0 0 0 0]
   source: Ma2016boom, Bruggemann2017
 
@@ -71,12 +71,12 @@ p_wave_velocity:
 
 s_wave_velocity:
   type: scalar
-  value: None
+  value:  
   dev_pdf: std
-  dev_value: None
+  dev_value:  
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: None
+  source:  
 
 electrical_resistivity:
   type: scalar

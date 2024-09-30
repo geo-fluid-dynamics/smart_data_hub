@@ -16,7 +16,7 @@ effective_porosity:
   value: 0.15
   dev_pdf: std
   dev_value: 0.075
-  unit_str: None
+  unit_str:  
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2016
 

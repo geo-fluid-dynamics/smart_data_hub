@@ -14,7 +14,7 @@ density_Granite:
 effective_porosity_Granite:
   type: scalar
   value: 0.002
-  unit_str: None
+  unit_str:  
   unit: [0 0 0 0 0 0 0]
   source: Vondrovic.2017
 

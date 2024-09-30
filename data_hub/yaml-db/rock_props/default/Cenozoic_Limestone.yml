@@ -16,7 +16,7 @@ effective_porosity:
   value: 0.15 # Slightly higher than mesozoic limestone due to less diagenetic compression (younger rocks).
   dev_pdf: std
   dev_value: 0.05 
-  unit_str: None
+  unit_str:  
   unit: [0 0 0 0 0 0 0]
   source: Jodocy.2010
 
