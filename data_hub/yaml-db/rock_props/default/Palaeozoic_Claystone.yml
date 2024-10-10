@@ -1,7 +1,3 @@
-lithology: Claystone
-
-age: Palaeozoic
-
 density:
   type: scalar
   value: 2500

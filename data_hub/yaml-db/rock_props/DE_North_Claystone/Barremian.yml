@@ -1,9 +1,3 @@
-lithology: Claystone
-
-age: Mesozoic
-
-description: Claystone and clayey marlstone, bituminous claystone layers. Clayey subfacies shows res < 15 Ohmm, sandy and calcareous parts > 25 Ohmm.
-
 density:
   type: scalar
   value: 2450

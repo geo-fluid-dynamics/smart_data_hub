@@ -1,9 +1,3 @@
-lithology: Claystone
-
-age: Mesozoic
-
-description: Claystone and siltstone, thin sandstone beds and evaporitic layers
-
 density:
   type: scalar
   value: 2600

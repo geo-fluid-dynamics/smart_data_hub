@@ -1,7 +1,3 @@
-lithology: Limestone
-
-age: Mesozoic
-
 density:
   type: scalar
   value: 2600

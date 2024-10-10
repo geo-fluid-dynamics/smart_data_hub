@@ -1,7 +1,3 @@
-lithology: Sandstone
-
-age: Mesozoic
-
 density:
   type: scalar
   value: 2500

@@ -1,9 +1,3 @@
-lithology: Claystone
-
-age: Mesozoic
-
-description: Claystone and clayey marlstone, bituminous claystone layers, comparable to host rock.
-
 density:
   type: scalar
   value: 2520

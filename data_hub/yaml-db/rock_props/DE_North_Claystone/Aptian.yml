@@ -1,9 +1,3 @@
-lithology: Claystone
-
-age: Mesozoic
-
-description: Claystone, marlstone with varying clay content
-
 density:
   type: scalar
   value: 2300

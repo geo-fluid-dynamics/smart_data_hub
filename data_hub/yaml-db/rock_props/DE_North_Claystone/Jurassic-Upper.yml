@@ -1,9 +1,3 @@
-lithology: Limestone
-
-age: Mesozoic
-
-description: Limestone, thin beds of anhydrite and evaporites.
-
 density:
   type: scalar
   value: 2520

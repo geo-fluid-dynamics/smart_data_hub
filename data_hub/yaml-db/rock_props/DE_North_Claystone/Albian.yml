@@ -1,9 +1,3 @@
-lithology: Claystone
-
-age: Mesozoic
-
-description: Claystone and marlstone. Increasing limestone content leads to increase in res.
-
 density:
   type: scalar
   value: 2165

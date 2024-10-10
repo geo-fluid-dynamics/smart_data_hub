@@ -1,9 +1,3 @@
-lithology: Claystone
-
-age: Mesozoic
-
-description: Claystone and clayey marlstone. Similar lithological composition to Albian and Aptian, but assuming slightly higher clay content (-> lower res).
-
 density:
   type: scalar
   value: 2380

@@ -1,7 +1,3 @@
-lithology: Sandstone
-
-age: Cenozoic
-
 density:
   type: scalar
   value: 2200

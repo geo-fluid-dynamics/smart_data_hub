@@ -1,7 +1,3 @@
-lithology: Rocksalt
-
-age: Palaeozoic
-
 density:
   type: scalar
   value: 2250

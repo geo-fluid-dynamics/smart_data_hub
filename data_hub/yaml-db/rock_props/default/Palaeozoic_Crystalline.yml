@@ -1,7 +1,3 @@
-lithology: Crystalline
-
-age: Palaeozoic
-
 density_Granite:
   type: scalar
   value: 2700
