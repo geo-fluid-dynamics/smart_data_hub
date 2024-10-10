@@ -145,7 +145,7 @@ def load_default_props():
             dir_name=os.path.join("rock_props", "default", default_file_name + ".yml"), items="default_props_dict")
         default_props_dict_df[default_file_name] = default_dict['properties']
 
-    return default_props_dict
+    return default_props_dict_df
 
 
 def fill_in_default_props(stratum_props: pd.DataFrame or str, default_props: pd.DataFrame):
