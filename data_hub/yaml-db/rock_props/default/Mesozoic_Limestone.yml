@@ -70,7 +70,8 @@ electrical_resistivity:
   type: scalar
   value: 1500
   dev_pdf: list
-  dev_value: [500, 2000] # High degree of uncertainty to cope for different degree of fracturing.
+  dev_value: [500, 2000]
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
   source: Gelis.2016
+  meta_free: High degree of uncertainty to cope for different degree of fracturing.

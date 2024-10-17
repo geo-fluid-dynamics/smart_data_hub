@@ -48,7 +48,8 @@ p_wave_velocity_Granite:
   dev_value: 300
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
+  source: Ronczka.2017
+  meta_free: Derived from measurements performed at Äspö HRL in Sweden
 
 s_wave_velocity_Granite:
   type: scalar
@@ -67,4 +68,5 @@ electrical_resistivity_Granite:
   dev_value: 2500
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Ronczka.2017 #Derived from measurements performed at Äspö HRL in Sweden
+  source: Ronczka.2017 
+  meta_free: Derived from measurements performed at Äspö HRL in Sweden

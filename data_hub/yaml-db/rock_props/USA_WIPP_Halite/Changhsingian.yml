@@ -1,74 +1,80 @@
 density:
   type: scalar
-  value: 2200
+  value: 2400
   dev_pdf: std
   dev_value: 200
   unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
-  source: Minkley.2010, Jahn.2013
+  source: manger_sediments_1963
+
+porosity:
+  type: scalar
+  value: 0.175
+  dev_pdf: std
+  dev_value: 0.075
+  unit_str:
+  unit: [0 0 0 0 0 0 0]
+  source: manger_sediments_1963
 
 effective_porosity:
   type: scalar
-  value: 0.1
+  value: 0.075
   dev_pdf: std
-  dev_value: 0.07
-  unit_str:  
+  dev_value: 0.025
+  unit_str:
   unit: [0 0 0 0 0 0 0]
-  source: Reinhold.2016
+  source: manger_sediments_1963
 
 specific_heat_capacity:
   type: scalar
   value: 1000
-  dev_pdf: std
-  dev_value: 150
   unit_str: J/kg/K
   unit: [0 2-2 -1 0 0 0]
-  source: Nowak.2013, Liu.2017
+  source: robertson_thermal_1988
   meta_free: T = 273.16 K
 
 heat_conductivity:
   type: scalar
-  value: 2.3
+  value: 2.25
   dev_pdf: std
-  dev_value: 0.3
+  dev_value: 0.25
   unit_str: W/m/K
   unit: [1 1 -3 -1 0 0 0]
-  source: Clauser.2002, Liu.2017
+  source: robertson_thermal_1988
   meta_free: T = 273.16 K
 
 hydraulic_conductivity:
   type: scalar
-  value: 5.0e-5
-  dev_pdf: std
-  dev_value: 1.0e-5
+  value: 1.0e-5
+  dev_pdf: list
+  dev_value: [1.0e-6, 1.0e-4]
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: BfS.2002, Jahn.2013
+  source: freeze_groundwater_1979
 
 p_wave_velocity:
   type: scalar
-  value: 2500
+  value: 3000
   dev_pdf: std
-  dev_value: 200
+  dev_value: 500
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Alheid.1986
+  source: schon_physical_2011
 
 s_wave_velocity:
   type: scalar
-  value: 1370
+  value: 1750
   dev_pdf: std
-  dev_value: 200
+  dev_value: 250
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: Alheid.1986
+  source: schon_physical_2011
 
 electrical_resistivity:
   type: scalar
-  value: 150
-  dev_pdf: std
-  dev_value: 50
+  value: 500
+  dev_pdf: list
+  dev_value: [100, 1000]
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
-  source: Kneuker.2021
-  meta_free: High deviation to cope for different water saturation.
+  source: keller_electrical_1966
