@@ -24,19 +24,19 @@ Mesozoic-Paleozoic-Permian-Lopingian-Changhsingian:
   description: Dewey Lake Formation, Sandstone with thin siltstone beds.
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Upper:
-  properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian_Upper.yml
+  properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Upper.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Rulster formation, dolomite and anhydrite with silt- and clay-rich thin beds.
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Middle:
-  properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian_Middle.yml
+  properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Middle.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Rock salt with anhydrite and mudstone interbeds.
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Lower:
-  properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian_Lower.yml
+  properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Lower.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Anhydrite in succession with rock salt.
