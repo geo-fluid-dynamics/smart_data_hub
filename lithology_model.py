@@ -14,24 +14,18 @@ import os
 from os import listdir, walk
 from os.path import isfile, join
 import yaml
+import dash_vtk
+from vtk.util.numpy_support import vtk_to_numpy
 
 
-def hex_conversion(rgb_str: int):
-    """
-    Function that returns hexadecimal code from RGB values.
-    @param rgb_str: Input RGB values.
-    @return: string of hexcode of all input RGB values.
-    """
-    rgb = tuple(map(int, rgb_str.split("/")))
-    # Convert to hexadecimal
-    return "#{:02x}{:02x}{:02x}".format(rgb[0], rgb[1], rgb[2])
-
-
-def RGBtxt_to_dict(file_path: str):
+def RGBtxt_to_dict(file_path: str, color_type: str):
     """
     Convert text to Dict.
     @param file_path: path to the txt file.
-    @return: dictionary with all hexadecimal codes and corresponding lithologies.
+    @param color_type: str, color type {'to_hex', 'to_rgb'}.
+    to_hex: return hex color codes.
+    to_rgb: return RGB colors.
+    @return: dictionary with all hexadecimal color codes or rgb colors and corresponding lithologies.
     """
     result_dict = {}
     with open(file_path, "r") as file:
@@ -41,19 +35,20 @@ def RGBtxt_to_dict(file_path: str):
                 key = parts[0].strip()
                 rgb_value = parts[1].strip()
                 # Convert RGB to hex
-                hex_value = hex_conversion(rgb_value)
-                result_dict[key] = hex_value
+                rgb = tuple(map(int, rgb_value.split("/")))
+                if color_type == 'to_hex':
+                    hex_value = "#{:02x}{:02x}{:02x}".format(rgb[0], rgb[1], rgb[2])
+                    result_dict[key] = hex_value
+                elif color_type == 'to_rgb':
+                    result_dict[key] = f"rgb{rgb}"
+                else:
+                    raise ValueError("Valid value for color_type: ['to_hex', 'to_rgb']")
             elif len(parts) != 2:
                 raise ValueError(
                     "No tuple, please make sure the dictionary has the right structure!"
                 )
 
     return result_dict
-
-
-file_path = "RGB_stratigraphy.txt"
-hex_colors = RGBtxt_to_dict(file_path)
-geomodel_colors = px.colors.qualitative.Dark24
 
 
 def load_yaml_to_dict(file_name: str, props_yaml_to_dataframe=True):
@@ -261,68 +256,29 @@ def fill_in_default_props(stratum_props: pd.DataFrame or str, default_props: pd.
     return stratum_props_table, style_data_conditional
 
 
-def load_geomodel(site_name: str):
+def load_plydata(site_name: str, sites_material_props_dict: dict):
     site_geo_path = os.path.join(
         os.path.realpath(os.path.dirname(__file__)),
         os.path.join("data_hub", "yaml-db", "geometry", site_name),
     )
 
-    site_orientation_path = os.path.join(site_geo_path, "orientations.csv")
-    site_points_path = os.path.join(site_geo_path, "points.csv")
-    points_csv = pd.read_csv(site_points_path)
+    site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
+    points_all = []
+    polys_all = []
 
-    formation_list = list(dict.fromkeys(list(points_csv["formation"])))
-    extent_geometry = [
-        min(0, min(list(points_csv["X"]))),
-        max(0, max(list(points_csv["X"]))),
-        min(0, min(list(points_csv["Y"]))),
-        max(0, max(list(points_csv["Y"]))),
-        min(0, min(list(points_csv["Z"]))),
-        max(0, max(list(points_csv["Z"]))),
-    ]
-    formation_dict = dict(zip(formation_list, formation_list))
+    points_array = np.array([0.0, 0.0, 0.0])  # vstack all the points
+    for i in range(len(site_strata_names_list)):
+        stratum_ply = pv.read(os.path.join(site_geo_path, f"{site_strata_names_list[i]}.ply"))
+        points_array = np.vstack((np.array(stratum_ply.points), points_array))
 
-    geo_data = gp.create_geomodel(
-        project_name=site_name,
-        extent=extent_geometry,
-        refinement=4,
-        importer_helper=gp.data.ImporterHelper(
-            path_to_orientations=site_orientation_path,
-            path_to_surface_points=site_points_path,
-        ),
-    )
+        points_all.append(stratum_ply.points.ravel())
+        polys_all.append(vtk_to_numpy(stratum_ply.GetPolys().GetData()))
 
-    surface_data = gp.map_stack_to_surfaces(geo_data, formation_dict)
-
-    data_model = gp.compute_model(geo_data)
-
-    model_img = gpv.plot_3d(model=geo_data, show=False)
-
-    len_formation = len(formation_list)
-    # print(formation_list)
-
-    # layer_colors = [to_hex(c) for c in cm.tab20.colors]
-    layer_colors = geomodel_colors
-    plotter_model = pv.Plotter()
-    plotter_model.add_mesh(mesh=model_img.surface_points_mesh, show_scalar_bar=False)
-    plotter_model.add_mesh(
-        mesh=model_img.regular_grid_actor.GetMapper().GetInput(),
-        cmap=layer_colors[0:len_formation],
-        opacity=0.7,
-        show_scalar_bar=False,
-    )
-
-    for i in range(len_formation):
-        plotter_model.add_mesh(
-            mesh=model_img.surface_poly[formation_list[i]],
-            color=layer_colors[i],
-            show_scalar_bar=False,
-        )
-
-    plotter_model.show_grid(color="gray", grid="front")
-    filename_html = site_name + ".html"
-    plotter_model.export_html(filename_html)
-    return filename_html
+    # define a camera position for dash_vtk
+    mean_array = np.mean(points_array, axis=0)
+    mirrored_Z = 2 * np.max(points_array, axis=0)[-1] - np.min(points_array, axis=0)[-1]
+    camera_position = [mean_array[0], mean_array[1], mirrored_Z]
+    return points_all, polys_all, camera_position
 
 
 def create_stratigraphic_table(site_strata: list, strata_props_descriptions: list):
@@ -335,7 +291,7 @@ def create_stratigraphic_table(site_strata: list, strata_props_descriptions: lis
     ids = ["Phanerozoic"]
     labels = ["Phanerozoic"]
     parents = [""]
-    strata_colors = [hex_colors["Phanerozoic"]]
+    stratigraphy_colors = [rgb_colors["Phanerozoic"]]
 
     d_k = 0
     ids_descriptions = ['']
@@ -351,12 +307,10 @@ def create_stratigraphic_table(site_strata: list, strata_props_descriptions: lis
             if id_name not in ids:
                 ids.append(id_name)
                 try:
-                    strata_colors.append(hex_colors[id_name])
-                except (
-                        KeyError
-                ):  # if the id_name is not within the international chronostratigraphic chart, then use
+                    stratigraphy_colors.append(rgb_colors[id_name])
+                except KeyError:  # if the id_name is not within the international chronostratigraphic chart, then use
                     # its parents color.
-                    strata_colors.append(strata_colors[-1])
+                    stratigraphy_colors.append(stratigraphy_colors[-1])
 
                 if id_name in site_strata:
                     ids_descriptions.append(strata_props_descriptions[d_k])
@@ -375,19 +329,139 @@ def create_stratigraphic_table(site_strata: list, strata_props_descriptions: lis
             ids=ids,
             labels=labels,
             parents=parents,
-            marker_colors=strata_colors,
+            marker_colors=stratigraphy_colors,
             hovertext=ids_descriptions,
             textinfo="label+text",
             sort=False,
         )
     )
 
+    stratigraphy_colors_dict = dict(zip(ids, stratigraphy_colors))
     fig.update_layout(margin=dict(t=50, l=25, r=25, b=25))
-    return fig
+    return fig, stratigraphy_colors_dict
 
+
+def add_site_props_to_sites_dict(site_name: str, sites_material_props_dict: dict):
+    """
+    Add site material properties to the existing Python Dictionary sites_material_props_dict.
+    @param site_name: str, name of the site
+    @param sites_material_props_dict: dict, dictionary that contains all the sites material properties.
+    @return: the updated sites_material_props_dict.
+    """
+    # convert YAML file to Python dictionary
+    site_props_dict = load_items_in_dir(
+        dir_name=os.path.join("site", site_name + ".yml"), items="site_props_dict"
+    )
+    # get a list of layer names
+    site_strata_names_list = list(site_props_dict['properties'].keys())
+    # store the site name and its layers names
+    sites_material_props_dict.update(
+        {site_name: {'strata': dict(zip(site_strata_names_list, site_strata_names_list))}}
+    )
+    # load property path, lithology, age and description
+    for id_name in site_strata_names_list:
+        site_props_dict_props_id = site_props_dict["properties"][id_name]
+        # load default file name
+        stratum_props_lithology = site_props_dict_props_id["lithology"]
+        stratum_props_age = site_props_dict_props_id["age"]
+        # load stratum file path and description
+        stratum_props_file_path = site_props_dict_props_id["properties"]
+        stratum_props_description = site_props_dict_props_id["description"]
+        # store property path, default file name, and description into dictionary
+        sites_material_props_dict[site_name]['strata'][id_name] = {
+            "properties_file_path": stratum_props_file_path,
+            "default_properties_file_name": stratum_props_age + "_" + stratum_props_lithology,
+            "description": stratum_props_description,
+        }
+    return sites_material_props_dict
+
+
+def add_stratum_table_to_sites_dict(site_name: str, id_name: str, sites_material_props_dict: dict):
+    """
+    Add stratum table to the existing Python Dictionary sites_material_props_dict.
+    @param site_name: str, name of the site
+    @param id_name: str, name of the lithostratigraphic layer.
+    @param sites_material_props_dict: dict, dictionary that contains all the sites material properties.
+    @return: the updated sites_material_props_dict.
+    """
+    # Load default file
+    default_file_name = sites_material_props_dict[site_name]['strata'][id_name]["default_properties_file_name"]
+    default_props = default_props_dict[default_file_name]
+
+    # Load stratum props
+    stratum_props_file_path = sites_material_props_dict[site_name]['strata'][id_name]["properties_file_path"]
+    if stratum_props_file_path == "default":
+        stratum_props = "default"
+    else:
+        # load stratum properties
+        id_name_props_yaml = load_yaml_to_dict(stratum_props_file_path, props_yaml_to_dataframe=True)
+        stratum_props = id_name_props_yaml["properties"]
+
+    # fill in missing fields and properties with default
+    stratum_props_table, style_default_data = fill_in_default_props(
+        stratum_props, default_props
+    )
+
+    # convert dataframe to dash table
+    stratum_props_table_to_records = stratum_props_table.to_dict("records")
+    stratum_props_table_index = stratum_props_table.columns
+
+    # store stratum properties into dictionary
+    sites_material_props_dict[site_name]['strata'][id_name].update({"stratum_props": {
+        "stratum_props_table": stratum_props_table_to_records,
+        "stratum_props_table_index": stratum_props_table_index,
+        "style_default_data": style_default_data}})
+
+    return sites_material_props_dict
+
+
+def load_dash_vtk_children(points_all, polys_all, stratum_colors, stratum_opacity):
+    children_lists = [
+        dash_vtk.GeometryRepresentation(
+            children=[dash_vtk.PolyData(points=points_all[0], polys=polys_all[0])],
+            property={"edgeVisibility": False, "color": stratum_colors[0], "opacity": stratum_opacity[0]},
+            showCubeAxes=True,
+        )
+    ]
+    for i in range(1, len(stratum_colors)):
+        children_lists.append(
+            dash_vtk.GeometryRepresentation(
+                children=[dash_vtk.PolyData(points=points_all[i], polys=polys_all[i])],
+                property={"edgeVisibility": False, "color": stratum_colors[i], "opacity": stratum_opacity[i]},
+            ),
+        )
+
+    return children_lists
+
+
+def load_dash_stratum_table(site_name: str, id_name: str, sites_material_props_dict: dict):
+    stratum_props_table_to_records = sites_material_props_dict[site_name]['strata'][id_name]["stratum_props"][
+        "stratum_props_table"]
+    stratum_props_table_index = sites_material_props_dict[site_name]['strata'][id_name]["stratum_props"][
+        "stratum_props_table_index"]
+    style_default_data = sites_material_props_dict[site_name]['strata'][id_name]["stratum_props"][
+        "style_default_data"]
+
+    children = [
+        html.Div(
+            className="table_props",
+            children=[
+                dash_table.DataTable(
+                    data=stratum_props_table_to_records,
+                    columns=[{"name": i, "id": i} for i in stratum_props_table_index],
+                    style_data_conditional=style_default_data,
+                    filter_action="native",
+                )
+            ],
+        )
+    ]
+    return children
+
+
+hex_colors = RGBtxt_to_dict("RGB_stratigraphy.txt", color_type='to_hex')
+rgb_colors = RGBtxt_to_dict("RGB_stratigraphy.txt", color_type='to_rgb')
 
 site_dropdown_list = load_items_in_dir(dir_name="site", items="yml_files")
-site_dropdown_list = ["DE_North_Claystone", "test"]
 geometry_folder_list = load_items_in_dir(dir_name="geometry", items="folders")
 default_props_dict = load_default_props()
 app = Dash(external_stylesheets=["assets/dashboard.css"])
@@ -414,16 +488,19 @@ app.layout = html.Div(
         html.Div(
             className="model_and_properties",
             children=[
-                dcc.Store(id="model_html_list"),
                 html.Div(
                     className="geomodel",
                     children=[
                         html.H1(
+                            id="reset_camera",
                             className="geomodel_header",
                             children="3D Structural Geomodel",
                             style={"textAlign": "center", "color": "black"},
                         ),
-                        html.Iframe(id="3d_model", className="iframe_geomodel"),
+                        html.Div(id="3d_model_div", className="iframe_geomodel",
+                                 children=[dash_vtk.View(id="3d_model",
+                                                         background=[0.9, 0.9, 1],
+                                                         )])
                     ],
                 ),
                 html.Div(
@@ -434,22 +511,26 @@ app.layout = html.Div(
                             children="lithostratigraphy",
                             style={"textAlign": "center", "color": "black"},
                         ),
-                        dcc.Store(id="sites_material_props_dict"),
-                        dcc.Store(id="default_props_dict"),
-                        dcc.Store(id="site_name_previous"),
                         dcc.Graph(id="icicle_props", className="icicle_stratigraphy"),
                         html.Div(id="properties_table"),
                     ],
                 ),
             ],
         ),
+
+        dcc.Store(id="sites_material_props_dict"),
+        dcc.Store(id="site_name_previous"),
+        dcc.Store(id="stratum_colors_dict"),
+        dcc.Store(id="clicked_layer")
     ]
 )
 
 
+# change the value in state will not return output,  unless any input has changed
 @app.callback(
     Output("icicle_props", "figure"),
     Output("sites_material_props_dict", "data"),
+    # Output("stratum_colors_dict", "data"),
     Input("site_dropdown", "value"),
     State("sites_material_props_dict", "data"),
 )
@@ -460,147 +541,92 @@ def display_stratigraphic_table(site_name, sites_material_props_dict):
         fig.update_yaxes(visible=False)
         return fig, {}
     else:
-        if site_name in sites_material_props_dict:  # if the site material properties have been stored
-            site_strata_names_list = list(sites_material_props_dict[site_name].keys())
-            strata_props_descriptions = [
-                id_name.get("description")
-                for id_name in sites_material_props_dict[site_name].values()
-            ]
-        else:
-            # convert YAML file to Python dictionary
-            site_props_dict = load_items_in_dir(
-                dir_name=os.path.join("site", site_name + ".yml"), items="site_props_dict"
-            )
-            # get a list of layer names
-            site_strata_names_list = list(site_props_dict['properties'].keys())
-            # store the site name and its layers names
-            sites_material_props_dict.update(
-                {site_name: dict(zip(site_strata_names_list, site_strata_names_list))}
-            )
-            strata_props_descriptions = []
-            # load property path, lithology, age and description
-            for id_name in site_strata_names_list:
-                site_props_dict_props_id = site_props_dict["properties"][id_name]
-                # load default file name
-                stratum_props_lithology = site_props_dict_props_id["lithology"]
-                stratum_props_age = site_props_dict_props_id["age"]
-                # load stratum file path and description
-                stratum_props_file_path = site_props_dict_props_id["properties"]
-                stratum_props_description = site_props_dict_props_id["description"]
-                strata_props_descriptions.append(stratum_props_description)
-                # store property path, default file name, and description into dictionary
-                sites_material_props_dict[site_name][id_name] = {
-                    "properties_file_path": stratum_props_file_path,
-                    "default_properties_file_name": stratum_props_age + "_" + stratum_props_lithology,
-                    "description": stratum_props_description,
-                }
-        fig = create_stratigraphic_table(
+        if site_name not in sites_material_props_dict:
+            sites_material_props_dict = add_site_props_to_sites_dict(site_name, sites_material_props_dict)
+
+        site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
+        strata_props_descriptions = [
+            id_name.get("description")
+            for id_name in sites_material_props_dict[site_name]['strata'].values()
+        ]
+
+        fig, stratigraphy_colors_dict = create_stratigraphic_table(
             site_strata_names_list, strata_props_descriptions
         )
 
+        stratum_colors = [tuple(c / 255 for c in eval(stratigraphy_colors_dict[id_name][3:])) for id_name in
+                          site_strata_names_list]
+        stratum_colors_dict = dict(zip(site_strata_names_list, stratum_colors))
+        sites_material_props_dict[site_name]['stratum_colors_dict'] = stratum_colors_dict
+        print('strata_dict1')
         return fig, sites_material_props_dict
-
-
-@app.callback(
-    Output("3d_model", "srcDoc"),
-    Output("model_html_list", "data"),
-    Input("site_dropdown", "value"),
-    State("model_html_list", "data"),
-)
-def display_3d_model(site_name, model_html_list):
-    if site_name is None:  # assign initial values
-        return None, []
-    elif site_name not in geometry_folder_list:
-        return "No geomodel available!", model_html_list
-    else:
-        site_name_html = site_name + ".html"
-        # if the load_geomodel function has been called before, then one can directly load the html
-        if site_name_html in model_html_list:
-            return open(site_name_html, "rt").read(), model_html_list
-        else:
-            model_html = load_geomodel(site_name)
-            model_html_list.append(model_html)
-            return open(model_html, "rt").read(), model_html_list
 
 
 @app.callback(
     Output("properties_table", "children"),
     Output("site_name_previous", "data"),
     Output("icicle_props", "clickData"),
-    Output("sites_material_props_dict", "data", allow_duplicate=True),
+    #Output("sites_material_props_dict", "data", allow_duplicate=True),
+    Output("3d_model", "children"),
+    Output("3d_model", "cameraPosition"),
+    Output("3d_model", "cameraViewUp"),
     Input("icicle_props", "clickData"),
-    State("sites_material_props_dict", "data"),
+    Input("sites_material_props_dict", "data"),
     Input("site_dropdown", "value"),
-    State("site_name_previous", "data"),
-    prevent_initial_call=True
+    Input("site_name_previous", "data"),
+    # prevent_initial_call=True
 )
-def update_layer_tables(
+def update_LayerTables_3dModel(
         clickData,
         sites_material_props_dict,
         site_name,
         site_name_previous,
 ):
+    if site_name not in geometry_folder_list:  # initial interface or when no geomodel is available.
+        geo_model = None
+        camera_position = None
+    else:
+        print('sites_material_props_dict2: ', sites_material_props_dict)
+        points_all, polys_all, camera_position = load_plydata(site_name, sites_material_props_dict)
+        site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
+        stratum_colors_dict = sites_material_props_dict[site_name]['stratum_colors_dict']
+        geo_model = load_dash_vtk_children(points_all, polys_all, list(stratum_colors_dict.values()),
+                                           np.ones(len(site_strata_names_list)))
+
     layer_name = clickData
+    print('site_name: ', site_name)
+    print('layer_name: ', layer_name)
     if layer_name is None:
-        return [], site_name, None, sites_material_props_dict  # hide the table and keep clickData to none
+        dash_stratum_table = []  # hide the table
+        return dash_stratum_table, site_name, None, None, None, None
+
     else:  # display the properties table
+        dash_stratum_table = []
         id_name = layer_name["points"][0]["id"]
-        site_strata_names_list = list(sites_material_props_dict[site_name].keys())
+        site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
         # set the condition of site_name == site_name_previous to make sure the properties table
         # is hidden when site_name is updated.
-        if id_name in site_strata_names_list and site_name == site_name_previous:
-            if "stratum_props" in sites_material_props_dict[site_name][id_name].keys():
-                stratum_props_table_to_records = sites_material_props_dict[site_name][id_name]["stratum_props"][
-                    "stratum_props_table"]
-                stratum_props_table_index = sites_material_props_dict[site_name][id_name]["stratum_props"][
-                    "stratum_props_table_index"]
-                style_default_data = sites_material_props_dict[site_name][id_name]["stratum_props"][
-                    "style_default_data"]
-            else:
-                # Load default file
-                default_file_name = sites_material_props_dict[site_name][id_name]["default_properties_file_name"]
-                default_props = default_props_dict[default_file_name]
+        if id_name in site_strata_names_list and site_name == site_name_previous:  # if properties for the layer exist
+            # display the properties table
+            # if "stratum_props" not in sites_material_props_dict[site_name]['strata'][id_name].keys():
+            sites_material_props_dict = add_stratum_table_to_sites_dict(site_name, id_name,
+                                                                        sites_material_props_dict)
+            dash_stratum_table = load_dash_stratum_table(site_name, id_name, sites_material_props_dict)
 
-                # Load stratum props
-                stratum_props_file_path = sites_material_props_dict[site_name][id_name]["properties_file_path"]
-                if stratum_props_file_path == "default":
-                    stratum_props = "default"
-                else:
-                    # load stratum properties
-                    id_name_props_yaml = load_yaml_to_dict(stratum_props_file_path, props_yaml_to_dataframe=True)
-                    stratum_props = id_name_props_yaml["properties"]
+            # highlight the clicked layer
+            if site_name in geometry_folder_list:
+                stratum_colors_dict = {
+                    id_layer: ((0.8980, 0.8941, 0.8863) if id_layer != id_name else stratum_colors_dict[id_layer]) for
+                    id_layer
+                    in stratum_colors_dict}
+                stratum_opacities = {
+                    id_layer: (0.5 if id_layer != id_name else 1) for
+                    id_layer
+                    in stratum_colors_dict}
+                geo_model = load_dash_vtk_children(points_all, polys_all, list(stratum_colors_dict.values()),
+                                                   list(stratum_opacities.values()))
 
-                # fill in missing fields and properties with default
-                stratum_props_table, style_default_data = fill_in_default_props(
-                    stratum_props, default_props
-                )
-
-                # convert dataframe to dash table
-                stratum_props_table_to_records = stratum_props_table.to_dict("records")
-                stratum_props_table_index = stratum_props_table.columns
-
-                # store stratum properties into dictionary
-                sites_material_props_dict[site_name][id_name].update({"stratum_props": {
-                    "stratum_props_table": stratum_props_table_to_records,
-                    "stratum_props_table_index": stratum_props_table_index,
-                    "style_default_data": style_default_data}})
-
-            children = [
-                html.Div(
-                    className="table_props",
-                    children=[
-                        dash_table.DataTable(
-                            data=stratum_props_table_to_records,
-                            columns=[{"name": i, "id": i} for i in stratum_props_table_index],
-                            style_data_conditional=style_default_data,
-                            filter_action="native",
-                        )
-                    ],
-                )
-            ]
-            return children, site_name, None, sites_material_props_dict  # display the table and clear the clickData
-        else:
-            return [], site_name, None, sites_material_props_dict  # hide the table and clear the clickData
+        return dash_stratum_table, site_name, None, None, camera_position, [-1, -1, 1]
 
 
 if __name__ == "__main__":
