@@ -1,4 +1,4 @@
-from dash import Dash, html, dcc, callback, Output, Input, dash_table, State
+from dash import Dash, html, dcc, ctx, callback, Output, Input, dash_table, State
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.graph_objects as go
@@ -256,8 +256,7 @@ def fill_in_default_props(stratum_props: pd.DataFrame or str, default_props: pd.
     return stratum_props_table, style_data_conditional
 
 
-def load_plydata(site_name: str, sites_material_props_dict: dict, stratum_colors_dict: dict,
-                 stratum_opacities_dict: dict = None):
+def load_plydata(site_name: str, sites_material_props_dict: dict, stratum_colors_dict: dict):
     site_geo_path = os.path.join(
         os.path.realpath(os.path.dirname(__file__)),
         os.path.join("data_hub", "yaml-db", "geometry", site_name),
@@ -266,19 +265,14 @@ def load_plydata(site_name: str, sites_material_props_dict: dict, stratum_colors
     site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
     plotter_strata = pv.Plotter()
 
-    if stratum_opacities_dict is None:
-        stratum_opacities_dict = dict(zip(site_strata_names_list, np.ones(len(site_strata_names_list))))
-
-    for i in range(len(site_strata_names_list)):
-        stratum_ply = pv.read(os.path.join(site_geo_path, f"{site_strata_names_list[i]}.ply"))
+    for stratum in site_strata_names_list:
+        stratum_ply = pv.read(os.path.join(site_geo_path, f"{stratum}.ply"))
         plotter_strata.add_mesh(
             stratum_ply,
-            color=stratum_colors_dict[site_strata_names_list[i]],
-            opacity=stratum_opacities_dict[site_strata_names_list[i]])
+            color=stratum_colors_dict[stratum],
+            name=stratum)
 
-    filename_html = site_name + ".html"
-    plotter_strata.export_html(filename_html)
-    return filename_html
+    return plotter_strata
 
 
 def create_stratigraphic_table(site_strata: list, strata_props_descriptions: list):
@@ -516,7 +510,9 @@ app.layout = html.Div(
         ),
 
         dcc.Store(id="sites_material_props_dict"),
-        dcc.Store(id="site_name_previous")
+        dcc.Store(id="site_name_previous"),
+        dcc.Store(id="clicked_layer_name"),
+        dcc.Store(id="plotter_plydata")
     ]
 )
 
@@ -561,65 +557,68 @@ def display_stratigraphic_table(site_name, sites_material_props_dict):
     Output("properties_table", "children"),
     Output("site_name_previous", "data"),
     Output("icicle_props", "clickData"),
+    Output("clicked_layer_name", "data"),
     # Output("sites_material_props_dict", "data", allow_duplicate=True),
-    Output("3d_model", "srcDoc"),
     Input("icicle_props", "clickData"),
     Input("sites_material_props_dict", "data"),
     Input("site_dropdown", "value"),
-    Input("site_name_previous", "data"),
+    State("site_name_previous", "data"),
     # prevent_initial_call=True
 )
-def update_LayerTables_3dModel(
-        clickData,
+def load_stratum_table(
+        click_data,
         sites_material_props_dict,
         site_name,
         site_name_previous,
 ):
-    if site_name not in geometry_folder_list:  # initial interface or when no geomodel is available.
-        if site_name is None:
-            geo_model = None
-        else:
-            geo_model = "No geomodel is available!"
-    else:
-        stratum_colors_dict = sites_material_props_dict[site_name]['stratum_colors_dict']
-        model_html = load_plydata(site_name, sites_material_props_dict, stratum_colors_dict)
-        geo_model = open(model_html, "rt").read()
-
-    layer_name = clickData
-    print('site_name: ', site_name)
-    print('layer_name: ', layer_name)
-    if layer_name is None:
+    if click_data is None:
         dash_stratum_table = []  # hide the table
+        clicked_layer_name = None
 
     else:  # display the properties table
         dash_stratum_table = []
-        id_name = layer_name["points"][0]["id"]
+        clicked_layer_name = click_data["points"][0]["id"]
         site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
         # set the condition of site_name == site_name_previous to make sure the properties table
         # is hidden when site_name is updated.
-        if id_name in site_strata_names_list and site_name == site_name_previous:  # if properties for the layer exist
+        if clicked_layer_name in site_strata_names_list and site_name == site_name_previous:  # if properties for the layer exist
             # display the properties table
             # if "stratum_props" not in sites_material_props_dict[site_name]['strata'][id_name].keys():
-            sites_material_props_dict = add_stratum_table_to_sites_dict(site_name, id_name,
+            sites_material_props_dict = add_stratum_table_to_sites_dict(site_name, clicked_layer_name,
                                                                         sites_material_props_dict)
-            dash_stratum_table = load_dash_stratum_table(site_name, id_name, sites_material_props_dict)
+            dash_stratum_table = load_dash_stratum_table(site_name, clicked_layer_name, sites_material_props_dict)
 
-            # highlight the clicked layer
-            if site_name in geometry_folder_list:
-                stratum_colors_dict = {
-                    id_layer: ('#D3D3D3' if id_layer != id_name else stratum_colors_dict[id_layer]) for
-                    id_layer
-                    in stratum_colors_dict}
-                stratum_opacities_dict = {
-                    id_layer: (0.5 if id_layer != id_name else 1) for
-                    id_layer
-                    in stratum_colors_dict}
+    return dash_stratum_table, site_name, None, clicked_layer_name
 
-                model_html = load_plydata(site_name, sites_material_props_dict, stratum_colors_dict,
-                                          stratum_opacities_dict)
-                geo_model = open(model_html, "rt").read()
 
-    return dash_stratum_table, site_name, None, geo_model
+@app.callback(
+    Output("3d_model", "srcDoc"),
+    Input("site_dropdown", "value"),
+    Input("sites_material_props_dict", "data"),
+    Input("clicked_layer_name", "data")
+)
+def display_3d_model(site_name, sites_material_props_dict, clicked_layer_name):
+    if site_name is None:  # initial interface
+        return None
+    elif site_name not in geometry_folder_list:  # when no geomodel is available.
+        return "No geomodel is available!"
+    else:
+        stratum_colors_dict = sites_material_props_dict[site_name][
+            "stratum_colors_dict"
+        ]
+        plotter_plydata = load_plydata(
+            site_name, sites_material_props_dict, stratum_colors_dict
+        )
+
+        if clicked_layer_name in stratum_colors_dict:
+            for name, actor in plotter_plydata.renderer.actors.items():
+                if name != clicked_layer_name:
+                    actor.GetProperty().SetColor(211 / 255.0, 211 / 255.0, 211 / 255.0)
+                    actor.GetProperty().SetOpacity(0.5)
+        site_name_html = site_name + ".html"
+        plotter_plydata.export_html(site_name_html)
+
+        return open(site_name_html, "rt").read()
 
 
 if __name__ == "__main__":
