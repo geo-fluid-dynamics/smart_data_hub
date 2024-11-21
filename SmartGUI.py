@@ -1,21 +1,12 @@
-from dash import Dash, html, dcc, ctx, callback, Output, Input, dash_table, State
-import dash_bootstrap_components as dbc
+from dash import Dash, html, dcc, Output, Input, dash_table, State
 import pandas as pd
 import plotly.graph_objects as go
-import plotly.express as px
-import gempy as gp
-import gempy_viewer as gpv
 import pyvista as pv
-import webbrowser
-from matplotlib.pyplot import cm
-import numpy as np
-from matplotlib.colors import to_hex
 import os
 from os import listdir, walk
 from os.path import isfile, join
 import yaml
 import dash_vtk
-from vtk.util.numpy_support import vtk_to_numpy
 
 
 def RGBtxt_to_dict(file_path: str, color_type: str):
