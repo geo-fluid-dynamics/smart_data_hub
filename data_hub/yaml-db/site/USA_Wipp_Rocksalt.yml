@@ -10,36 +10,42 @@ Cenozoic-Quaternary:
   lithology: Sandstone
   age: Cenozoic
   description: Default values for Cenozoic sandstone.
+  geometry:
 
 Mesozoic-Triassic-Upper:
   properties: default
   lithology: Sandstone
   age: Mesozoic
   description: Thin-bedded upper Triassic sandstone formation.
+  geometry:
 
 Mesozoic-Paleozoic-Permian-Lopingian-Changhsingian:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Changhsingian.yml
   lithology: Sandstone
   age: Paleozoic
   description: Dewey Lake Formation, Sandstone with thin siltstone beds.
+  geometry:
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Upper:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Upper.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Rulster formation, dolomite and anhydrite with silt- and clay-rich thin beds.
+  geometry:
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Middle:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Middle.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Rock salt with anhydrite and mudstone interbeds.
+  geometry:
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Lower:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Lower.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Anhydrite in succession with rock salt.
+  geometry:
 
 geometry:
   geological_model_points: 

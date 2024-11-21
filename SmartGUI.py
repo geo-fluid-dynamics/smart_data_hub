@@ -150,7 +150,7 @@ def fill_in_default_props(stratum_props: pd.DataFrame or str, default_props: pd.
     @param default_props: DataFrame. Default property with corresponding lithology and age.
     @return: stratum properties fill in the default values and styles for DataTable.
     """
-    if isinstance(stratum_props, str):
+    if isinstance(stratum_props, str):  # default
         stratum_props_table = (
             (default_props.T.reset_index())
             .rename(columns={"index": "property"})
@@ -257,20 +257,18 @@ def fill_in_default_props(stratum_props: pd.DataFrame or str, default_props: pd.
 
 
 def load_plydata(site_name: str, sites_material_props_dict: dict, stratum_colors_dict: dict):
-    site_geo_path = os.path.join(
-        os.path.realpath(os.path.dirname(__file__)),
-        os.path.join("data_hub", "yaml-db", "geometry", site_name),
-    )
-
     site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
     plotter_strata = pv.Plotter()
 
     for stratum in site_strata_names_list:
-        stratum_ply = pv.read(os.path.join(site_geo_path, f"{stratum}.ply"))
-        plotter_strata.add_mesh(
-            stratum_ply,
-            color=stratum_colors_dict[stratum],
-            name=stratum)
+        stratum_props_file_path = sites_material_props_dict[site_name]['strata'][stratum]["geometry_file_path"]
+
+        if isinstance(stratum_props_file_path, str):  # not None or nan
+            stratum_ply = pv.read(stratum_props_file_path)
+            plotter_strata.add_mesh(
+                stratum_ply,
+                color=stratum_colors_dict[stratum],
+                name=stratum)
 
     return plotter_strata
 
@@ -361,11 +359,13 @@ def add_site_props_to_sites_dict(site_name: str, sites_material_props_dict: dict
         # load stratum file path and description
         stratum_props_file_path = site_props_dict_props_id["properties"]
         stratum_props_description = site_props_dict_props_id["description"]
+        stratum_props_geometry_path = site_props_dict_props_id["geometry"]
         # store property path, default file name, and description into dictionary
         sites_material_props_dict[site_name]['strata'][id_name] = {
             "properties_file_path": stratum_props_file_path,
             "default_properties_file_name": stratum_props_age + "_" + stratum_props_lithology,
             "description": stratum_props_description,
+            "geometry_file_path": stratum_props_geometry_path
         }
     return sites_material_props_dict
 
@@ -609,8 +609,10 @@ def display_3d_model(site_name, sites_material_props_dict, clicked_layer_name):
         plotter_plydata = load_plydata(
             site_name, sites_material_props_dict, stratum_colors_dict
         )
+        plotter_plydata_names = list(plotter_plydata.renderer.actors.keys())
 
-        if clicked_layer_name in stratum_colors_dict:
+        # highlight the clicked layer
+        if clicked_layer_name in plotter_plydata_names:
             for name, actor in plotter_plydata.renderer.actors.items():
                 if name != clicked_layer_name:
                     actor.GetProperty().SetColor(211 / 255.0, 211 / 255.0, 211 / 255.0)
