@@ -5,14 +5,7 @@ name: USA_WIPP_Rocksalt
 
 description: Synthetic data from the Waste Isolation Power Plant (WIPP).
 
-Cenozoic-Quaternary:
-  properties: default
-  lithology: Sandstone
-  age: Cenozoic
-  description: Default values for Cenozoic sandstone.
-  geometry:
-
-Mesozoic-Triassic-Upper:
+Mesozoic-Triassic:
   properties: default
   lithology: Sandstone
   age: Mesozoic
@@ -37,19 +30,19 @@ Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Middle:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Middle.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Rock salt with anhydrite and mudstone interbeds.
+  description: Salado formation, rock salt with anhydrite and mudstone interbeds.
   geometry:
 
 Mesozoic-Paleozoic-Permian-Lopingian-Wuchiapingian-Lower:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Halite/Wuchiapingian-Lower.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Anhydrite in succession with rock salt.
+  description: Castile formation, anhydrite in succession with rock salt.
   geometry:
 
 geometry:
-  geological_model_points: 
-  geological_model_orientations: 
+  geological_model_points: data_hub/yaml-db/geometry/USA_Wipp_Rocksalt/points.csv
+  geological_model_orientations: data_hub/yaml-db/geometry/USA_Wipp_Rocksalt/orientations.csv
 
 
 

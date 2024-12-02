@@ -1,0 +1,21 @@
+X,Y,Z,formation
+0,0,-40, Triassic
+0,1000,-40, Triassic
+1000,0,-40, Triassic
+1000,1000,-40, Triassic
+0,0,-800, Wuchiapingian-Middle
+0,1000,-800, Wuchiapingian-Middle
+1000,0,-800, Wuchiapingian-Middle
+1000,1000,-800, Wuchiapingian-Middle
+0,0,-1150, Wuchiapingian-Lower
+0,1000,-1150, Wuchiapingian-Lower
+1000,0,-1150, Wuchiapingian-Lower
+1000,1000,-1150, Wuchiapingian-Lower
+0,0,-255, Wuchiapingian-Upper
+0,1000,-255, Wuchiapingian-Upper
+1000,0,-255, Wuchiapingian-Upper
+1000,1000,-255, Wuchiapingian-Upper
+0,0,-135, Changhsingian
+0,1000,-135, Changhsingian
+1000,0,-135, Changhsingian
+1000,1000,-135, Changhsingian
