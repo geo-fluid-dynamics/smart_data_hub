@@ -5,12 +5,12 @@ name: USA_WIPP_Rocksalt
 
 description: Synthetic data from the Waste Isolation Power Plant (WIPP).
 
-Mesozoic-Triassic:
+Cenozoic-Tertiary:
   properties: default
   lithology: Sandstone
-  age: Mesozoic
-  description: Thin-bedded upper Triassic sandstone formation.
-  geometry: data_hub/yaml-db/geometry/USA_WIPP_Rocksalt/Triassic.ply
+  age: Cenozoic
+  description: Thin-bedded upper Tertiary sandstone formation.
+  geometry: data_hub/yaml-db/geometry/USA_WIPP_Rocksalt/Tertiary.ply
 
 Paleozoic-Permian-Lopingian-Changhsingian:
   properties: data_hub/yaml-db/rock_props/USA_WIPP_Rocksalt/Changhsingian.yml

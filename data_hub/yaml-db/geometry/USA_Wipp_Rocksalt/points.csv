@@ -1,8 +1,8 @@
 X,Y,Z,formation
-0,0,-40,Triassic
-0,1000,-40,Triassic
-1000,0,-40,Triassic
-1000,1000,-40,Triassic
+0,0,-40,Tertiary
+0,1000,-40,Tertiary
+1000,0,-40,Tertiary
+1000,1000,-40,Tertiary
 0,0,-135,Changhsingian
 0,1000,-135,Changhsingian
 1000,0,-135,Changhsingian
