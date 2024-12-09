@@ -1,6 +1,6 @@
 ﻿X,Y,Z,dip,polarity,azimuth,formation
-0,0,-40,0,1,135, Triassic
+0,0,-40,0,1,135,Triassic
+0,0,-135,0,1,135,Changhsingian
+0,0,-250,0,1,135,Wuchiapingian-Upper
 0,0,-800,0,1,135,Wuchiapingian-Middle
 0,0,-1150,0,1,135,Wuchiapingian-Lower
-0,0,-250,0,1,135,Wuchiapingian-Upper
-0,0,-135,0,1,135,Changhsingian
