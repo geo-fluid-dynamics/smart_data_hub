@@ -7,7 +7,6 @@ description: Synthetic data from Northern Germany.
 
 Cenozoic-Quaternary:
   properties: default
-  # properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Albian.yml
   lithology: Claystone
   age: Cenozoic
   description: Default values from Cenozoic_Claystone.yml
