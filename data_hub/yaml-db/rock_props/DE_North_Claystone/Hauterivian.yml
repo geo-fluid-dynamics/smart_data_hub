@@ -79,7 +79,7 @@ diffusivity_parallel:
   value: 5.4e-11
   dev_pdf: Gauss
   dev_value: 0.4e-11
-  unit_str: m²/s
+  unit_str: m^2/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
 
@@ -88,11 +88,10 @@ diffusivity_perpendicular:
   value: 1.4e-11
   dev_pdf: Gauss
   dev_value: 0.1e-12
-  unit_str: m²/s
+  unit_str: m^2/s
   unit: [0 2 -1 0 0 0 0]
   source: VanLoon.2004
-
-#Values are taken from Mont Terri studies for HTO isotopes
+  meta_free: Values are taken from Mont Terri studies for HTO isotopes
 
 electrical_resistivity:
   type: scalar

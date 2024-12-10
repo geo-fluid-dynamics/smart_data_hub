@@ -46,7 +46,7 @@ heat_conductivity:
 hydraulic_conductivity:
   type: scalar
   value: 1.0e-5
-  dev_pdf: list
+  dev_pdf: range
   dev_value: [1.0e-6, 1.0e-4]
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
@@ -73,7 +73,7 @@ s_wave_velocity:
 electrical_resistivity:
   type: scalar
   value: 500
-  dev_pdf: list
+  dev_pdf: range
   dev_value: [100, 1000]
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]

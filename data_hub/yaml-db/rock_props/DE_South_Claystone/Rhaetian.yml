@@ -3,7 +3,7 @@ density:
   value: 2420
   dev_pdf: Gauss
   dev_value: 87
-  unit_str: kg/m³
+  unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
   source: NAGRA.2001
 

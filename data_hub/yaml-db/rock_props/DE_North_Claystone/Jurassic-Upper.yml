@@ -66,9 +66,10 @@ s_wave_velocity:
 
 electrical_resistivity:
   type: scalar
-  value: 2500 #Assuming unfractured limestone and marlstone
+  value: 2500
   dev_pdf: Gauss
   dev_value: 250
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
   source: Kneuker.2021
+  meta_free: Assuming unfractured limestone and marlstone
