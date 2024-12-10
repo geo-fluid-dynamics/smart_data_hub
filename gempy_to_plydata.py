@@ -5,11 +5,13 @@ import pyvista as pv
 import numpy as np
 
 
-def create_geomodel_for_site(site_orientation_path: str, site_points_path: str, save_ply_folder_path: str = ''):
+def create_geomodel_for_site(site_orientation_path: str, site_points_path: str, extent_geometry: list = None,
+                             save_ply_folder_path: str = ''):
     """
     Create GemPy 3D structural model and save each surface mesh to PolyData
     @param site_orientation_path: path to CSV file that stores orientation data for each surface.
     @param site_points_path: path to CSV file that stores point data for each surface.
+    @param extent_geometry: model extend in a list [x_min, x_max, y_min, y_max, z_min, z_max].
     @param save_ply_folder_path: path to a folder that saves the PolyData.
     @return: PolyData for each surface.
     """
@@ -17,14 +19,15 @@ def create_geomodel_for_site(site_orientation_path: str, site_points_path: str, 
     points_csv = pd.read_csv(site_points_path)
     # get strata name list
     formation_list = list(dict.fromkeys(list(points_csv["formation"])))
-    extent_geometry = [
-        min(0, min(list(points_csv["X"]))),
-        max(0, max(list(points_csv["X"]))),
-        min(0, min(list(points_csv["Y"]))),
-        max(0, max(list(points_csv["Y"]))),
-        min(0, min(list(points_csv["Z"]))),
-        max(0, max(list(points_csv["Z"]))),
-    ]
+    if extent_geometry is None:
+        extent_geometry = [
+            min(0, min(list(points_csv["X"]))),
+            max(0, max(list(points_csv["X"]))),
+            min(0, min(list(points_csv["Y"]))),
+            max(0, max(list(points_csv["Y"]))),
+            min(0, min(list(points_csv["Z"]))),
+            max(0, max(list(points_csv["Z"]))),
+        ]
     formation_dict = dict(zip(formation_list, formation_list))
     geo_data = gp.create_geomodel(
         project_name="site",

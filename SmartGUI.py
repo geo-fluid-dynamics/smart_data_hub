@@ -7,6 +7,7 @@ from os import listdir, walk
 from os.path import isfile, join
 import yaml
 import dash_vtk
+import numpy as np
 
 
 def RGBtxt_to_dict(file_path: str, color_type: str):
@@ -250,16 +251,29 @@ def fill_in_default_props(stratum_props: pd.DataFrame or str, default_props: pd.
 def load_plydata(site_name: str, sites_material_props_dict: dict, stratum_colors_dict: dict):
     site_strata_names_list = list(sites_material_props_dict[site_name]['strata'].keys())
     plotter_strata = pv.Plotter()
+    # array for calculating model extend
+    points_array = np.array([0.0, 0.0, 0.0])
 
     for stratum in site_strata_names_list:
         stratum_props_file_path = sites_material_props_dict[site_name]['strata'][stratum]["geometry_file_path"]
 
         if isinstance(stratum_props_file_path, str):  # not None or nan
             stratum_ply = pv.read(stratum_props_file_path)
+
+            # vstack all the points
+            points_array = np.vstack((np.array(stratum_ply.points), points_array))
+
             plotter_strata.add_mesh(
                 stratum_ply,
                 color=stratum_colors_dict[stratum],
                 name=stratum)
+
+    # calculate extend of the model
+    min_array = np.min(points_array, axis=0)
+    max_array = np.max(points_array, axis=0)
+    model_extend = [min_array[0], max_array[0], min_array[1], max_array[1], min_array[2], max_array[2]]
+    # add axis
+    plotter_strata.show_bounds(bounds=model_extend, location="furthest", grid=True)
 
     return plotter_strata
 
