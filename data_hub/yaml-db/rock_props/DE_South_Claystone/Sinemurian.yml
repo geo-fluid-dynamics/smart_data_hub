@@ -1,7 +1,7 @@
 density:
   type: scalar
   value: 2530
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 120
   unit_str: kg/m^3
   unit: [1 -3 0 0 0 0 0]
@@ -9,15 +9,15 @@ density:
 
 effective_porosity:
   type: scalar
-  value: None
-  unit_str: None
+  value:
+  unit_str:
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2016
 
 specific_heat_capacity:
   type: scalar
   value: 880
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 40
   unit_str: J/kg/K
   unit: [0 2-2 -1 0 0 0]
@@ -27,7 +27,7 @@ specific_heat_capacity:
 heat_conductivity:
   type: scalar
   value: 2.38
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 0.12
   unit_str: W/m/K
   unit: [1 1 -3 -1 0 0 0]
@@ -44,7 +44,7 @@ hydraulic_conductivity:
 p_wave_velocity_parallel:
   type: scalar
   value: 5680
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 400
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
@@ -53,7 +53,7 @@ p_wave_velocity_parallel:
 p_wave_velocity_perpendicular:
   type: scalar
   value: 5410
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 490
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
@@ -61,7 +61,7 @@ p_wave_velocity_perpendicular:
 
 s_wave_velocity:
   type: scalar
-  value: None
+  value:
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: Gebrande.1982
@@ -69,7 +69,7 @@ s_wave_velocity:
 electrical_resistivity:
   type: scalar
   value: 35
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 5
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]

@@ -8,103 +8,103 @@ Cenozoic-Tertiary:
   properties: default
   lithology: Claystone
   age: Cenozoic
-  description:
+  description: Marlstone, varying calcareous and clayey components.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Tertiary.ply
 
 Mesozoic-Jurassic-Upper-Tithonian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Tithonian.yml
-  lithology: Claystone
+  lithology: Limestone
   age: Mesozoic
-  description:
+  description: Limestone, marlstone.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Tithonian.ply
 
 Mesozoic-Jurassic-Upper-Kimmeridgian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Kimmeridgian.yml
-  lithology: Claystone
+  lithology: Limestone
   age: Mesozoic
-  description:
+  description: Limestone, dolomite.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Kimmeridgian.ply
 
 Mesozoic-Jurassic-Upper-Oxfordian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Oxfordian.yml
-  lithology: Claystone
+  lithology: Limestone
   age: Mesozoic
-  description:
+  description: Limestone, marlstone.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Oxfordian.ply
 
 Mesozoic-Jurassic-Middle-Bathonian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Bathonian.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Clayey marlstone, single limestone beds.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Bathonian.ply
 
 Mesozoic-Jurassic-Middle-Bajocian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Bajocian.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Fe-rich sandstone, claystone and marlstone beds.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Bajocian.ply
 
 Mesozoic-Jurassic-Middle-Aalenian-Opalinus_Clay:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Opalinus_Clay.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Claystone.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Opalinus_Clay.ply
 
 Mesozoic-Jurassic-Lower-Pliensbachian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Pliensbachian.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Clayey marlstone, marlstone.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Pliensbachian.ply
 
 Mesozoic-Jurassic-Lower-Sinemurian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Sinemurian.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Clayey sandstone, clayey marlstone.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Sinemurian.ply
 
 Mesozoic-Triassic-Upper-Rhaetian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Rhaetian.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Claystone, marlstone, calcareous concretions.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Rhaetian.ply
 
 Mesozoic-Triassic-Upper-Norian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Norian.yml
-  lithology: Claystone
+  lithology: Sandstone
   age: Mesozoic
-  description:
+  description: Sandstone, single claystone beds.
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Norian.ply
 
 Mesozoic-Triassic-Upper-Carnian:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Carnian.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Claystone, siltstones
   geometry: data_hub/yaml-db/geometry/DE_South_Claystone/Carnian.ply
 
 Mesozoic-Triassic-Middle-Anisian-Upper:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Anisian-Upper.yml
-  lithology: Claystone
+  lithology: Sandstone
   age: Mesozoic
-  description:
+  description: Dolomitestone.
   geometry:
 
 Mesozoic-Triassic-Middle-Anisian-Middle:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Anisian-Middle.yml
   lithology: Claystone
   age: Mesozoic
-  description:
+  description: Anhydrite, single claystone beds.
   geometry:
 
 Mesozoic-Triassic-Middle-Anisian-Lower:
   properties: data_hub/yaml-db/rock_props/DE_South_Claystone/Anisian-Lower.yml
-  lithology: Claystone
+  lithology: Sandstone
   age: Mesozoic
-  description:
+  description: Brownstone, varying clay content.
   geometry:

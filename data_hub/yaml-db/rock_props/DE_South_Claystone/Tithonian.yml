@@ -7,8 +7,8 @@ density:
 
 effective_porosity:
   type: scalar
-  value: None
-  unit_str: None
+  value:
+  unit_str:
   unit: [0 0 0 0 0 0 0]
   source: Jahn.2016
 
@@ -38,7 +38,7 @@ hydraulic_conductivity:
 p_wave_velocity:
   type: scalar
   value: 5630
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 580
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
@@ -47,7 +47,7 @@ p_wave_velocity:
 s_wave_velocity:
   type: scalar
   value: 3120
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 450
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
@@ -56,7 +56,7 @@ s_wave_velocity:
 electrical_resistivity:
   type: scalar
   value: 2500 
-  dev_pdf: Gauss
+  dev_pdf: std
   dev_value: 250
   unit_str: Ohmm
   unit: [1 2 -3 0 -2 0 0]
