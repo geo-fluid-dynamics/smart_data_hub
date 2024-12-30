@@ -18,26 +18,26 @@ Cenozoic-Tertiary:
   description: Sandstone, siltstone, claystone layers.
   geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Tertiary.ply
 
-Mesozoic-Triassic-Lower-Olenekian-Bunter-Middle:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Bunter-Middle.yml
+Mesozoic-Triassic-Lower-Olenekian-Buntsandstein-Middle:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Buntsandstein-Middle.yml
   lithology: Sandstone
   age: Mesozoic
   description: Sandstone (mid- to coarse-grained, aquifer).
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Bunter-Middle.ply
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Buntsandstein-Middle.ply
 
-Mesozoic-Triassic-Lower-Induan-Bunter-Lower:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Bunter-Lower.yml
+Mesozoic-Triassic-Lower-Induan-Buntsandstein-Lower:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Buntsandstein-Lower.yml
   lithology: Sandstone
   age: Mesozoic
   description: Siltstone, fine sandstone, claystone.
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Bunter-Lower.ply
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Buntsandstein-Lower.ply
 
-Paleozoic-Permian-Lopingian-Aller-Steinsalz:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Aller-Steinsalz.yml
+Paleozoic-Permian-Lopingian-Aller-Rock_salt:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Aller-Rock_salt.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Rocksalt.
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Aller-Steinsalz.ply
+  description: Rock salt.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Aller-Rock_salt.ply
 
 Paleozoic-Permian-Lopingian-Leine-Anhydritmittelsalz:
   properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Anhydritmittelsalz.yml
@@ -46,33 +46,33 @@ Paleozoic-Permian-Lopingian-Leine-Anhydritmittelsalz:
   description: Anhydrite rock.
   geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Anhydritmittelsalz.ply
 
-Paleozoic-Permian-Lopingian-Leine-Steinsalz:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Leine-Steinsalz.yml
+Paleozoic-Permian-Lopingian-Leine-Rock_salt:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Leine-Rock_salt.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Rocksalt.
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Leine-Steinsalz.ply
+  description: Rock salt.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Leine-Rock_salt.ply
 
-Paleozoic-Permian-Lopingian-Leine-Hauptanhydrit:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Hauptanhydrit.yml
+Paleozoic-Permian-Lopingian-Leine-Main_Anhydrite:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Main_Anhydrite.yml
   lithology: Rocksalt
   age: Paleozoic
   description: Anhydrite rock.
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Hauptanhydrit.ply
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Main_Anhydrite.ply
 
-Paleozoic-Permian-Lopingian-Strassfurt-Kalifloez:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Kalifloez.yml
+Paleozoic-Permian-Lopingian-Strassfurt-Potash_seam:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Potash_seam.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Kali salt.
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Kalifloez.ply
+  description: Potash seam.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Potash_seam.ply
 
-Paleozoic-Permian-Lopingian-Strassfurt-Steinsalz:
-  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Strassfurt-Steinsalz.yml
+Paleozoic-Permian-Lopingian-Strassfurt-Rock_salt:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Strassfurt-Rock_salt.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Rocksalt.
-  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Strassfurt-Steinsalz.ply
+  description: Rock salt.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Strassfurt-Rock_salt.ply
 
 Paleozoic-Permian-Lopingian-Strassfurt-Anhydrite_Carbonate:
   properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Anhydrite_Carbonate.yml
