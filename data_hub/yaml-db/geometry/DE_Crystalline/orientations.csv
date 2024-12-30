@@ -1,0 +1,13 @@
+X,Y,Z,azimuth,dip,polarity,formation
+0,0,-60,90,0,1,Muschelkalk_sequence1
+0,0,-150,90,0,1,Muschelkalk_sequence2
+0,0,-250,90,0,1,Buntsandstein-Upper
+0,0,-340,90,0,1,Buntsandstein-Middle
+0,0,-450,90,0,1,Buntsandstein-Lower
+0,0,-650,90,0,1,Rock_salt_sequence1
+0,0,-690,90,0,1,Anhydrite_sequence1
+0,0,-720,90,0,1,Potash
+0,0,-860,90,0,1,Rock_salt_sequence2
+0,0,-890,90,0,1,Anhydrite_sequence2
+0,0,-910,90,0,1,Granite_weathered
+0,0,-1200,90,0,1,Granite
