@@ -29,16 +29,15 @@ heat_conductivity:
   dev_value: 0.4
   unit_str: W/m/K
   unit: [1 1 -3 -1 0 0 0]
-  source: Liu.2017
+  source: Liu.2018
   meta_free: T = 273.16 K
 
 hydraulic_conductivity:
   type: scalar
-  value: 1.0e-12 
+  value: 1.0e-10
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
   source: AdHocAG.1997
-  meta_free: Lower since thick-banked rock salt layer acts as main geological barrier for repository.
 
 p_wave_velocity:
   type: scalar
@@ -54,14 +53,8 @@ s_wave_velocity:
   dev_value: 250
   unit_str: m/s
   unit: [0 1 -1 0 0 0 0]
-  source: GPG.2022
-
-diffusivity:
-  type: scalar
-  value: 2.2e-10
-  unit_str: m^2/s
-  unit: [0 2 -1 0 0 0 0]
-  source: Kock.2012
+  source: GPG.2022 
+  meta_free: Website Geophysics for Practicing Geoscientists (GPG)
 
 electrical_resistivity:
   type: scalar

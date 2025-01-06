@@ -4,19 +4,19 @@ name: DE_Crystalline
 
 description: Located in homogenous granitic rocks. A homogenous fracture network will be assumed in later stages.
 
-Mesozoic-Triassic-Middle-Anisian-Muschelkalk_sequence1:
-  properties: default
-  lithology: Limestone
-  age: Mesozoic
-  description: Limestone, marlstone, karstified (karst aquifer).
-  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Muschelkalk_sequence1.ply
-
 Mesozoic-Triassic-Middle-Anisian-Muschelkalk_sequence2:
   properties: default
   lithology: Limestone
   age: Mesozoic
-  description: Limestone, marlstone, porous, jointed (pore-water aquifer).
+  description: Limestone, marlstone, karstified (karst aquifer).
   geometry: data_hub/yaml-db/geometry/DE_Crystalline/Muschelkalk_sequence2.ply
+
+Mesozoic-Triassic-Middle-Anisian-Muschelkalk_sequence1:
+  properties: default
+  lithology: Limestone
+  age: Mesozoic
+  description: Limestone, marlstone, porous, jointed (pore-water aquifer).
+  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Muschelkalk_sequence1.ply
 
 Mesozoic-Triassic-Lower-Buntsandstein-Upper:
   properties: data_hub/yaml-db/rock_props/DE_Crystalline/Buntsandstein-Upper.yml
@@ -39,32 +39,11 @@ Mesozoic-Triassic-Lower-Buntsandstein-Lower:
   description: Siltstone, fine sandstone, groundwater aquifer.
   geometry: data_hub/yaml-db/geometry/DE_Crystalline/Buntsandstein-Lower.ply
 
-Paleozoic-Permian-Lopingian-Zechstein-Rock_salt_sequence1:
-  properties: data_hub/yaml-db/rock_props/DE_Crystalline/Rock_salt_sequence1.yml
-  lithology: Rocksalt
-  age: Paleozoic
-  description: Rock salt
-  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Rock_salt_sequence1.ply
-
-Paleozoic-Permian-Lopingian-Zechstein-Anhydrite_sequence1:
-  properties: data_hub/yaml-db/rock_props/DE_Crystalline/Anhydrite.yml
-  lithology: Rocksalt
-  age: Paleozoic
-  description: Rock salt
-  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Anhydrite_sequence1.ply
-
-Paleozoic-Permian-Lopingian-Zechstein-Potash:
-  properties: data_hub/yaml-db/rock_props/DE_Crystalline/Potash.yml
-  lithology: Rocksalt
-  age: Paleozoic
-  description: Rock salt
-  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Potash.ply
-
 Paleozoic-Permian-Lopingian-Zechstein-Rock_salt_sequence2:
   properties: data_hub/yaml-db/rock_props/DE_Crystalline/Rock_salt_sequence2.yml
   lithology: Rocksalt
   age: Paleozoic
-  description: Rock salt, acts as main geological barrier for repository.
+  description: Rock salt
   geometry: data_hub/yaml-db/geometry/DE_Crystalline/Rock_salt_sequence2.ply
 
 Paleozoic-Permian-Lopingian-Zechstein-Anhydrite_sequence2:
@@ -73,6 +52,27 @@ Paleozoic-Permian-Lopingian-Zechstein-Anhydrite_sequence2:
   age: Paleozoic
   description: Rock salt
   geometry: data_hub/yaml-db/geometry/DE_Crystalline/Anhydrite_sequence2.ply
+
+Paleozoic-Permian-Lopingian-Zechstein-Potash:
+  properties: data_hub/yaml-db/rock_props/DE_Crystalline/Potash.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Rock salt
+  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Potash.ply
+
+Paleozoic-Permian-Lopingian-Zechstein-Rock_salt_sequence1:
+  properties: data_hub/yaml-db/rock_props/DE_Crystalline/Rock_salt_sequence1.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Rock salt, acts as main geological barrier for repository.
+  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Rock_salt_sequence1.ply
+
+Paleozoic-Permian-Lopingian-Zechstein-Anhydrite_sequence1:
+  properties: data_hub/yaml-db/rock_props/DE_Crystalline/Anhydrite.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Rock salt
+  geometry: data_hub/yaml-db/geometry/DE_Crystalline/Anhydrite_sequence1.ply
 
 Paleozoic-Carboniferous-Pennsylvanian-Granite_weathered:
   properties: data_hub/yaml-db/rock_props/DE_Crystalline/Granite_weathered.yml
