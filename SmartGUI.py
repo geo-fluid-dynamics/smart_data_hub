@@ -6,7 +6,6 @@ import os
 from os import listdir, walk
 from os.path import isfile, join
 import yaml
-import dash_vtk
 
 
 def RGBtxt_to_dict(file_path: str, color_type: str):
@@ -400,25 +399,6 @@ def add_stratum_table_to_sites_dict(site_name: str, id_name: str, sites_material
         "style_default_data": style_default_data}})
 
     return sites_material_props_dict
-
-
-def load_dash_vtk_children(points_all, polys_all, stratum_colors, stratum_opacity):
-    children_lists = [
-        dash_vtk.GeometryRepresentation(
-            children=[dash_vtk.PolyData(points=points_all[0], polys=polys_all[0])],
-            property={"edgeVisibility": False, "color": stratum_colors[0], "opacity": stratum_opacity[0]},
-            showCubeAxes=True,
-        )
-    ]
-    for i in range(1, len(stratum_colors)):
-        children_lists.append(
-            dash_vtk.GeometryRepresentation(
-                children=[dash_vtk.PolyData(points=points_all[i], polys=polys_all[i])],
-                property={"edgeVisibility": False, "color": stratum_colors[i], "opacity": stratum_opacity[i]},
-            ),
-        )
-
-    return children_lists
 
 
 def load_dash_stratum_table(site_name: str, id_name: str, sites_material_props_dict: dict):
