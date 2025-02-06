@@ -1,36 +1,83 @@
-# Nino Menzel @ RWTH, April 2024
+# Nino Menzel, Qian Chen@ RWTH, April 2024
 
 # name of the site
 name: DE_North_Claystone
 
-# Location
-location:
-  type: 
-  value: 
+description: Synthetic data from Northern Germany.
 
-Triassic-Upper_Keuper:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Keuper.yml
-Lower_Jurassic:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Lower_Jurassic.yml
-Middle_Jurassic:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Middle_Jurassic.yml
-Upper_Jurassic:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Upper_Jurassic.yml
-Cretaceous-Lower_Wealden:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Weladen.yml
-Cretaceous-Lower_Hauterivian:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Hauterivian.yml
-Cretaceous-Lower_Barremian:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Barremian.yml
-Cretaceous-Lower_Aptian:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Aptian.yml
-Cretaceous_Lower_Albian:
-  properties: ../../../yaml-db/lithostratigraphy/DE_North_Claystone/Albian.yml
+Cenozoic-Quaternary:
+  properties: default
+  lithology: Claystone
+  age: Cenozoic
+  description: Default values from Cenozoic_Claystone.yml
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Quaternary.ply
 
+Mesozoic-Cretaceous-Lower-Albian:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Albian.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and marlstone. Increasing limestone content leads to increase in res.
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Albian.ply
+
+Mesozoic-Cretaceous-Lower-Aptian:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Aptian.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone, marlstone with varying clay content
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Aptian.ply
+
+Mesozoic-Cretaceous-Lower-Barremian:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Barremian.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and clayey marlstone, bituminous claystone layers. Clayey subfacies shows res < 15 Ohmm, sandy and calcareous parts > 25 Ohmm.
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Barremian.ply
+
+Mesozoic-Cretaceous-Lower-Hauterivian:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Hauterivian.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and clayey marlstone. Similar lithological composition to Albian and Aptian, but assuming slightly higher clay content (-> lower res).
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Hauterivian.ply
+
+Mesozoic-Cretaceous-Lower-Berriasian-Wealden:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Wealden.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and sandstone, assume that composition is similar to Lower Jurassic 1 from claystone model South (Gelis, 2015).
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Wealden.ply
+
+Mesozoic-Jurassic-Upper:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Jurassic-Upper.yml
+  lithology: Limestone
+  age: Mesozoic
+  description: Limestone, thin beds of anhydrite and evaporites.
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Jurassic-Upper.ply
+
+Mesozoic-Jurassic-Middle:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Jurassic-Middle.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and marlstone.
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Jurassic-Middle.ply
+
+Mesozoic-Jurassic-Lower:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Jurassic-Lower.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and clayey marlstone, bituminous claystone layers, comparable to host rock.
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Jurassic-Lower.ply
+
+Mesozoic-Triassic-Upper-Keuper:
+  properties: data_hub/yaml-db/rock_props/DE_North_Claystone/Keuper.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: Claystone and siltstone, thin sandstone beds and evaporitic layers
+  geometry: data_hub/yaml-db/geometry/DE_North_Claystone/Keuper.ply
 
 geometry:
-  geological_model_points: ../../../yaml-db/geometry/DE_North_Claystone/points.csv
-  geological_model_orientations: ../../../yaml-db/geometry/DE_North_Claystone/orientations.csv
+  geological_model_points: data_hub/yaml-db/geometry/DE_North_Claystone/points.csv
+  geological_model_orientations: data_hub/yaml-db/geometry/DE_North_Claystone/orientations.csv
 
 
 

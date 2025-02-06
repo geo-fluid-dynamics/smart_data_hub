@@ -1,0 +1,89 @@
+# Nino Menzel, Qian Chen @ RWTH, 2024
+
+name: DE_Rocksalt
+
+description: Located in Lower Saxony. Stratiform Zechstein rocks are assumed as barrier- and host rock formations.
+
+Cenozoic-Quaternary:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Quaternary.yml
+  lithology: Sandstone
+  age: Cenozoic
+  description: Loose to barely compacted sands and gravels.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Quaternary.ply
+
+Cenozoic-Tertiary:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Tertiary.yml
+  lithology: Sandstone
+  age: Cenozoic
+  description: Sandstone, siltstone, claystone layers.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Tertiary.ply
+
+Mesozoic-Triassic-Lower-Olenekian-Buntsandstein-Middle:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Buntsandstein-Middle.yml
+  lithology: Sandstone
+  age: Mesozoic
+  description: Sandstone (mid- to coarse-grained, aquifer).
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Buntsandstein-Middle.ply
+
+Mesozoic-Triassic-Lower-Induan-Buntsandstein-Lower:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Buntsandstein-Lower.yml
+  lithology: Sandstone
+  age: Mesozoic
+  description: Siltstone, fine sandstone, claystone.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Buntsandstein-Lower.ply
+
+Paleozoic-Permian-Lopingian-Aller-Rock_salt:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Aller-Rock_salt.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Rock salt.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Aller-Rock_salt.ply
+
+Paleozoic-Permian-Lopingian-Leine-Anhydritmittelsalz:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Anhydritmittelsalz.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Anhydrite rock.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Anhydritmittelsalz.ply
+
+Paleozoic-Permian-Lopingian-Leine-Rock_salt:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Leine-Rock_salt.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Rock salt.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Leine-Rock_salt.ply
+
+Paleozoic-Permian-Lopingian-Leine-Main_Anhydrite:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Main_Anhydrite.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Anhydrite rock.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Main_Anhydrite.ply
+
+Paleozoic-Permian-Lopingian-Strassfurt-Potash_seam:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Potash_seam.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Potash seam.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Potash_seam.ply
+
+Paleozoic-Permian-Lopingian-Strassfurt-Rock_salt:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Strassfurt-Rock_salt.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Rock salt.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Strassfurt-Rock_salt.ply
+
+Paleozoic-Permian-Lopingian-Strassfurt-Anhydrite_Carbonate:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Anhydrite_Carbonate.yml
+  lithology: Rocksalt
+  age: Paleozoic
+  description: Anhydrite rock and calcareous layers (base of saline succession).
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Anhydrite_Carbonate.ply
+
+Paleozoic-Permian-Rotliegend:
+  properties: data_hub/yaml-db/rock_props/DE_Rocksalt/Rotliegend.yml
+  lithology: Claystone
+  age: Paleozoic
+  description: Claystones and siltstones.
+  geometry: data_hub/yaml-db/geometry/DE_Rocksalt/Rotliegend.ply

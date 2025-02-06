@@ -1,0 +1,60 @@
+# Qian Chen @RWTH, January 2025
+name: Mont Terri
+
+description: The Mont Terri rock laboratory is located in Canton Jura, Switzerland. The Opalinus Clay fromation attributed chronostratigraphically from late Toarcian until the late Aalenian.
+
+Mesozoic-Jurassic-Middle-Bajocian-Hauptrogenstein:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/Hauptrogenstein.yml
+  lithology: Limestone
+  age: Mesozoic
+  description: oolithic limestone; coarse-grained, beige and light grey calcarenites; marls and limestones.
+  geometry:
+
+Mesozoic-Jurassic-Middle-Passwang_Formation:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/Passwang.yml
+  lithology: Sandstone
+  age: Mesozoic
+  description: silty to fine-sandy marls, quartz sand and limestones.
+  geometry:
+
+Mesozoic-Jurassic-Middle-Aalenian-Opalinus_Clay-sandy_facies2:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/sandy_facies.yml
+  lithology: Sandstone
+  age: Mesozoic
+  description: calcareous, silty-sandy claystones with numerous light-grey, laminated sandstone lenses.
+  geometry:
+
+Mesozoic-Jurassic-Middle-Aalenian-Opalinus_Clay-shaly_facies2:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/shaly_facies.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: dark grey, mostly mica and pyrite containing calcareous silty-sandy claystones.
+  geometry:
+
+Mesozoic-Jurassic-Middle-Aalenian-Opalinus_Clay-sandy_facies1:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/sandy_facies.yml
+  lithology: Sandstone
+  age: Mesozoic
+  description: calcareous, silty-sandy claystones interspersed with numerous light-grey, thinly bedded sandstone lenses.
+  geometry:
+
+Mesozoic-Jurassic-Middle-Aalenian-Opalinus_Clay-carb_sandy_facies:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/sandy_facies.yml
+  lithology: Sandstone
+  age: Mesozoic
+  description: dark grey, calcareous, silty-sandy claystone layers alternating with light-grey calcareous lenses and dm-size layers.
+  geometry:
+
+Mesozoic-Jurassic-Opalinus_Clay-shaly_facies1:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/shaly_facies.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: dark grey calcareous, silty-sandy claystones containing mica and pyrite.
+  geometry:
+
+Mesozoic-Jurassic-Lower-Toarcian-Staffelegg_Formation:
+  properties: data_hub/yaml-db/rock_props/CH_MontTerri_OpalinusClay/Staffelegg.yml
+  lithology: Claystone
+  age: Mesozoic
+  description: grey clayey marls and light grey marls, argillaceous limestones with filamentous bivalves and occasional layers rich in belemnites.
+  geometry:

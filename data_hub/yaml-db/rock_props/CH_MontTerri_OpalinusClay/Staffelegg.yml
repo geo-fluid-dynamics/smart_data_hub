@@ -1,0 +1,35 @@
+# Qian Chen @ RWTH, January 2025
+#
+# name:
+#   - type                         # [ scalar, array, tabulated, expression, coordinate, string ]
+#   - value                        # float
+#   - dev_pdf                      # Gauss or other parametrized or tabulated PDF
+#   - dev_value                    # hyperparameters of PDF or array
+#   - unit_str                     # standard string to inidate unit
+#   - unit  [ kg m s K A mol cd ]  # unit in systematically documented SI units
+#   - variable                     # function argument
+#   - variable_unit  [ kg m s K A mol cd ]  # unit in systematically documented SI units
+#   - variable_unit_str            # standard string to indicate variable_unit
+#   - source [ string ]            # data source
+#   - meta_sys [ string ]          # meta data from systematic databases, e.g. NASA database
+#   - meta_free [ string]          # free text meta data
+
+intrinsic_permeability:
+  type: scalar
+  value: 2.975e-20
+  dev_pdf: std
+  dev_value: [1.5e-21, 5.8e-20]
+  unit_str: m^2
+  unit: [0 2 0 0 0 0 0]
+  source: yu2018comparative
+  meta_free: petrophysical measurements.
+
+hydraulic_conductivity:
+  type: scalar
+  value: 4.0e-10
+  dev_pdf: std
+  dev_value: [2.1e-10, 5.9e-10]
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: yu2018comparative
+  meta_free: in-situ hydraulic tests.

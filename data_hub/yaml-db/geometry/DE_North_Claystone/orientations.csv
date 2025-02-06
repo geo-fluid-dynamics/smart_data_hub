@@ -5,7 +5,7 @@ X,Y,Z,azimuth,dip,polarity,formation
 0,0,-650,0,2.5,1,Barremian
 0,0,-900,0,2.5,1,Hauterivian
 0,0,-1000,0,2.5,1,Wealden
-0,0,-1000,0,0,1,Upper_Jurassic
-0,0,-1350,90,2.5,1,Mid_Jurassic
-0,0,-1650,90,7.5,1,Lower_Jurassic
+0,0,-1000,0,0,1,Jurassic-Upper
+0,0,-1350,90,2.5,1,Jurassic-Middle
+0,0,-1650,90,7.5,1,Jurassic-Lower
 0,0,-1900,90,0,1,Keuper

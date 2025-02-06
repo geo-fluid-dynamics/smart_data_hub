@@ -1,0 +1,13 @@
+X,Y,Z,azimuth,dip,polarity,formation
+0,0,-50,90,5,1,Tertiary
+0,0,-300,90,3.75,1,Tithonian
+0,0,-350,90,3.75,1,Kimmeridgian
+0,0,-500,90,3.75,1,Oxfordian
+0,0,-530,90,3.75,1,Bathonian
+0,0,-580,90,3.75,1,Bajocian
+0,0,-620,90,3.25,1,Opalinus_Clay
+0,0,-760,90,3.25,1,Pliensbachian
+0,0,-780,90,3.25,1,Sinemurian
+0,0,-830,90,3.75,1,Rhaetian
+0,0,-880,90,3.75,1,Norian
+0,0,-955,90,3.75,1,Carnian

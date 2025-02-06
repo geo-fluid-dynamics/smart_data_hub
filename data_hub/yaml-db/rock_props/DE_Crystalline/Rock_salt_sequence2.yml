@@ -1,0 +1,64 @@
+density:
+  type: scalar
+  value: 2160
+  unit_str: kg/m^3
+  unit: [1 -3 0 0 0 0 0]
+  source: Liu.2017
+
+effective_porosity:
+  type: scalar
+  value:  
+  unit_str: 
+  unit: [0 0 0 0 0 0 0]
+  source: Jahn.2013
+
+specific_heat_capacity:
+  type: scalar
+  value: 870
+  dev_pdf: std
+  dev_value: 20
+  unit_str: J/kg/K
+  unit: [0 2-2 -1 0 0 0]
+  source: Lerch.2012
+  meta_free: T = 273.16 K
+
+heat_conductivity:
+  type: scalar
+  value: 5.4
+  dev_pdf: std
+  dev_value: 0.4
+  unit_str: W/m/K
+  unit: [1 1 -3 -1 0 0 0]
+  source: Liu.2018
+  meta_free: T = 273.16 K
+
+hydraulic_conductivity:
+  type: scalar
+  value: 1.0e-10
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: AdHocAG.1997
+
+p_wave_velocity:
+  type: scalar
+  value: 4500
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: Warren.2008,Ahlrichs.2021
+
+s_wave_velocity:
+  type: scalar
+  value: 2750
+  dev_pdf: std
+  dev_value: 250
+  unit_str: m/s
+  unit: [0 1 -1 0 0 0 0]
+  source: GPG.2022 
+  meta_free: Website Geophysics for Practicing Geoscientists (GPG)
+
+electrical_resistivity:
+  type: scalar
+  value: 5.0e+5
+  unit_str: Ohmm
+  unit: [1 2 -3 0 -2 0 0]
+  source: Yaramanci.2001

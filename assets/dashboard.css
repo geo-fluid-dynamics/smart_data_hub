@@ -1,0 +1,110 @@
+/* Show a progress cursor when loading something and do not allow to click somewhere */
+._dash-loading-callback {
+  /* This is an invisible banner that covers the whole screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: progress;
+}
+
+/* Define main colors here */
+:root {
+    --BackgroundColor: #FAF0E6;
+    --BorderColor: #FFFFFF;
+}
+
+/* Set font to Arial for the whole site */
+body {
+    font-family: Arial;
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header {
+    height: 50px;
+    background-color: var(--BackgroundColor);
+    font-size: 20pt;
+    border-style: solid;
+    border-color: var(--BorderColor); /*var(--Linen), logo section border*/
+    border-width: medium;
+    border-radius: 5pt;
+}
+
+.model_and_properties{
+    position: fixed;
+    top:32%;
+    height: 65%;
+    width: 98%;
+    background-color: var(--BackgroundColor) ;
+    border-style: solid;
+    border-color: var(--BorderColor); /*var(--Linen), logo section border*/
+    border-width: medium;
+    border-radius: 5pt;
+}
+
+.geomodel{
+    height: 99%;
+    width: 31%;
+    float: right;
+}
+
+.geomodel_header {
+    height: 25px;
+    width: 97%;
+    background-color: var(--BackgroundColor) ;
+    font-size: 14pt;
+    border-style: solid;
+    border-color: var(--BorderColor); /*var(--Linen), logo section border*/
+    border-width: medium;
+    border-radius: 5pt;
+    float: left;
+}
+
+.iframe_geomodel{
+    height: 82%;
+    width: 97%;
+    float: left;
+}
+
+.properties{
+    height: 99%;
+    top:40%;
+    width: 68%;
+    float: left;
+}
+
+
+.stratigraphy_header {
+    height: 25px;
+    width: 98%;
+    background-color: var(--BackgroundColor) ;
+    font-size: 14pt;
+    border-style: solid;
+    border-color: var(--BorderColor); /*var(--Linen), logo section border*/
+    border-width: medium;
+    border-radius: 5pt;
+    float: right;
+}
+
+.icicle_stratigraphy{
+    height: 82%;
+    width: 98%;
+    float: right;
+}
+
+.table_props{
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: auto;
+    top:38%;
+    margin-left: 5%;
+    height: 50%;
+    width: 59.5%;
+}
