@@ -9,7 +9,8 @@ The data-hub consists of a database integrated with a Graphic User Interface (GU
 1. **Database**: It provides material properties along with their uncertainty margins and sensible defaults 
 in YAML files. The material properties are grouped into synthetic, 
 reference, and candidate sites. All relevant files can be found in the [`data_hub/yaml-db`](./data_hub/yaml-db/readme.md) directory.
-2. **GUI**: It was developed with [Plotly Dash](https://dash.plotly.com/)—a web-based application for interactive visualization.
+2. **GUI**: The GUI provides a platform to view the database. It was developed with [Plotly Dash](https://dash.plotly.com/)—a web-based application for interactive visualization.
+Simply run the Python program [SmartGUI.py](./SmartGUI.py), it will then start a local flask server. 
 The GUI displays three sections:
    * Geomodel: provides a 3D structural geomodel for each site.
    * Chronostratigraphic chart: indicates geological formation time of each stratum.

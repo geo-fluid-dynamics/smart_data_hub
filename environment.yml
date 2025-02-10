@@ -1,10 +1,11 @@
-name: smart_data_hub_test
+name: smart_data_hub
 channels:
   - pypi
   - conda-forge
   - defaults
 dependencies:
   - python=3.10
+  - pip
   - pip:
     - dash==2.17.1
     - gempy==2024.2.0.2
