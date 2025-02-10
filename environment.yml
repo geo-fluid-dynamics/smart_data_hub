@@ -13,3 +13,7 @@ dependencies:
     - pandas==2.2.2
     - pyvista==0.43.10
     - pyyaml==6.0.1
+    - trame==3.6.3
+    - trame-vtk==2.8.9
+    - trame-vuetify==2.6.0
+    - vtk==9.3.0
